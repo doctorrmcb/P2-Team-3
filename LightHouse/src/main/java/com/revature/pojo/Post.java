@@ -14,33 +14,54 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 
-/*
- * Author - Robert Li
+/**
+ * Class for all posts
+ * @author Robert Li
+ *
  */
 
 @Entity
 @Table(name = "Posts")
 public class Post {
+	
+	/**
+	 * ID of the post
+	 */
 	@Id
 	@SequenceGenerator(name = "POSTID_SEQ", sequenceName = "post_id_seq")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "POSTID_SEQ")
 	@Column(name = "Post_ID")
 	private int postID;
 	
+	/**
+	 * The thread the post replied to
+	 */
 	@ManyToOne
 	@JoinColumn(name = "thread_id")
 	private Thread threadID;
 	
+	/**
+	 * The user who posted the Post
+	 */
 	@ManyToOne
 	@JoinColumn(name = "user_id")
 	private User posted_by;
 	
+	/**
+	 * Contents of the post
+	 */
 	@Column(name = "contents")
 	private String contents;
 	
+	/**
+	 * Date the post was posted
+	 */
 	@Column(name = "post_date")
 	private LocalDate postDate;
 	
+	/**
+	 * Time the post was posted
+	 */
 	@Column(name = "post_time")
 	private LocalTime postTime;
 
