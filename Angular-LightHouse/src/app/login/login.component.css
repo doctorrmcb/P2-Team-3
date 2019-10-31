@@ -40,6 +40,7 @@ body {
 .btn {
     background-color: #F26925;
     border-color: #F26925;
+    color: #FFFFFF;
     border-radius: 28px;
     padding-left: 30px; 
     padding-top: 12px;
@@ -56,7 +57,7 @@ body {
 .btn:hover, .btn:active, .btn:focus {
     background-color: #FFFFFF;
     color: #FCB414;
-
+    box-shadow: none;
 }
 
 .container {
