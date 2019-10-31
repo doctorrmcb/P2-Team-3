@@ -1,3 +1,12 @@
 #revature-image {
     margin-left: 2%;
 }
+
+.form-control {
+    max-width:600px;
+    margin: auto;
+}
+
+.form, .title {
+    text-align: center;
+}
