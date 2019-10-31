@@ -1,20 +1,2 @@
-<nav class="navbar" id="navbar"><img id="revature-image" src="assets/Revature-Logo.png"></nav>
-<h1 class="title">{{title}}</h1>
-
-
-<div class="form">
-  <form name="login" action="login" method="POST" class="login-form">
-    <label for="username">Username:</label>
-    <input name="username" id="username" type="text" class="form-control" [(ngModel)]="username" placeholder="username" />
-
-    <br>
-
-    <label for="password">Password:</label>
-    <input name="password" id="password" type="password" class="form-control" [(ngModel)]="password" placeholder="password" />
-  
-    <br>
-
-    <button name="submit" id="submit" type="button" class="btn btn-primary btn-lg">Submit</button>
-    
-  </form>
-</div>
+<app-navbar-outer></app-navbar-outer>
+<app-login></app-login>

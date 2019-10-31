@@ -1,0 +1,69 @@
+/* Sets all font on the page to match revature style */
+* {
+    font-family: 'Futura-PT';
+}
+
+#outer-container {
+    background-image: url("../../assets/nik-macmillan-YXemfQiPR_E-unsplash.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+body {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.form-control {
+    max-width: 100%;
+    margin: auto;
+    border-color: #F26925;
+    border: 3px, solid, #F26925!important;
+    border-width: 3px;
+    border-radius: 12px;
+    padding-left: 18px; 
+    padding-top: 8px;
+    padding-right: 18px;
+    padding-bottom: 8px;
+    color: #B9B9BA;
+    height: 50px;    
+}
+
+#label-username, #label-password {
+    text-align: left;
+}
+
+.title {
+    text-align: center;
+}
+
+.btn {
+    background-color: #F26925;
+    border-color: #F26925;
+    border-radius: 28px;
+    padding-left: 30px; 
+    padding-top: 12px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    font-family: 'Futura-PT';
+    font-size: 15px;
+    font-weight: 700;
+    width: 40%;
+    position: relative; 
+    left: 30%;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background-color: #FFFFFF;
+    color: #FCB414;
+
+}
+
+.container {
+    width: 35%;
+    height: 80%;
+    margin-top: 8%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: rgba(255, 255, 255, .6);
+}
