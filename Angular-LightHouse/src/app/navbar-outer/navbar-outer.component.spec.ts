@@ -22,4 +22,11 @@ describe('NavbarOuterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render the logo', () => {
+    //const fixture = TestBed.createComponent(AppComponent);
+    //fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('nav>img').src).toContain("assets/Revature-Logo.png");
+  });
 });
