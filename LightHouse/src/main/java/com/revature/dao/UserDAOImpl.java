@@ -56,7 +56,7 @@ public class UserDAOImpl implements UserDAO {
 			Session sess = sf.openSession();
 			Transaction tx = sess.beginTransaction();
 			User User = (User) sess.get(User.class, username);
-			info("Got user with username:" + User.getUserName());
+			info("Got user with username:" + User.getUsername());
 			tx.commit();
 			sess.close();
 			return User;
