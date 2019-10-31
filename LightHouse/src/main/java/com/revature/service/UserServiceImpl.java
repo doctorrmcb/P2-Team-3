@@ -44,12 +44,12 @@ public class UserServiceImpl implements UserService {
 
 		info("User: " + user);
 
-		if (((user.getUserName() != null) && (user.getPassWord() != null)) && (user.getPassWord().equals(password))) {
-			debug("Checking if Username: " + user.getUserName() + " Password: " + user.getPassWord());
+		if (((user.getUsername() != null) && (user.getPassword() != null)) && (user.getPassword().equals(password))) {
+			debug("Checking if Username: " + user.getUsername() + " Password: " + user.getPassword());
 			return user;
 
 		}
-		debug("Checking if Username: " + user.getUserName() + " Password: " + user.getPassWord());
+		debug("Checking if Username: " + user.getUsername() + " Password: " + user.getPassword());
 		return null;
 	}
 	

@@ -1,9 +1,11 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [FormsModule],
       declarations: [
         AppComponent
       ],
@@ -33,6 +35,20 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('nav>img').src).toContain("assets/Revature%20Logo.png");
+    expect(compiled.querySelector('nav>img').src).toContain("assets/Revature-Logo.png");
+  });
+
+  it('should contain username input', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('#username').name).toContain("username");
+  });
+
+  it('should contain password input', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('#password').name).toContain("password");
   });
 });
