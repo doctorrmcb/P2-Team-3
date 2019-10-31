@@ -10,9 +10,11 @@ import org.hibernate.Transaction;
 import com.revature.pojo.Post;
 import com.revature.util.SessionFactoryUtil;
 
+import static com.revature.util.LoggerUtil.*;
+
 
 /**
- * This is the class that will get all Post objects from the databse
+ * This class implements CRUD methods for Post objects
  * 
  * @author Robert Li
  */
@@ -34,12 +36,14 @@ private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 	 */
 	@Override
 	public Post getPost(int postID) {
+		info("Getting post with ID: " + postID);
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
-		Post Post = (Post) sess.get(Post.class, postID);
+		Post post = (Post) sess.get(Post.class, postID);
+		info("Got post with ID:" + post.getPostID());
 		tx.commit();
 		sess.close();
-		return Post;
+		return post;
 	}
 	
 	/**
@@ -50,11 +54,12 @@ private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 	
 	@Override
 	public List<Post> getAllPosts() {
-		
+		info("Getting all posts");
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
 		Criteria crit = sess.createCriteria(Post.class);
 		List<Post> postList = crit.list();
+		info("Retrieved " + postList.size() + "posts");
 		tx.commit();
 		sess.close();
 		return postList;

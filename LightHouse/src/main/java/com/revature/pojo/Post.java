@@ -30,7 +30,7 @@ public class Post {
 	@Id
 	@SequenceGenerator(name = "POSTID_SEQ", sequenceName = "post_id_seq")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "POSTID_SEQ")
-	@Column(name = "Post_ID")
+	@Column(name = "post_id")
 	private int postID;
 	
 	/**

@@ -12,8 +12,8 @@ import com.revature.pojo.ForumThread;
 import com.revature.util.LoggerUtil.*;
 
 /**
- * This is the class that will get all ForumThread objects from the database
- * thread refers to a ForumThread object
+ * This class implements CRUD methods for ForumThread objects
+ * ForumThread will be referred to as simply thread
  * 
  * @author Robert Li
  *
