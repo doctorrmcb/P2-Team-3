@@ -13,14 +13,22 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-/*
- * Author - Robert Li
+/**
+ * This class is for all threads on the forum
+ * It is named ForumThread to avoid conflict with the Java Thread object
+ * Will be referred to as a thread
+ * @author Robert Li
+ *
  */
 
 @Entity
 @Table(name = "Threads")
-public class Thread {
+public class ForumThread {
 
+	
+	/**
+	 * ID of the thread
+	 */
 	
 	@Id
 	@SequenceGenerator(name = "THREADID_SEQ", sequenceName = "thread_id_seq")
@@ -28,25 +36,49 @@ public class Thread {
 	@Column(name = "THREAD_ID")
 	private int threadID;
 	
+	
+	/**
+	 * User that posted the thread
+	 */
 	@ManyToOne
 	@JoinColumn(name = "user_id")
 	private User posted_by;
 	
+	/**
+	 * Title of the thread
+	 */
 	@Column(name = "title")
 	private String title;
 	
+	
+	/**
+	 * Contents of the therad
+	 */
 	@Column(name = "contents")
 	private String contents;
 	
+	/**
+	 * Date thread was posted
+	 */
 	@Column(name = "post_date")
 	private LocalDate postDate;
 	
+	/**
+	 * Time thread was posted
+	 */
 	@Column(name = "post_time")
 	private LocalTime postTime;
 	
+	/**
+	 * Topic of the post
+	 * Will mainly be used for asking questions
+	 */
 	@Column(name = "topic")
 	private String topic;
 	
+	/**
+	 * Denotes whether the thread should be stickied or not
+	 */
 	@Column(name = "is_sticky")
 	private boolean isSticky;
 
@@ -122,6 +154,7 @@ public class Thread {
 		result = prime * result + (isSticky ? 1231 : 1237);
 		result = prime * result + ((postDate == null) ? 0 : postDate.hashCode());
 		result = prime * result + ((postTime == null) ? 0 : postTime.hashCode());
+		result = prime * result + ((posted_by == null) ? 0 : posted_by.hashCode());
 		result = prime * result + threadID;
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
 		result = prime * result + ((topic == null) ? 0 : topic.hashCode());
@@ -136,7 +169,7 @@ public class Thread {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Thread other = (Thread) obj;
+		ForumThread other = (ForumThread) obj;
 		if (contents == null) {
 			if (other.contents != null)
 				return false;
@@ -153,6 +186,11 @@ public class Thread {
 			if (other.postTime != null)
 				return false;
 		} else if (!postTime.equals(other.postTime))
+			return false;
+		if (posted_by == null) {
+			if (other.posted_by != null)
+				return false;
+		} else if (!posted_by.equals(other.posted_by))
 			return false;
 		if (threadID != other.threadID)
 			return false;
@@ -171,12 +209,13 @@ public class Thread {
 
 	@Override
 	public String toString() {
-		return "Threads [threadID=" + threadID + ", title=" + title + ", contents=" + contents + ", postDate="
-				+ postDate + ", postTime=" + postTime + ", topic=" + topic + ", isSticky=" + isSticky + "]";
+		return "ForumThread [threadID=" + threadID + ", posted_by=" + posted_by + ", title=" + title + ", contents="
+				+ contents + ", postDate=" + postDate + ", postTime=" + postTime + ", topic=" + topic + ", isSticky="
+				+ isSticky + "]";
 	}
 
-	public Thread(int threadID, User posted_by, String title, String contents, LocalDate postDate, LocalTime postTime,
-			String topic, boolean isSticky) {
+	public ForumThread(int threadID, User posted_by, String title, String contents, LocalDate postDate,
+			LocalTime postTime, String topic, boolean isSticky) {
 		super();
 		this.threadID = threadID;
 		this.posted_by = posted_by;
@@ -188,12 +227,11 @@ public class Thread {
 		this.isSticky = isSticky;
 	}
 
-	public Thread() {
+	public ForumThread() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	
 	
 	
 	

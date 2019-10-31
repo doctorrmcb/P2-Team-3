@@ -10,35 +10,66 @@ import org.hibernate.Transaction;
 import com.revature.pojo.Post;
 import com.revature.util.SessionFactoryUtil;
 
+import static com.revature.util.LoggerUtil.*;
 
-/*
- * Author - Robert Li
+
+/**
+ * This class implements CRUD methods for Post objects
+ * 
+ * @author Robert Li
  */
 public class PostDAOImpl implements PostDAO {
 
+	
+	
+/**
+ * This is the SessionFactory that will create sessions
+ */
 private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 	
+
+	/**
+	 * This method gets a post from the database
+	 * 
+	 * @param postID is the ID of the post to retrieve
+	 * @return Post returns the post
+	 */
 	@Override
 	public Post getPost(int postID) {
+		info("Getting post with ID: " + postID);
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
-		Post Post = (Post) sess.get(Post.class, postID);
+		Post post = (Post) sess.get(Post.class, postID);
+		info("Got post with ID:" + post.getPostID());
 		tx.commit();
 		sess.close();
-		return Post;
+		return post;
 	}
-
+	
+	/**
+	 * This method gets all posts from the database
+	 * 
+	 * @return postList This is the list of all posts
+	 */
+	
 	@Override
 	public List<Post> getAllPosts() {
-		
+		info("Getting all posts");
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
 		Criteria crit = sess.createCriteria(Post.class);
 		List<Post> postList = crit.list();
+		info("Retrieved " + postList.size() + "posts");
 		tx.commit();
 		sess.close();
 		return postList;
 	}
+	
+	/**
+	 * This method inserts a post into the database
+	 * 
+	 * @param post This post is the post to be inserted
+	 */
 
 	@Override
 	public void createPost(Post post) {
@@ -49,6 +80,12 @@ private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 		sess.close();
 	}
 
+	/**
+	 * This method updates a post in the database
+	 * 
+	 * @param post is the post to be updated
+	 */
+	
 	@Override
 	public void updatePost(Post post) {
 		Session sess = sf.openSession();
@@ -58,6 +95,12 @@ private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 		sess.close();
 	}
 
+	/**
+	 * This method deletes a post from the database
+	 * 
+	 * @param post is the post to be deleted
+	 */
+	
 	@Override
 	public void deletePost(Post post) {
 		Session sess = sf.openSession();

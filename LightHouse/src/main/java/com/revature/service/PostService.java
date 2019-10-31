@@ -1,18 +1,16 @@
-package com.revature.dao;
+package com.revature.service;
 
 import java.util.List;
 
 import com.revature.pojo.Post;
 
 /**
- * This is the interface for PostDAOImpl
- * Ensures that CRUD methods will be implemented
- * 
+ * Interface for the PostService object
+ * Acts as the liaison between the DAOs and the servlet
  * @author Robert Li
  *
  */
-public interface PostDAO {
-
+public interface PostService {
 	/**
 	 * Retrieves a post from the database based on ID
 	 * 
