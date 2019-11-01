@@ -6,12 +6,12 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.revature.pojo.Post;
 import com.revature.util.SessionFactoryUtil;
 
 import static com.revature.util.LoggerUtil.*;
-
 
 /**
  * This class implements CRUD methods for Post objects
@@ -20,14 +20,15 @@ import static com.revature.util.LoggerUtil.*;
  */
 public class PostDAOImpl implements PostDAO {
 
-	
-	
-/**
- * This is the SessionFactory that will create sessions
- */
-private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
-	
+	/**
+	 * This is the SessionFactory that will create sessions
+	 */
+	private static SessionFactory sf;
 
+	@Autowired
+	public void setSessionFactory(SessionFactory sf) {
+		this.sf = sf;
+	}
 	/**
 	 * This method gets a post from the database
 	 * 
@@ -45,13 +46,13 @@ private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 		sess.close();
 		return post;
 	}
-	
+
 	/**
 	 * This method gets all posts from the database
 	 * 
 	 * @return postList This is the list of all posts
 	 */
-	
+
 	@Override
 	public List<Post> getAllPosts() {
 		info("Getting all posts");
@@ -64,7 +65,7 @@ private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 		sess.close();
 		return postList;
 	}
-	
+
 	/**
 	 * This method inserts a post into the database
 	 * 
@@ -85,7 +86,7 @@ private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 	 * 
 	 * @param post is the post to be updated
 	 */
-	
+
 	@Override
 	public void updatePost(Post post) {
 		Session sess = sf.openSession();
@@ -100,7 +101,7 @@ private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 	 * 
 	 * @param post is the post to be deleted
 	 */
-	
+
 	@Override
 	public void deletePost(Post post) {
 		Session sess = sf.openSession();

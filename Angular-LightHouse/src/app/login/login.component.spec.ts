@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LoginComponent } from './login.component';
 import { FormsModule } from '@angular/forms';
+import { RouterTestingModule} from '@angular/router/testing';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
@@ -9,8 +10,12 @@ describe('LoginComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [FormsModule],
-      declarations: [ LoginComponent ]
+      imports: [
+        FormsModule,
+        RouterTestingModule
+        ],
+      declarations: [ LoginComponent ],
+      providers: []
     })
     .compileComponents();
   }));
@@ -45,4 +50,19 @@ describe('LoginComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('#password').name).toContain("password");
   });
+
+  it('should call onLogin method', ()=>{
+    const compiled = fixture.debugElement.nativeElement.querySelector('#login');
+    spyOn(component, "onLogin");
+    compiled.click();
+    expect(component.onLogin).toHaveBeenCalled();
+  });
+  
+  it('should call onRegister method', ()=>{
+    const compiled = fixture.debugElement.nativeElement.querySelector('#register');
+    spyOn(component, "onRegister");
+    compiled.click();
+    expect(component.onRegister).toHaveBeenCalled();
+  });
+
 });

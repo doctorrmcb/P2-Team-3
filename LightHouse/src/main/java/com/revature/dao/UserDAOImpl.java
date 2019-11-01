@@ -8,6 +8,7 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.revature.pojo.User;
 import com.revature.pojo.User;
@@ -22,9 +23,12 @@ public class UserDAOImpl implements UserDAO {
 	/**
 	 * This is the SessionFactory that will create sessions
 	 */
-	private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
-		
-
+	private static SessionFactory sf;
+	
+	@Autowired
+	public void setSessionFactory(SessionFactory sf) {
+		this.sf = sf;
+	}
 		/**
 		 * This method gets a user from the database based on userID
 		 * 
