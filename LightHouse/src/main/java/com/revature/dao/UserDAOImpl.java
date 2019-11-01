@@ -29,6 +29,7 @@ public class UserDAOImpl implements UserDAO {
 	public void setSessionFactory(SessionFactory sf) {
 		this.sf = sf;
 	}
+	
 		/**
 		 * This method gets a user from the database based on userID
 		 * 
