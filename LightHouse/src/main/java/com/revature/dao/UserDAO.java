@@ -2,6 +2,8 @@ package com.revature.dao;
 
 import java.util.List;
 
+import org.hibernate.SessionFactory;
+
 import com.revature.pojo.User;
 
 /**
@@ -12,6 +14,7 @@ import com.revature.pojo.User;
  */
 public interface UserDAO {
 
+	public void setSf(SessionFactory sf);
 	
 	/**
 	 * Retrieves a User from the database based on ID

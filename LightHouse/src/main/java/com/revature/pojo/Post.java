@@ -13,6 +13,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
+
 
 /**
  * Class for all posts
@@ -20,6 +22,7 @@ import javax.persistence.Table;
  *
  */
 
+@Component
 @Entity
 @Table(name = "Posts")
 public class Post {
