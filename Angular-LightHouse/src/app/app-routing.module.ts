@@ -4,8 +4,8 @@ import {RouterModule, Routes} from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 
-const routes: Routes = [
-  {path: 'login', component: LoginComponent},
+const appRoutes: Routes = [
+  {path: '', component: LoginComponent},
   {path: 'registration', component: RegistrationComponent},
 
 ]
@@ -18,3 +18,4 @@ const routes: Routes = [
   ]
 })
 export class AppRoutingModule { }
+export const routing = RouterModule.forRoot(appRoutes);
