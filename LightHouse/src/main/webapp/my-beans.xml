@@ -18,7 +18,7 @@
 		mapping="C:\Revature\repos\P2-Team-3\Angular-LightHouse\**"></mvc:resources>
 
 	<!-- Configure View Resolver -->
-	<bean
+<!-- 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/pages/</value>
@@ -26,6 +26,6 @@
 		<property name="suffix">
 			<value>.jsp</value>
 		</property>
-	</bean>
+	</bean> -->
 
 </beans>
