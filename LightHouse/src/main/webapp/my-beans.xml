@@ -20,7 +20,7 @@
 	
 	
 	<!-- Configure View Resolver -->
-	<bean
+<!-- 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/pages/</value>
@@ -28,6 +28,11 @@
 		<property name="suffix">
 			<value>.jsp</value>
 		</property>
+<<<<<<< HEAD:LightHouse/src/main/webapp/WEB-INF/beans.xml
 	</bean>
 	
+=======
+	</bean> -->
+
+>>>>>>> 1c2079f9b3c04f3d168b5dfd2036327d36960d2f:LightHouse/src/main/webapp/my-beans.xml
 </beans>

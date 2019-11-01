@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     console.log(this.password);
     console.log("CLICK!!!");
 
-    let url = 'http://localhost8080/LightHouse/login';
+    let url = 'http://localhost:8080/LightHouse/login';
     let result = this.http.post<Observable<boolean>>(url, {
       username: this.username,
       password: this.password
