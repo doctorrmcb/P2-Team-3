@@ -1,0 +1,2 @@
+2019-11-01 18:57:05 INFO  root:25 - Getting user with username: testUsername
+2019-11-01 18:57:35 INFO  root:25 - Getting user with username: testUsername

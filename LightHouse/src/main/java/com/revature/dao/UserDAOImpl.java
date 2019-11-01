@@ -8,6 +8,7 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -44,11 +45,11 @@ public class UserDAOImpl implements UserDAO {
 		info("Getting user with ID: " + userID);
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
-		User User = (User) sess.get(User.class, userID);
-		info("Got user with ID:" + User.getUserID());
+		User user = (User) sess.get(User.class, userID);
+		info("Got user with ID:" + user.getUserID());
 		tx.commit();
 		sess.close();
-		return User;
+		return user;
 	}
 
 	/**
@@ -60,17 +61,22 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public User getUserByUsername(String username) {
 		info("Getting user with username: " + username);
-		/*
-		 * Session sess = sf.openSession(); Transaction tx = sess.beginTransaction();
-		 * User user = (User) sess.get(User.class, username);
-		 * info("Got user with username:" + User.getUsername()); tx.commit();
-		 * sess.close();
-		 */
+		
+		sf = SessionFactoryUtil.getSessionFactory();
+		Session sess = sf.openSession();
+		Transaction tx = sess.beginTransaction();
+		Criteria crit = sess.createCriteria(User.class).add(Restrictions.eq("username", username));
+		User user = (User) crit.uniqueResult();
+		info("Got user with username:" + user.getUsername());
+		tx.commit();
+		sess.close();
 
 		// Test lines.
-		User user = new User();
-		user.setUsername("fakeUsername");
-		user.setPassword("fakePassword");
+
+		/*
+		 * User user = new User(); user.setUsername("fakeUsername");
+		 * user.setPassword("fakePassword");
+		 */
 		return user;
 	}
 
