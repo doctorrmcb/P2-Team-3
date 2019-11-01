@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -23,16 +25,33 @@ export class LoginComponent implements OnInit {
     console.log(this.password);
     console.log("CLICK!!!");
 
-    let url = 'http://localhost8080/login';
+    let url = 'http://localhost8080/LightHouse/login';
+    let result = this.http.post<Observable<boolean>>(url, {
+      username: this.username,
+      password: this.password
+    }).subscribe(isValid => {
+      if (isValid) {
+        sessionStorage.setItem(
+          'token',
+          btoa(this.username + ":" + this.password)
+        );
+        this.router.navigate(['']);
+      } else {
+        alert("Authentication failed.");
+      }
+    });
   }
 
   constructor(
-  private router: Router
+  private route: ActivatedRoute,
+  private router: Router,
+  private http: HttpClient
     
     
   ) { }
 
   ngOnInit() {
+    sessionStorage.setItem('token', '');
   }
 
 }

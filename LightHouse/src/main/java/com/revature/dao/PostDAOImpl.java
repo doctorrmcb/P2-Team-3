@@ -7,6 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.revature.pojo.Post;
 import com.revature.util.SessionFactoryUtil;
@@ -18,6 +19,7 @@ import static com.revature.util.LoggerUtil.*;
  * 
  * @author Robert Li
  */
+@Component
 public class PostDAOImpl implements PostDAO {
 
 	/**
