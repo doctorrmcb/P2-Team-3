@@ -26,19 +26,20 @@ export class LoginComponent implements OnInit {
     console.log("CLICK!!!");
 
     let url = 'http://localhost:8080/LightHouse/login';
-    let result = this.http.post<Observable<string>>(url, {
+    let result = this.http.post<Observable<boolean>>(url, {
       username: this.username,
       password: this.password
-    }).subscribe(console.log("isValid");
-    isValid => {
+    }).subscribe(isValid => {
       console.log(isValid);
       if (isValid) {
+        console.log("Truthy");
         sessionStorage.setItem(
           'token',
           btoa(this.username + ":" + this.password)
         );
-        this.router.navigate(['']);
+        this.router.navigate(['home']);
       } else {
+        console.log("Falsey");
         alert("Authentication failed.");
       }
     });

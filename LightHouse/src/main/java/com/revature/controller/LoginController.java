@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.pojo.User;
 import com.revature.service.UserServiceImpl;
 
@@ -37,7 +38,7 @@ public class LoginController {
 	}
 	
 	@PostMapping("/login")
-	public String loginPost(@RequestBody User user, ModelMap modelMap, HttpSession sess) {
+	public User loginPost(@RequestBody User user, ModelMap modelMap, HttpSession sess) {
 		System.out.println(user);
 		
 		User authUser = userService.loginUser(user.getUsername(), user.getPassword());
@@ -45,10 +46,11 @@ public class LoginController {
 		if (authUser != null) {
 			sess.setAttribute("user", authUser);
 			modelMap.addAttribute("user", authUser);
-			return "home";
+			
+			return authUser;
 		}
 		
-		return "login";
+		return null;
 	}
 	
 }
