@@ -1,0 +1,861 @@
+2019-10-31 20:31:22 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-10-31 20:31:22 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-10-31 20:31:22 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2118cddf: Unable to load Client Side Monitoring configurations from environment variables!
+2019-10-31 20:31:22 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@17a7f733: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-10-31 20:31:22 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 20:31:22 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@11fc564b: Unable to load config file
+2019-10-31 20:31:30 DEBUG InstanceMetadataRegionProvider:61 - Ignoring failure to retrieve the region: Unable to contact EC2 metadata service.
+2019-10-31 20:32:22 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 20:33:22 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 20:41:30 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-10-31 20:41:30 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-10-31 20:41:30 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2118cddf: Unable to load Client Side Monitoring configurations from environment variables!
+2019-10-31 20:41:30 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@17a7f733: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-10-31 20:41:30 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 20:41:30 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@11fc564b: Unable to load config file
+2019-10-31 20:41:56 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-10-31 20:41:56 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-10-31 20:41:57 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2118cddf: Unable to load Client Side Monitoring configurations from environment variables!
+2019-10-31 20:41:57 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@17a7f733: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-10-31 20:41:57 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 20:41:57 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@11fc564b: Unable to load config file
+2019-10-31 20:42:05 DEBUG InstanceMetadataRegionProvider:61 - Ignoring failure to retrieve the region: Unable to contact EC2 metadata service.
+2019-10-31 21:01:06 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-10-31 21:01:06 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-10-31 21:01:06 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2118cddf: Unable to load Client Side Monitoring configurations from environment variables!
+2019-10-31 21:01:06 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@17a7f733: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-10-31 21:01:06 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 21:01:06 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@11fc564b: Unable to load config file
+2019-10-31 21:01:14 DEBUG InstanceMetadataRegionProvider:61 - Ignoring failure to retrieve the region: Unable to contact EC2 metadata service.
+2019-10-31 21:40:45 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-10-31 21:40:45 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-10-31 21:40:45 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2118cddf: Unable to load Client Side Monitoring configurations from environment variables!
+2019-10-31 21:40:45 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@17a7f733: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-10-31 21:40:45 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 21:40:45 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@11fc564b: Unable to load config file
+2019-10-31 21:40:53 DEBUG InstanceMetadataRegionProvider:61 - Ignoring failure to retrieve the region: Unable to contact EC2 metadata service.
+2019-10-31 21:41:45 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 21:42:45 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 21:43:45 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 21:44:45 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 21:45:45 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 21:45:50 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-10-31 21:45:50 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-10-31 21:45:51 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@11fc564b: Unable to load Client Side Monitoring configurations from environment variables!
+2019-10-31 21:45:51 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@394a2528: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-10-31 21:45:51 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 21:45:51 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@fa36558: Unable to load config file
+2019-10-31 21:45:58 DEBUG InstanceMetadataRegionProvider:61 - Ignoring failure to retrieve the region: Unable to contact EC2 metadata service.
+2019-10-31 21:46:45 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 21:47:09 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-10-31 21:47:09 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-10-31 21:47:09 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@7671cb68: Unable to load Client Side Monitoring configurations from environment variables!
+2019-10-31 21:47:09 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@49dc7102: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-10-31 21:47:09 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-10-31 21:47:09 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@10959ece: Unable to load config file
+2019-10-31 21:47:09 DEBUG request:1244 - Sending Request: HEAD https://lighthouse18882819.s3.us-east-2.amazonaws.com / Headers: (amz-sdk-invocation-id: 5a094ce6-c427-d0cf-cf9c-edef9efbfa3f, Content-Type: application/octet-stream, User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation, ) 
+2019-10-31 21:47:09 DEBUG AWS4Signer:33 - AWS4 Canonical Request: '"HEAD
+/
+
+amz-sdk-invocation-id:5a094ce6-c427-d0cf-cf9c-edef9efbfa3f
+amz-sdk-retry:0/0/500
+content-type:application/octet-stream
+host:lighthouse18882819.s3.us-east-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20191101T024709Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-10-31 21:47:09 DEBUG AWS4Signer:33 - AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20191101T024709Z
+20191101/us-east-2/s3/aws4_request
+b3768f879d7432c5a213fcfa14747665430686c903a4191326fa8d615b57f51d"
+2019-10-31 21:47:09 DEBUG AWS4Signer:33 - Generating a new signing key as the signing key not available in the cache for the date 1572566400000
+2019-10-31 21:47:09 WARN  ApacheUtils:246 - NoSuchMethodException was thrown when disabling normalizeUri. This indicates you are using an old version (< 4.5.8) of Apache http client. It is recommended to use http client version >= 4.5.9 to avoid the breaking change introduced in apache client 4.5.7 and the latency in exception handling. See https://github.com/aws/aws-sdk-java/issues/1919 for more information
+2019-10-31 21:47:09 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-10-31 21:47:09 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-10-31 21:47:09 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-10-31 21:47:09 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-10-31 21:47:09 DEBUG MainClientExec:235 - Opening connection {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443
+2019-10-31 21:47:10 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.40:443
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:137 - connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.40:443
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:337 - Connecting socket to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.40:443 with timeout 10000
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:84 - socket.getSupportedProtocols(): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2], socket.getEnabledProtocols(): [TLSv1, TLSv1.1, TLSv1.2]
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:112 - TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1]
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:395 - Starting handshake
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:425 - Secure session established
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:426 -  negotiated protocol: TLSv1.2
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:435 -  peer principal: CN=*.s3.us-east-2.amazonaws.com, O="Amazon.com, Inc.", L=Seattle, ST=Washington, C=US
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:444 -  peer alternative names: [*.s3.us-east-2.amazonaws.com, s3.us-east-2.amazonaws.com, *.s3-us-east-2.amazonaws.com, s3-us-east-2.amazonaws.com, *.s3.dualstack.us-east-2.amazonaws.com, s3.dualstack.us-east-2.amazonaws.com, *.s3.amazonaws.com, *.s3-control.us-east-2.amazonaws.com, s3-control.us-east-2.amazonaws.com, *.s3-control.dualstack.us-east-2.amazonaws.com, s3-control.dualstack.us-east-2.amazonaws.com]
+2019-10-31 21:47:10 DEBUG SdkTLSSocketFactory:448 -  issuer principal: CN=DigiCert Baltimore CA-2 G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-10-31 21:47:10 DEBUG SdkSSLSocket:31 - created: lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.40:443
+2019-10-31 21:47:10 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.41.181.235:56915<->52.219.80.40:443
+2019-10-31 21:47:10 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 50000
+2019-10-31 21:47:10 DEBUG MainClientExec:256 - Executing request HEAD / HTTP/1.1
+2019-10-31 21:47:10 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-10-31 21:47:10 DEBUG headers:133 - http-outgoing-0 >> HEAD / HTTP/1.1
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> Host: lighthouse18882819.s3.us-east-2.amazonaws.com
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-invocation-id: 5a094ce6-c427-d0cf-cf9c-edef9efbfa3f
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=5e09694aac268db1ff7f98292e794e40fe91fb6c37f98a8fe9b907f75b8f608b
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/octet-stream
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> X-Amz-Date: 20191101T024709Z
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "HEAD / HTTP/1.1[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "Host: lighthouse18882819.s3.us-east-2.amazonaws.com[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-invocation-id: 5a094ce6-c427-d0cf-cf9c-edef9efbfa3f[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=5e09694aac268db1ff7f98292e794e40fe91fb6c37f98a8fe9b907f75b8f608b[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/octet-stream[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "X-Amz-Date: 20191101T024709Z[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "x-amz-bucket-region: us-east-2[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "x-amz-request-id: 5043B8A4CAFD41C8[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "x-amz-id-2: xhYRwvqZkA+sE1MAjV6iQrBW+5bV7E2rKFIM6Z5hpU6ZqZnQ8HmVJLhd3u3m9D2lRYl7gGf33mI=[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "Date: Fri, 01 Nov 2019 02:47:12 GMT[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-10-31 21:47:10 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 403 Forbidden
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << x-amz-bucket-region: us-east-2
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << x-amz-request-id: 5043B8A4CAFD41C8
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << x-amz-id-2: xhYRwvqZkA+sE1MAjV6iQrBW+5bV7E2rKFIM6Z5hpU6ZqZnQ8HmVJLhd3u3m9D2lRYl7gGf33mI=
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/xml
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << Date: Fri, 01 Nov 2019 02:47:12 GMT
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << Server: AmazonS3
+2019-10-31 21:47:10 DEBUG MainClientExec:285 - Connection can be kept alive for 60000 MILLISECONDS
+2019-10-31 21:47:10 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443] can be kept alive for 60.0 seconds
+2019-10-31 21:47:10 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2019-10-31 21:47:10 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-10-31 21:47:10 DEBUG request:1696 - Received error response: com.amazonaws.services.s3.model.AmazonS3Exception: Forbidden (Service: Amazon S3; Status Code: 403; Error Code: 403 Forbidden; Request ID: 5043B8A4CAFD41C8; S3 Extended Request ID: xhYRwvqZkA+sE1MAjV6iQrBW+5bV7E2rKFIM6Z5hpU6ZqZnQ8HmVJLhd3u3m9D2lRYl7gGf33mI=), S3 Extended Request ID: xhYRwvqZkA+sE1MAjV6iQrBW+5bV7E2rKFIM6Z5hpU6ZqZnQ8HmVJLhd3u3m9D2lRYl7gGf33mI=
+2019-10-31 21:47:10 DEBUG ClockSkewAdjuster:155 - Reported server date (from 'Date' header): Fri, 01 Nov 2019 02:47:12 GMT
+2019-10-31 21:47:10 INFO  root:25 - works uyduif
+2019-10-31 21:47:10 DEBUG request:1244 - Sending Request: PUT https://lighthouse18882819.s3.us-east-2.amazonaws.com /UploadMe.txt Headers: (amz-sdk-invocation-id: 99f55332-fa6c-53e9-7f07-753eecc0d8bc, Content-Length: 42, Content-Type: text/plain, User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation, ) 
+2019-10-31 21:47:10 DEBUG AWS4Signer:33 - AWS4 Canonical Request: '"PUT
+/UploadMe.txt
+
+amz-sdk-invocation-id:99f55332-fa6c-53e9-7f07-753eecc0d8bc
+amz-sdk-retry:0/0/500
+content-length:42
+content-type:text/plain
+host:lighthouse18882819.s3.us-east-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20191101T024710Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-10-31 21:47:10 DEBUG AWS4Signer:33 - AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20191101T024710Z
+20191101/us-east-2/s3/aws4_request
+e5a1f4bcfcb35021187016b43f955f692e450719177bbdbde79e9c84f27041d6"
+2019-10-31 21:47:10 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-10-31 21:47:10 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-10-31 21:47:10 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-10-31 21:47:10 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-10-31 21:47:10 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 50000
+2019-10-31 21:47:10 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 50000
+2019-10-31 21:47:10 DEBUG MainClientExec:256 - Executing request PUT /UploadMe.txt HTTP/1.1
+2019-10-31 21:47:10 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-10-31 21:47:10 DEBUG headers:133 - http-outgoing-0 >> PUT /UploadMe.txt HTTP/1.1
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> Host: lighthouse18882819.s3.us-east-2.amazonaws.com
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-invocation-id: 99f55332-fa6c-53e9-7f07-753eecc0d8bc
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=e6c497a11e46a6e84e7c76b291d5359fae5bd3880d800df8f294b6c4ba1ffdec
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> Content-Type: text/plain
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> X-Amz-Date: 20191101T024710Z
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 42
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-10-31 21:47:10 DEBUG headers:136 - http-outgoing-0 >> Expect: 100-continue
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "PUT /UploadMe.txt HTTP/1.1[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "Host: lighthouse18882819.s3.us-east-2.amazonaws.com[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-invocation-id: 99f55332-fa6c-53e9-7f07-753eecc0d8bc[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=e6c497a11e46a6e84e7c76b291d5359fae5bd3880d800df8f294b6c4ba1ffdec[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: text/plain[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "X-Amz-Date: 20191101T024710Z[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 42[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "Expect: 100-continue[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "x-amz-request-id: 14DD6B60FADF94ED[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "x-amz-id-2: RoLyakjzxlM1X1pufS1vsj8tiLcWFjoy/lhjtwRH8i4v+XmobBnU2B0RA87WZrLmGmJSW/09oSU=[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "Date: Fri, 01 Nov 2019 02:47:12 GMT[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "Connection: close[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-10-31 21:47:10 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 403 Forbidden
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << x-amz-request-id: 14DD6B60FADF94ED
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << x-amz-id-2: RoLyakjzxlM1X1pufS1vsj8tiLcWFjoy/lhjtwRH8i4v+XmobBnU2B0RA87WZrLmGmJSW/09oSU=
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/xml
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << Date: Fri, 01 Nov 2019 02:47:12 GMT
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << Connection: close
+2019-10-31 21:47:10 DEBUG headers:125 - http-outgoing-0 << Server: AmazonS3
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "16a[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "<Error><Code>InvalidAccessKeyId</Code><Message>The AWS Access Key Id you provided does not exist in our records.</Message><AWSAccessKeyId>&lt;AKIAQI3VJZ74MUG6TCUX&gt;</AWSAccessKeyId><RequestId>14DD6B60FADF94ED</RequestId><HostId>RoLyakjzxlM1X1pufS1vsj8tiLcWFjoy/lhjtwRH8i4v+XmobBnU2B0RA87WZrLmGmJSW/09oSU=</HostId></Error>[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "0[\r][\n]"
+2019-10-31 21:47:10 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-10-31 21:47:10 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2019-10-31 21:47:10 DEBUG SdkSSLSocket:76 - shutting down output of lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.40:443
+2019-10-31 21:47:10 DEBUG SdkSSLSocket:62 - closing lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.40:443
+2019-10-31 21:47:10 DEBUG MainClientExec:104 - Connection discarded
+2019-10-31 21:47:10 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-10-31 21:47:10 DEBUG request:1696 - Received error response: com.amazonaws.services.s3.model.AmazonS3Exception: The AWS Access Key Id you provided does not exist in our records. (Service: Amazon S3; Status Code: 403; Error Code: InvalidAccessKeyId; Request ID: 14DD6B60FADF94ED; S3 Extended Request ID: RoLyakjzxlM1X1pufS1vsj8tiLcWFjoy/lhjtwRH8i4v+XmobBnU2B0RA87WZrLmGmJSW/09oSU=), S3 Extended Request ID: RoLyakjzxlM1X1pufS1vsj8tiLcWFjoy/lhjtwRH8i4v+XmobBnU2B0RA87WZrLmGmJSW/09oSU=
+2019-10-31 21:47:10 DEBUG ClockSkewAdjuster:155 - Reported server date (from 'Date' header): Fri, 01 Nov 2019 02:47:12 GMT
+2019-10-31 21:47:10 ERROR root:13 - The AWS Access Key Id you provided does not exist in our records.
+2019-11-01 08:17:59 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-11-01 08:17:59 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-11-01 08:17:59 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2ea41516: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-01 08:17:59 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@3a44431a: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-01 08:17:59 DEBUG PoolingHttpClientConnectionManager:421 - Closing connections idle longer than 60000 MILLISECONDS
+2019-11-01 08:17:59 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@17497425: Unable to load config file
+2019-11-01 08:17:59 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2ea41516: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-01 08:17:59 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@3a44431a: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-01 08:17:59 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@17497425: Unable to load config file
+2019-11-01 08:17:59 DEBUG request:1244 - Sending Request: PUT https://lighthouse18882819.s3.us-east-2.amazonaws.com /UploadMe.txt Headers: (amz-sdk-invocation-id: d33e4077-829b-522a-c9f0-d365eac0de33, Content-Length: 42, Content-Type: text/plain, User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation, ) 
+2019-11-01 08:17:59 DEBUG AWS4Signer:33 - AWS4 Canonical Request: '"PUT
+/UploadMe.txt
+
+amz-sdk-invocation-id:d33e4077-829b-522a-c9f0-d365eac0de33
+amz-sdk-retry:0/0/500
+content-length:42
+content-type:text/plain
+host:lighthouse18882819.s3.us-east-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20191101T131759Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-11-01 08:17:59 DEBUG AWS4Signer:33 - AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20191101T131759Z
+20191101/us-east-2/s3/aws4_request
+73d3ef3a942b151eb6c24fd395797d2d916ee3210c3ce55b15c80fa063bedf72"
+2019-11-01 08:17:59 DEBUG AWS4Signer:33 - Generating a new signing key as the signing key not available in the cache for the date 1572566400000
+2019-11-01 08:17:59 WARN  ApacheUtils:246 - NoSuchMethodException was thrown when disabling normalizeUri. This indicates you are using an old version (< 4.5.8) of Apache http client. It is recommended to use http client version >= 4.5.9 to avoid the breaking change introduced in apache client 4.5.7 and the latency in exception handling. See https://github.com/aws/aws-sdk-java/issues/1919 for more information
+2019-11-01 08:17:59 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-11-01 08:17:59 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-11-01 08:17:59 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-11-01 08:17:59 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-11-01 08:17:59 DEBUG MainClientExec:235 - Opening connection {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443
+2019-11-01 08:17:59 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.97.58:443
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:137 - connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.97.58:443
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:337 - Connecting socket to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.97.58:443 with timeout 10000
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:84 - socket.getSupportedProtocols(): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2], socket.getEnabledProtocols(): [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:112 - TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1]
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:395 - Starting handshake
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:425 - Secure session established
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:426 -  negotiated protocol: TLSv1.2
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:435 -  peer principal: CN=*.s3.us-east-2.amazonaws.com, O="Amazon.com, Inc.", L=Seattle, ST=Washington, C=US
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:444 -  peer alternative names: [*.s3.us-east-2.amazonaws.com, s3.us-east-2.amazonaws.com, *.s3-us-east-2.amazonaws.com, s3-us-east-2.amazonaws.com, *.s3.dualstack.us-east-2.amazonaws.com, s3.dualstack.us-east-2.amazonaws.com, *.s3.amazonaws.com, *.s3-control.us-east-2.amazonaws.com, s3-control.us-east-2.amazonaws.com, *.s3-control.dualstack.us-east-2.amazonaws.com, s3-control.dualstack.us-east-2.amazonaws.com]
+2019-11-01 08:17:59 DEBUG SdkTLSSocketFactory:448 -  issuer principal: CN=DigiCert Baltimore CA-2 G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-11-01 08:17:59 DEBUG SdkSSLSocket:31 - created: lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.97.58:443
+2019-11-01 08:17:59 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.226.60.193:57228<->52.219.97.58:443
+2019-11-01 08:17:59 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 50000
+2019-11-01 08:17:59 DEBUG MainClientExec:256 - Executing request PUT /UploadMe.txt HTTP/1.1
+2019-11-01 08:17:59 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-11-01 08:17:59 DEBUG headers:133 - http-outgoing-0 >> PUT /UploadMe.txt HTTP/1.1
+2019-11-01 08:17:59 DEBUG headers:136 - http-outgoing-0 >> Host: lighthouse18882819.s3.us-east-2.amazonaws.com
+2019-11-01 08:17:59 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-invocation-id: d33e4077-829b-522a-c9f0-d365eac0de33
+2019-11-01 08:17:59 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-11-01 08:17:59 DEBUG headers:136 - http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=ebbc41303cf846dc7e3773f9f76aa0f73b10703ca10aca7a8db632c16c01a026
+2019-11-01 08:17:59 DEBUG headers:136 - http-outgoing-0 >> Content-Type: text/plain
+2019-11-01 08:17:59 DEBUG headers:136 - http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+2019-11-01 08:17:59 DEBUG headers:136 - http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-11-01 08:17:59 DEBUG headers:136 - http-outgoing-0 >> X-Amz-Date: 20191101T131759Z
+2019-11-01 08:17:59 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 42
+2019-11-01 08:17:59 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-11-01 08:17:59 DEBUG headers:136 - http-outgoing-0 >> Expect: 100-continue
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "PUT /UploadMe.txt HTTP/1.1[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "Host: lighthouse18882819.s3.us-east-2.amazonaws.com[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-invocation-id: d33e4077-829b-522a-c9f0-d365eac0de33[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=ebbc41303cf846dc7e3773f9f76aa0f73b10703ca10aca7a8db632c16c01a026[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: text/plain[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "X-Amz-Date: 20191101T131759Z[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 42[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "Expect: 100-continue[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "x-amz-request-id: 1309FD23AE6ECA7C[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "x-amz-id-2: ynj2ocDkXb62sq/cRLNxnKxytIhmbFi8/QjZuRM8WHV/9+Uw9Zlz0tKt1lpcUu/+L/Kr4rQEbfg=[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "Date: Fri, 01 Nov 2019 13:18:01 GMT[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "Connection: close[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-11-01 08:17:59 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 403 Forbidden
+2019-11-01 08:17:59 DEBUG headers:125 - http-outgoing-0 << x-amz-request-id: 1309FD23AE6ECA7C
+2019-11-01 08:17:59 DEBUG headers:125 - http-outgoing-0 << x-amz-id-2: ynj2ocDkXb62sq/cRLNxnKxytIhmbFi8/QjZuRM8WHV/9+Uw9Zlz0tKt1lpcUu/+L/Kr4rQEbfg=
+2019-11-01 08:17:59 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/xml
+2019-11-01 08:17:59 DEBUG headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2019-11-01 08:17:59 DEBUG headers:125 - http-outgoing-0 << Date: Fri, 01 Nov 2019 13:18:01 GMT
+2019-11-01 08:17:59 DEBUG headers:125 - http-outgoing-0 << Connection: close
+2019-11-01 08:17:59 DEBUG headers:125 - http-outgoing-0 << Server: AmazonS3
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "16a[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "<Error><Code>InvalidAccessKeyId</Code><Message>The AWS Access Key Id you provided does not exist in our records.</Message><AWSAccessKeyId>&lt;AKIAQI3VJZ74MUG6TCUX&gt;</AWSAccessKeyId><RequestId>1309FD23AE6ECA7C</RequestId><HostId>ynj2ocDkXb62sq/cRLNxnKxytIhmbFi8/QjZuRM8WHV/9+Uw9Zlz0tKt1lpcUu/+L/Kr4rQEbfg=</HostId></Error>[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "0[\r][\n]"
+2019-11-01 08:17:59 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-11-01 08:17:59 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2019-11-01 08:17:59 DEBUG SdkSSLSocket:76 - shutting down output of lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.97.58:443
+2019-11-01 08:17:59 DEBUG SdkSSLSocket:62 - closing lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.97.58:443
+2019-11-01 08:17:59 DEBUG MainClientExec:104 - Connection discarded
+2019-11-01 08:17:59 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-11-01 08:17:59 DEBUG request:1696 - Received error response: com.amazonaws.services.s3.model.AmazonS3Exception: The AWS Access Key Id you provided does not exist in our records. (Service: Amazon S3; Status Code: 403; Error Code: InvalidAccessKeyId; Request ID: 1309FD23AE6ECA7C; S3 Extended Request ID: ynj2ocDkXb62sq/cRLNxnKxytIhmbFi8/QjZuRM8WHV/9+Uw9Zlz0tKt1lpcUu/+L/Kr4rQEbfg=), S3 Extended Request ID: ynj2ocDkXb62sq/cRLNxnKxytIhmbFi8/QjZuRM8WHV/9+Uw9Zlz0tKt1lpcUu/+L/Kr4rQEbfg=
+2019-11-01 08:17:59 DEBUG ClockSkewAdjuster:155 - Reported server date (from 'Date' header): Fri, 01 Nov 2019 13:18:01 GMT
+2019-11-01 08:18:00 ERROR root:13 - The AWS Access Key Id you provided does not exist in our records.
+2019-11-01 08:32:39 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-11-01 08:32:39 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-11-01 08:37:53 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-11-01 08:37:53 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-11-01 08:37:54 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2ea41516: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-01 08:37:54 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@3a44431a: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-01 08:37:54 DEBUG PoolingHttpClientConnectionManager:422 - Closing connections idle longer than 60000 MILLISECONDS
+2019-11-01 08:37:54 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@17497425: Unable to load config file
+2019-11-01 08:37:54 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2ea41516: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-01 08:37:54 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@3a44431a: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-01 08:37:54 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@17497425: Unable to load config file
+2019-11-01 08:37:54 DEBUG request:1244 - Sending Request: PUT https://lighthouse18882819.s3.us-east-2.amazonaws.com /UploadMe.txt Headers: (amz-sdk-invocation-id: d0e0968e-7708-2e25-7a68-970f98a6e02d, Content-Length: 42, Content-Type: text/plain, User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation, ) 
+2019-11-01 08:37:54 DEBUG AWS4Signer:33 - AWS4 Canonical Request: '"PUT
+/UploadMe.txt
+
+amz-sdk-invocation-id:d0e0968e-7708-2e25-7a68-970f98a6e02d
+amz-sdk-retry:0/0/500
+content-length:42
+content-type:text/plain
+host:lighthouse18882819.s3.us-east-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20191101T133754Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-11-01 08:37:54 DEBUG AWS4Signer:33 - AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20191101T133754Z
+20191101/us-east-2/s3/aws4_request
+a0202428e1a8311c6291e6e71b6f15112eeb3258a0688d533b65c3e47a2ee94a"
+2019-11-01 08:37:54 DEBUG AWS4Signer:33 - Generating a new signing key as the signing key not available in the cache for the date 1572566400000
+2019-11-01 08:37:54 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-11-01 08:37:54 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-11-01 08:37:54 DEBUG PoolingHttpClientConnectionManager:266 - Connection request: [route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-11-01 08:37:54 DEBUG PoolingHttpClientConnectionManager:310 - Connection leased: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-11-01 08:37:54 DEBUG MainClientExec:234 - Opening connection {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443
+2019-11-01 08:37:54 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.184:443
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:137 - connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.184:443
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:366 - Connecting socket to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.184:443 with timeout 10000
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:430 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:431 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:84 - socket.getSupportedProtocols(): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2], socket.getEnabledProtocols(): [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:112 - TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1]
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:435 - Starting handshake
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:465 - Secure session established
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:466 -  negotiated protocol: TLSv1.2
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:467 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:475 -  peer principal: CN=*.s3.us-east-2.amazonaws.com, O="Amazon.com, Inc.", L=Seattle, ST=Washington, C=US
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:484 -  peer alternative names: [*.s3.us-east-2.amazonaws.com, s3.us-east-2.amazonaws.com, *.s3-us-east-2.amazonaws.com, s3-us-east-2.amazonaws.com, *.s3.dualstack.us-east-2.amazonaws.com, s3.dualstack.us-east-2.amazonaws.com, *.s3.amazonaws.com, *.s3-control.us-east-2.amazonaws.com, s3-control.us-east-2.amazonaws.com, *.s3-control.dualstack.us-east-2.amazonaws.com, s3-control.dualstack.us-east-2.amazonaws.com]
+2019-11-01 08:37:54 DEBUG SdkTLSSocketFactory:488 -  issuer principal: CN=DigiCert Baltimore CA-2 G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-11-01 08:37:54 DEBUG SdkSSLSocket:31 - created: lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.184:443
+2019-11-01 08:37:54 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.226.60.193:57366<->52.219.96.184:443
+2019-11-01 08:37:54 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 50000
+2019-11-01 08:37:54 DEBUG MainClientExec:255 - Executing request PUT /UploadMe.txt HTTP/1.1
+2019-11-01 08:37:54 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2019-11-01 08:37:54 DEBUG headers:133 - http-outgoing-0 >> PUT /UploadMe.txt HTTP/1.1
+2019-11-01 08:37:54 DEBUG headers:136 - http-outgoing-0 >> Host: lighthouse18882819.s3.us-east-2.amazonaws.com
+2019-11-01 08:37:54 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-invocation-id: d0e0968e-7708-2e25-7a68-970f98a6e02d
+2019-11-01 08:37:54 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-11-01 08:37:54 DEBUG headers:136 - http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=b4d48893801422892b5d5628261423e4847bf2880b53fef513c273aa5be8a35c
+2019-11-01 08:37:54 DEBUG headers:136 - http-outgoing-0 >> Content-Type: text/plain
+2019-11-01 08:37:54 DEBUG headers:136 - http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+2019-11-01 08:37:54 DEBUG headers:136 - http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-11-01 08:37:54 DEBUG headers:136 - http-outgoing-0 >> X-Amz-Date: 20191101T133754Z
+2019-11-01 08:37:54 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 42
+2019-11-01 08:37:54 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-11-01 08:37:54 DEBUG headers:136 - http-outgoing-0 >> Expect: 100-continue
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "PUT /UploadMe.txt HTTP/1.1[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "Host: lighthouse18882819.s3.us-east-2.amazonaws.com[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-invocation-id: d0e0968e-7708-2e25-7a68-970f98a6e02d[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=b4d48893801422892b5d5628261423e4847bf2880b53fef513c273aa5be8a35c[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: text/plain[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "X-Amz-Date: 20191101T133754Z[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 42[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "Expect: 100-continue[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "x-amz-request-id: 57853CD655A25FD2[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "x-amz-id-2: LrkuxRrS318iQHJj2G4bhfWLqYihNHodRnSntpned51pcRh8C4jTQ4/Jlt7wahD3yUM5+fjCTjA=[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "Date: Fri, 01 Nov 2019 13:37:57 GMT[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "Connection: close[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-11-01 08:37:54 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 403 Forbidden
+2019-11-01 08:37:54 DEBUG headers:125 - http-outgoing-0 << x-amz-request-id: 57853CD655A25FD2
+2019-11-01 08:37:54 DEBUG headers:125 - http-outgoing-0 << x-amz-id-2: LrkuxRrS318iQHJj2G4bhfWLqYihNHodRnSntpned51pcRh8C4jTQ4/Jlt7wahD3yUM5+fjCTjA=
+2019-11-01 08:37:54 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/xml
+2019-11-01 08:37:54 DEBUG headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2019-11-01 08:37:54 DEBUG headers:125 - http-outgoing-0 << Date: Fri, 01 Nov 2019 13:37:57 GMT
+2019-11-01 08:37:54 DEBUG headers:125 - http-outgoing-0 << Connection: close
+2019-11-01 08:37:54 DEBUG headers:125 - http-outgoing-0 << Server: AmazonS3
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "16a[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "<Error><Code>InvalidAccessKeyId</Code><Message>The AWS Access Key Id you provided does not exist in our records.</Message><AWSAccessKeyId>&lt;AKIAQI3VJZ74MUG6TCUX&gt;</AWSAccessKeyId><RequestId>57853CD655A25FD2</RequestId><HostId>LrkuxRrS318iQHJj2G4bhfWLqYihNHodRnSntpned51pcRh8C4jTQ4/Jlt7wahD3yUM5+fjCTjA=</HostId></Error>[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "0[\r][\n]"
+2019-11-01 08:37:54 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-11-01 08:37:54 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2019-11-01 08:37:54 DEBUG SdkSSLSocket:76 - shutting down output of lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.184:443
+2019-11-01 08:37:54 DEBUG SdkSSLSocket:62 - closing lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.184:443
+2019-11-01 08:37:54 DEBUG MainClientExec:104 - Connection discarded
+2019-11-01 08:37:54 DEBUG PoolingHttpClientConnectionManager:349 - Connection released: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-11-01 08:37:54 DEBUG request:1696 - Received error response: com.amazonaws.services.s3.model.AmazonS3Exception: The AWS Access Key Id you provided does not exist in our records. (Service: Amazon S3; Status Code: 403; Error Code: InvalidAccessKeyId; Request ID: 57853CD655A25FD2; S3 Extended Request ID: LrkuxRrS318iQHJj2G4bhfWLqYihNHodRnSntpned51pcRh8C4jTQ4/Jlt7wahD3yUM5+fjCTjA=), S3 Extended Request ID: LrkuxRrS318iQHJj2G4bhfWLqYihNHodRnSntpned51pcRh8C4jTQ4/Jlt7wahD3yUM5+fjCTjA=
+2019-11-01 08:37:54 DEBUG ClockSkewAdjuster:155 - Reported server date (from 'Date' header): Fri, 01 Nov 2019 13:37:57 GMT
+2019-11-01 08:37:54 ERROR root:13 - The AWS Access Key Id you provided does not exist in our records.
+2019-11-01 09:13:23 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-11-01 09:13:23 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-11-01 09:13:23 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@434a63ab: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-01 09:13:23 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@6e0f5f7f: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-01 09:13:23 DEBUG PoolingHttpClientConnectionManager:422 - Closing connections idle longer than 60000 MILLISECONDS
+2019-11-01 09:13:23 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@2ea41516: Unable to load config file
+2019-11-01 09:13:23 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@434a63ab: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-01 09:13:23 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@6e0f5f7f: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-01 09:13:23 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@2ea41516: Unable to load config file
+2019-11-01 09:13:23 DEBUG request:1244 - Sending Request: PUT https://lighthouse18882819.s3.us-east-2.amazonaws.com /UploadMe.txt Headers: (amz-sdk-invocation-id: c2079e78-e563-92a1-322f-af0821ded580, Content-Length: 42, Content-Type: text/plain, User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation, ) 
+2019-11-01 09:13:23 DEBUG AWS4Signer:33 - AWS4 Canonical Request: '"PUT
+/UploadMe.txt
+
+amz-sdk-invocation-id:c2079e78-e563-92a1-322f-af0821ded580
+amz-sdk-retry:0/0/500
+content-length:42
+content-type:text/plain
+host:lighthouse18882819.s3.us-east-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20191101T141323Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-11-01 09:13:23 DEBUG AWS4Signer:33 - AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20191101T141323Z
+20191101/us-east-2/s3/aws4_request
+45ca73b3fd107743c4e856f8e1ce88f79a28c7e4ca602f497f9d6f4892cc42b0"
+2019-11-01 09:13:23 DEBUG AWS4Signer:33 - Generating a new signing key as the signing key not available in the cache for the date 1572566400000
+2019-11-01 09:13:23 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-11-01 09:13:23 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-11-01 09:13:23 DEBUG PoolingHttpClientConnectionManager:266 - Connection request: [route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-11-01 09:13:23 DEBUG PoolingHttpClientConnectionManager:310 - Connection leased: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-11-01 09:13:23 DEBUG MainClientExec:234 - Opening connection {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443
+2019-11-01 09:13:23 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.88:443
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:137 - connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.88:443
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:366 - Connecting socket to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.88:443 with timeout 10000
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:430 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:431 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:84 - socket.getSupportedProtocols(): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2], socket.getEnabledProtocols(): [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:112 - TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1]
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:435 - Starting handshake
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:465 - Secure session established
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:466 -  negotiated protocol: TLSv1.2
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:467 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:475 -  peer principal: CN=*.s3.us-east-2.amazonaws.com, O="Amazon.com, Inc.", L=Seattle, ST=Washington, C=US
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:484 -  peer alternative names: [*.s3.us-east-2.amazonaws.com, s3.us-east-2.amazonaws.com, *.s3-us-east-2.amazonaws.com, s3-us-east-2.amazonaws.com, *.s3.dualstack.us-east-2.amazonaws.com, s3.dualstack.us-east-2.amazonaws.com, *.s3.amazonaws.com, *.s3-control.us-east-2.amazonaws.com, s3-control.us-east-2.amazonaws.com, *.s3-control.dualstack.us-east-2.amazonaws.com, s3-control.dualstack.us-east-2.amazonaws.com]
+2019-11-01 09:13:23 DEBUG SdkTLSSocketFactory:488 -  issuer principal: CN=DigiCert Baltimore CA-2 G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-11-01 09:13:23 DEBUG SdkSSLSocket:31 - created: lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.88:443
+2019-11-01 09:13:23 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.226.60.193:57593<->52.219.96.88:443
+2019-11-01 09:13:23 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 50000
+2019-11-01 09:13:23 DEBUG MainClientExec:255 - Executing request PUT /UploadMe.txt HTTP/1.1
+2019-11-01 09:13:23 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2019-11-01 09:13:23 DEBUG headers:133 - http-outgoing-0 >> PUT /UploadMe.txt HTTP/1.1
+2019-11-01 09:13:23 DEBUG headers:136 - http-outgoing-0 >> Host: lighthouse18882819.s3.us-east-2.amazonaws.com
+2019-11-01 09:13:23 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-invocation-id: c2079e78-e563-92a1-322f-af0821ded580
+2019-11-01 09:13:23 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-11-01 09:13:23 DEBUG headers:136 - http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=79090b412745fcc80d9b6d7bd1e60966e41f47ba06e770bfe709da7b2444cde8
+2019-11-01 09:13:23 DEBUG headers:136 - http-outgoing-0 >> Content-Type: text/plain
+2019-11-01 09:13:23 DEBUG headers:136 - http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+2019-11-01 09:13:23 DEBUG headers:136 - http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-11-01 09:13:23 DEBUG headers:136 - http-outgoing-0 >> X-Amz-Date: 20191101T141323Z
+2019-11-01 09:13:23 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 42
+2019-11-01 09:13:23 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-11-01 09:13:23 DEBUG headers:136 - http-outgoing-0 >> Expect: 100-continue
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "PUT /UploadMe.txt HTTP/1.1[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "Host: lighthouse18882819.s3.us-east-2.amazonaws.com[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-invocation-id: c2079e78-e563-92a1-322f-af0821ded580[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=79090b412745fcc80d9b6d7bd1e60966e41f47ba06e770bfe709da7b2444cde8[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: text/plain[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "X-Amz-Date: 20191101T141323Z[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 42[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "Expect: 100-continue[\r][\n]"
+2019-11-01 09:13:23 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "x-amz-request-id: 79CEDAB7578833F2[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "x-amz-id-2: oP/uXbq64DjmuPv5lsmHIouUYXgiSeu+YeHi0b8dVQfB3+G3uJB/aqW++oG92w4+fnLPfBEfjoM=[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "Date: Fri, 01 Nov 2019 14:13:25 GMT[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "Connection: close[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-11-01 09:13:24 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 403 Forbidden
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-0 << x-amz-request-id: 79CEDAB7578833F2
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-0 << x-amz-id-2: oP/uXbq64DjmuPv5lsmHIouUYXgiSeu+YeHi0b8dVQfB3+G3uJB/aqW++oG92w4+fnLPfBEfjoM=
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/xml
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-0 << Date: Fri, 01 Nov 2019 14:13:25 GMT
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-0 << Connection: close
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-0 << Server: AmazonS3
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "16a[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "<Error><Code>InvalidAccessKeyId</Code><Message>The AWS Access Key Id you provided does not exist in our records.</Message><AWSAccessKeyId>&lt;AKIAQI3VJZ74MUG6TCUX&gt;</AWSAccessKeyId><RequestId>79CEDAB7578833F2</RequestId><HostId>oP/uXbq64DjmuPv5lsmHIouUYXgiSeu+YeHi0b8dVQfB3+G3uJB/aqW++oG92w4+fnLPfBEfjoM=</HostId></Error>[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "0[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-11-01 09:13:24 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2019-11-01 09:13:24 DEBUG SdkSSLSocket:76 - shutting down output of lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.88:443
+2019-11-01 09:13:24 DEBUG SdkSSLSocket:62 - closing lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.88:443
+2019-11-01 09:13:24 DEBUG MainClientExec:104 - Connection discarded
+2019-11-01 09:13:24 DEBUG PoolingHttpClientConnectionManager:349 - Connection released: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-11-01 09:13:24 DEBUG request:1696 - Received error response: com.amazonaws.services.s3.model.AmazonS3Exception: The AWS Access Key Id you provided does not exist in our records. (Service: Amazon S3; Status Code: 403; Error Code: InvalidAccessKeyId; Request ID: 79CEDAB7578833F2; S3 Extended Request ID: oP/uXbq64DjmuPv5lsmHIouUYXgiSeu+YeHi0b8dVQfB3+G3uJB/aqW++oG92w4+fnLPfBEfjoM=), S3 Extended Request ID: oP/uXbq64DjmuPv5lsmHIouUYXgiSeu+YeHi0b8dVQfB3+G3uJB/aqW++oG92w4+fnLPfBEfjoM=
+2019-11-01 09:13:24 DEBUG ClockSkewAdjuster:155 - Reported server date (from 'Date' header): Fri, 01 Nov 2019 14:13:25 GMT
+2019-11-01 09:13:24 ERROR root:13 - The AWS Access Key Id you provided does not exist in our records.
+2019-11-01 09:13:24 DEBUG request:1244 - Sending Request: GET https://lighthouse18882819.s3.us-east-2.amazonaws.com /UploadMe.txt Headers: (amz-sdk-invocation-id: 9bb536cf-cb07-f4f8-d4b4-1cddb54bf6cd, Content-Type: application/octet-stream, User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation, ) 
+2019-11-01 09:13:24 DEBUG AWS4Signer:33 - AWS4 Canonical Request: '"GET
+/UploadMe.txt
+
+amz-sdk-invocation-id:9bb536cf-cb07-f4f8-d4b4-1cddb54bf6cd
+amz-sdk-retry:0/0/500
+content-type:application/octet-stream
+host:lighthouse18882819.s3.us-east-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20191101T141324Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-11-01 09:13:24 DEBUG AWS4Signer:33 - AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20191101T141324Z
+20191101/us-east-2/s3/aws4_request
+109fef97436270e13ea0f254b7e5998f329662cf977496641e56b17eb28cd410"
+2019-11-01 09:13:24 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-11-01 09:13:24 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-11-01 09:13:24 DEBUG PoolingHttpClientConnectionManager:266 - Connection request: [route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-11-01 09:13:24 DEBUG PoolingHttpClientConnectionManager:310 - Connection leased: [id: 1][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-11-01 09:13:24 DEBUG MainClientExec:234 - Opening connection {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443
+2019-11-01 09:13:24 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.88:443
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:137 - connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.88:443
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:366 - Connecting socket to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.88:443 with timeout 10000
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:430 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:431 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:84 - socket.getSupportedProtocols(): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2], socket.getEnabledProtocols(): [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:112 - TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1]
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:435 - Starting handshake
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:465 - Secure session established
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:466 -  negotiated protocol: TLSv1.2
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:467 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:475 -  peer principal: CN=*.s3.us-east-2.amazonaws.com, O="Amazon.com, Inc.", L=Seattle, ST=Washington, C=US
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:484 -  peer alternative names: [*.s3.us-east-2.amazonaws.com, s3.us-east-2.amazonaws.com, *.s3-us-east-2.amazonaws.com, s3-us-east-2.amazonaws.com, *.s3.dualstack.us-east-2.amazonaws.com, s3.dualstack.us-east-2.amazonaws.com, *.s3.amazonaws.com, *.s3-control.us-east-2.amazonaws.com, s3-control.us-east-2.amazonaws.com, *.s3-control.dualstack.us-east-2.amazonaws.com, s3-control.dualstack.us-east-2.amazonaws.com]
+2019-11-01 09:13:24 DEBUG SdkTLSSocketFactory:488 -  issuer principal: CN=DigiCert Baltimore CA-2 G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-11-01 09:13:24 DEBUG SdkSSLSocket:31 - created: lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.88:443
+2019-11-01 09:13:24 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.226.60.193:57594<->52.219.96.88:443
+2019-11-01 09:13:24 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 50000
+2019-11-01 09:13:24 DEBUG MainClientExec:255 - Executing request GET /UploadMe.txt HTTP/1.1
+2019-11-01 09:13:24 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2019-11-01 09:13:24 DEBUG headers:133 - http-outgoing-1 >> GET /UploadMe.txt HTTP/1.1
+2019-11-01 09:13:24 DEBUG headers:136 - http-outgoing-1 >> Host: lighthouse18882819.s3.us-east-2.amazonaws.com
+2019-11-01 09:13:24 DEBUG headers:136 - http-outgoing-1 >> amz-sdk-invocation-id: 9bb536cf-cb07-f4f8-d4b4-1cddb54bf6cd
+2019-11-01 09:13:24 DEBUG headers:136 - http-outgoing-1 >> amz-sdk-retry: 0/0/500
+2019-11-01 09:13:24 DEBUG headers:136 - http-outgoing-1 >> Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=48ffb5042ecf374f75bd3b68063176f55f544b6b5b8cd9a0b8c62d7d2d8a454e
+2019-11-01 09:13:24 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/octet-stream
+2019-11-01 09:13:24 DEBUG headers:136 - http-outgoing-1 >> User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+2019-11-01 09:13:24 DEBUG headers:136 - http-outgoing-1 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-11-01 09:13:24 DEBUG headers:136 - http-outgoing-1 >> X-Amz-Date: 20191101T141324Z
+2019-11-01 09:13:24 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 0
+2019-11-01 09:13:24 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "GET /UploadMe.txt HTTP/1.1[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "Host: lighthouse18882819.s3.us-east-2.amazonaws.com[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "amz-sdk-invocation-id: 9bb536cf-cb07-f4f8-d4b4-1cddb54bf6cd[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "Authorization: AWS4-HMAC-SHA256 Credential=<AKIAQI3VJZ74MUG6TCUX>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=48ffb5042ecf374f75bd3b68063176f55f544b6b5b8cd9a0b8c62d7d2d8a454e[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/octet-stream[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "X-Amz-Date: 20191101T141324Z[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 0[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "x-amz-request-id: CAEE32B32F63D8CD[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "x-amz-id-2: VIfEId5Iv+kFtiFzRniFV75fZ1Qf2yNjOfrocRc84A/VkFTv1ZpYX0gnuUocw6ha+rz8KkX0yYE=[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/xml[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "Date: Fri, 01 Nov 2019 14:13:25 GMT[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "Server: AmazonS3[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2019-11-01 09:13:24 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 403 Forbidden
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-1 << x-amz-request-id: CAEE32B32F63D8CD
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-1 << x-amz-id-2: VIfEId5Iv+kFtiFzRniFV75fZ1Qf2yNjOfrocRc84A/VkFTv1ZpYX0gnuUocw6ha+rz8KkX0yYE=
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/xml
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-1 << Transfer-Encoding: chunked
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-1 << Date: Fri, 01 Nov 2019 14:13:25 GMT
+2019-11-01 09:13:24 DEBUG headers:125 - http-outgoing-1 << Server: AmazonS3
+2019-11-01 09:13:24 DEBUG MainClientExec:285 - Connection can be kept alive for 60000 MILLISECONDS
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "16a[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "<Error><Code>InvalidAccessKeyId</Code><Message>The AWS Access Key Id you provided does not exist in our records.</Message><AWSAccessKeyId>&lt;AKIAQI3VJZ74MUG6TCUX&gt;</AWSAccessKeyId><RequestId>CAEE32B32F63D8CD</RequestId><HostId>VIfEId5Iv+kFtiFzRniFV75fZ1Qf2yNjOfrocRc84A/VkFTv1ZpYX0gnuUocw6ha+rz8KkX0yYE=</HostId></Error>[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "0[\r][\n]"
+2019-11-01 09:13:24 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2019-11-01 09:13:24 DEBUG PoolingHttpClientConnectionManager:342 - Connection [id: 1][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443] can be kept alive for 60.0 seconds
+2019-11-01 09:13:24 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2019-11-01 09:13:24 DEBUG PoolingHttpClientConnectionManager:349 - Connection released: [id: 1][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-11-01 09:13:24 DEBUG request:1696 - Received error response: com.amazonaws.services.s3.model.AmazonS3Exception: The AWS Access Key Id you provided does not exist in our records. (Service: Amazon S3; Status Code: 403; Error Code: InvalidAccessKeyId; Request ID: CAEE32B32F63D8CD; S3 Extended Request ID: VIfEId5Iv+kFtiFzRniFV75fZ1Qf2yNjOfrocRc84A/VkFTv1ZpYX0gnuUocw6ha+rz8KkX0yYE=), S3 Extended Request ID: VIfEId5Iv+kFtiFzRniFV75fZ1Qf2yNjOfrocRc84A/VkFTv1ZpYX0gnuUocw6ha+rz8KkX0yYE=
+2019-11-01 09:13:24 DEBUG ClockSkewAdjuster:155 - Reported server date (from 'Date' header): Fri, 01 Nov 2019 14:13:25 GMT
+2019-11-01 09:28:39 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-11-01 09:28:39 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-11-01 09:28:40 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2ea41516: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-01 09:28:40 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@3a44431a: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-01 09:28:40 DEBUG PoolingHttpClientConnectionManager:422 - Closing connections idle longer than 60000 MILLISECONDS
+2019-11-01 09:28:40 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@17497425: Unable to load config file
+2019-11-01 09:28:40 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2ea41516: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-01 09:28:40 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@3a44431a: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-01 09:28:40 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@17497425: Unable to load config file
+2019-11-01 09:28:40 DEBUG request:1244 - Sending Request: PUT https://lighthouse18882819.s3.us-east-2.amazonaws.com /UploadMe.txt Headers: (amz-sdk-invocation-id: a8ab6676-0c44-1ba8-b5ba-cf6e73127a75, Content-Length: 42, Content-Type: text/plain, User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation, ) 
+2019-11-01 09:28:40 DEBUG AWS4Signer:33 - AWS4 Canonical Request: '"PUT
+/UploadMe.txt
+
+amz-sdk-invocation-id:a8ab6676-0c44-1ba8-b5ba-cf6e73127a75
+amz-sdk-retry:0/0/500
+content-length:42
+content-type:text/plain
+host:lighthouse18882819.s3.us-east-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20191101T142840Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-11-01 09:28:40 DEBUG AWS4Signer:33 - AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20191101T142840Z
+20191101/us-east-2/s3/aws4_request
+b0d561d873041f16475c35720992aa91ebcce683b6741ed124540030f22df883"
+2019-11-01 09:28:40 DEBUG AWS4Signer:33 - Generating a new signing key as the signing key not available in the cache for the date 1572566400000
+2019-11-01 09:28:40 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-11-01 09:28:40 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-11-01 09:28:40 DEBUG PoolingHttpClientConnectionManager:266 - Connection request: [route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-11-01 09:28:40 DEBUG PoolingHttpClientConnectionManager:310 - Connection leased: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-11-01 09:28:40 DEBUG MainClientExec:234 - Opening connection {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443
+2019-11-01 09:28:40 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.64:443
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:137 - connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.64:443
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:366 - Connecting socket to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.64:443 with timeout 10000
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:430 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:431 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:84 - socket.getSupportedProtocols(): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2], socket.getEnabledProtocols(): [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:112 - TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1]
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:435 - Starting handshake
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:465 - Secure session established
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:466 -  negotiated protocol: TLSv1.2
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:467 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:475 -  peer principal: CN=*.s3.us-east-2.amazonaws.com, O="Amazon.com, Inc.", L=Seattle, ST=Washington, C=US
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:484 -  peer alternative names: [*.s3.us-east-2.amazonaws.com, s3.us-east-2.amazonaws.com, *.s3-us-east-2.amazonaws.com, s3-us-east-2.amazonaws.com, *.s3.dualstack.us-east-2.amazonaws.com, s3.dualstack.us-east-2.amazonaws.com, *.s3.amazonaws.com, *.s3-control.us-east-2.amazonaws.com, s3-control.us-east-2.amazonaws.com, *.s3-control.dualstack.us-east-2.amazonaws.com, s3-control.dualstack.us-east-2.amazonaws.com]
+2019-11-01 09:28:40 DEBUG SdkTLSSocketFactory:488 -  issuer principal: CN=DigiCert Baltimore CA-2 G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-11-01 09:28:40 DEBUG SdkSSLSocket:31 - created: lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.64:443
+2019-11-01 09:28:40 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.226.60.193:57649<->52.219.80.64:443
+2019-11-01 09:28:40 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 50000
+2019-11-01 09:28:40 DEBUG MainClientExec:255 - Executing request PUT /UploadMe.txt HTTP/1.1
+2019-11-01 09:28:40 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2019-11-01 09:28:40 DEBUG headers:133 - http-outgoing-0 >> PUT /UploadMe.txt HTTP/1.1
+2019-11-01 09:28:40 DEBUG headers:136 - http-outgoing-0 >> Host: lighthouse18882819.s3.us-east-2.amazonaws.com
+2019-11-01 09:28:40 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-invocation-id: a8ab6676-0c44-1ba8-b5ba-cf6e73127a75
+2019-11-01 09:28:40 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-11-01 09:28:40 DEBUG headers:136 - http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=<AKIAI5X6KR4JJSTWZF2A>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=26b546b206dbe6689eb384aeab440e701b739eff2b5276608f46d425c2e5f48a
+2019-11-01 09:28:40 DEBUG headers:136 - http-outgoing-0 >> Content-Type: text/plain
+2019-11-01 09:28:40 DEBUG headers:136 - http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+2019-11-01 09:28:40 DEBUG headers:136 - http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-11-01 09:28:40 DEBUG headers:136 - http-outgoing-0 >> X-Amz-Date: 20191101T142840Z
+2019-11-01 09:28:40 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 42
+2019-11-01 09:28:40 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-11-01 09:28:40 DEBUG headers:136 - http-outgoing-0 >> Expect: 100-continue
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "PUT /UploadMe.txt HTTP/1.1[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "Host: lighthouse18882819.s3.us-east-2.amazonaws.com[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-invocation-id: a8ab6676-0c44-1ba8-b5ba-cf6e73127a75[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=<AKIAI5X6KR4JJSTWZF2A>/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=26b546b206dbe6689eb384aeab440e701b739eff2b5276608f46d425c2e5f48a[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: text/plain[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "X-Amz-Date: 20191101T142840Z[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 42[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "Expect: 100-continue[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "x-amz-request-id: C0A7939AC02D2BFC[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "x-amz-id-2: pJX/t026PfDjavREOzqRxrsMGu5iackOW52G2qSUh7oMDyDVGgjWm+TWhVwo1xsUL3uXdZDfIZM=[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "Date: Fri, 01 Nov 2019 14:28:42 GMT[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "Connection: close[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-11-01 09:28:40 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 403 Forbidden
+2019-11-01 09:28:40 DEBUG headers:125 - http-outgoing-0 << x-amz-request-id: C0A7939AC02D2BFC
+2019-11-01 09:28:40 DEBUG headers:125 - http-outgoing-0 << x-amz-id-2: pJX/t026PfDjavREOzqRxrsMGu5iackOW52G2qSUh7oMDyDVGgjWm+TWhVwo1xsUL3uXdZDfIZM=
+2019-11-01 09:28:40 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/xml
+2019-11-01 09:28:40 DEBUG headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2019-11-01 09:28:40 DEBUG headers:125 - http-outgoing-0 << Date: Fri, 01 Nov 2019 14:28:42 GMT
+2019-11-01 09:28:40 DEBUG headers:125 - http-outgoing-0 << Connection: close
+2019-11-01 09:28:40 DEBUG headers:125 - http-outgoing-0 << Server: AmazonS3
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "16a[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "<Error><Code>InvalidAccessKeyId</Code><Message>The AWS Access Key Id you provided does not exist in our records.</Message><AWSAccessKeyId>&lt;AKIAI5X6KR4JJSTWZF2A&gt;</AWSAccessKeyId><RequestId>C0A7939AC02D2BFC</RequestId><HostId>pJX/t026PfDjavREOzqRxrsMGu5iackOW52G2qSUh7oMDyDVGgjWm+TWhVwo1xsUL3uXdZDfIZM=</HostId></Error>[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "0[\r][\n]"
+2019-11-01 09:28:40 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-11-01 09:28:40 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2019-11-01 09:28:40 DEBUG SdkSSLSocket:76 - shutting down output of lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.64:443
+2019-11-01 09:28:40 DEBUG SdkSSLSocket:62 - closing lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.80.64:443
+2019-11-01 09:28:40 DEBUG MainClientExec:104 - Connection discarded
+2019-11-01 09:28:40 DEBUG PoolingHttpClientConnectionManager:349 - Connection released: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-11-01 09:28:40 DEBUG request:1696 - Received error response: com.amazonaws.services.s3.model.AmazonS3Exception: The AWS Access Key Id you provided does not exist in our records. (Service: Amazon S3; Status Code: 403; Error Code: InvalidAccessKeyId; Request ID: C0A7939AC02D2BFC; S3 Extended Request ID: pJX/t026PfDjavREOzqRxrsMGu5iackOW52G2qSUh7oMDyDVGgjWm+TWhVwo1xsUL3uXdZDfIZM=), S3 Extended Request ID: pJX/t026PfDjavREOzqRxrsMGu5iackOW52G2qSUh7oMDyDVGgjWm+TWhVwo1xsUL3uXdZDfIZM=
+2019-11-01 09:28:40 DEBUG ClockSkewAdjuster:155 - Reported server date (from 'Date' header): Fri, 01 Nov 2019 14:28:42 GMT
+2019-11-01 09:28:40 ERROR root:13 - The AWS Access Key Id you provided does not exist in our records.
+2019-11-01 09:29:30 DEBUG AmazonWebServiceClient:89 - Internal logging successfully configured to commons logger: true
+2019-11-01 09:29:30 DEBUG AwsSdkMetrics:412 - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-11-01 09:29:31 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2ea41516: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-01 09:29:31 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@3a44431a: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-01 09:29:31 DEBUG PoolingHttpClientConnectionManager:422 - Closing connections idle longer than 60000 MILLISECONDS
+2019-11-01 09:29:31 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@17497425: Unable to load config file
+2019-11-01 09:29:31 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@2ea41516: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-01 09:29:31 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@3a44431a: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-01 09:29:31 DEBUG CsmConfigurationProviderChain:48 - Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@17497425: Unable to load config file
+2019-11-01 09:29:31 DEBUG request:1244 - Sending Request: PUT https://lighthouse18882819.s3.us-east-2.amazonaws.com /UploadMe.txt Headers: (amz-sdk-invocation-id: e2ed24ad-7bc4-d5a5-1d62-181b09b7142c, Content-Length: 42, Content-Type: text/plain, User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation, ) 
+2019-11-01 09:29:31 DEBUG AWS4Signer:33 - AWS4 Canonical Request: '"PUT
+/UploadMe.txt
+
+amz-sdk-invocation-id:e2ed24ad-7bc4-d5a5-1d62-181b09b7142c
+amz-sdk-retry:0/0/500
+content-length:42
+content-type:text/plain
+host:lighthouse18882819.s3.us-east-2.amazonaws.com
+user-agent:aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20191101T142931Z
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+2019-11-01 09:29:31 DEBUG AWS4Signer:33 - AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20191101T142931Z
+20191101/us-east-2/s3/aws4_request
+bb5cccf2c6f2f0c0d462a7844135d4b177ff5496ee3b76b2040632f7148d31d2"
+2019-11-01 09:29:31 DEBUG AWS4Signer:33 - Generating a new signing key as the signing key not available in the cache for the date 1572566400000
+2019-11-01 09:29:31 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-11-01 09:29:31 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-11-01 09:29:31 DEBUG PoolingHttpClientConnectionManager:266 - Connection request: [route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+2019-11-01 09:29:31 DEBUG PoolingHttpClientConnectionManager:310 - Connection leased: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-11-01 09:29:31 DEBUG MainClientExec:234 - Opening connection {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443
+2019-11-01 09:29:31 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.48:443
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:137 - connecting to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.48:443
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:366 - Connecting socket to lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.48:443 with timeout 10000
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:430 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:431 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:84 - socket.getSupportedProtocols(): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2], socket.getEnabledProtocols(): [TLSv1, TLSv1.1, TLSv1.2]
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:112 - TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1]
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:435 - Starting handshake
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:465 - Secure session established
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:466 -  negotiated protocol: TLSv1.2
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:467 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:475 -  peer principal: CN=*.s3.us-east-2.amazonaws.com, O="Amazon.com, Inc.", L=Seattle, ST=Washington, C=US
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:484 -  peer alternative names: [*.s3.us-east-2.amazonaws.com, s3.us-east-2.amazonaws.com, *.s3-us-east-2.amazonaws.com, s3-us-east-2.amazonaws.com, *.s3.dualstack.us-east-2.amazonaws.com, s3.dualstack.us-east-2.amazonaws.com, *.s3.amazonaws.com, *.s3-control.us-east-2.amazonaws.com, s3-control.us-east-2.amazonaws.com, *.s3-control.dualstack.us-east-2.amazonaws.com, s3-control.dualstack.us-east-2.amazonaws.com]
+2019-11-01 09:29:31 DEBUG SdkTLSSocketFactory:488 -  issuer principal: CN=DigiCert Baltimore CA-2 G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-11-01 09:29:31 DEBUG SdkSSLSocket:31 - created: lighthouse18882819.s3.us-east-2.amazonaws.com/52.219.96.48:443
+2019-11-01 09:29:31 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.226.60.193:57652<->52.219.96.48:443
+2019-11-01 09:29:31 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 50000
+2019-11-01 09:29:31 DEBUG MainClientExec:255 - Executing request PUT /UploadMe.txt HTTP/1.1
+2019-11-01 09:29:31 DEBUG MainClientExec:266 - Proxy auth state: UNCHALLENGED
+2019-11-01 09:29:31 DEBUG headers:133 - http-outgoing-0 >> PUT /UploadMe.txt HTTP/1.1
+2019-11-01 09:29:31 DEBUG headers:136 - http-outgoing-0 >> Host: lighthouse18882819.s3.us-east-2.amazonaws.com
+2019-11-01 09:29:31 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-invocation-id: e2ed24ad-7bc4-d5a5-1d62-181b09b7142c
+2019-11-01 09:29:31 DEBUG headers:136 - http-outgoing-0 >> amz-sdk-retry: 0/0/500
+2019-11-01 09:29:31 DEBUG headers:136 - http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5X6KR4JJSTWZF2A/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=05f6cb0fb75ab5c79f5007c244068fa5b86e985c9eda01f57181c2d8dffd4e38
+2019-11-01 09:29:31 DEBUG headers:136 - http-outgoing-0 >> Content-Type: text/plain
+2019-11-01 09:29:31 DEBUG headers:136 - http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation
+2019-11-01 09:29:31 DEBUG headers:136 - http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+2019-11-01 09:29:31 DEBUG headers:136 - http-outgoing-0 >> X-Amz-Date: 20191101T142931Z
+2019-11-01 09:29:31 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 42
+2019-11-01 09:29:31 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-11-01 09:29:31 DEBUG headers:136 - http-outgoing-0 >> Expect: 100-continue
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "PUT /UploadMe.txt HTTP/1.1[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "Host: lighthouse18882819.s3.us-east-2.amazonaws.com[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-invocation-id: e2ed24ad-7bc4-d5a5-1d62-181b09b7142c[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5X6KR4JJSTWZF2A/20191101/us-east-2/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=05f6cb0fb75ab5c79f5007c244068fa5b86e985c9eda01f57181c2d8dffd4e38[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: text/plain[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.661 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.221-b11 java/1.8.0_221 vendor/Oracle_Corporation[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "X-Amz-Date: 20191101T142931Z[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 42[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "Expect: 100-continue[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 100 Continue[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-11-01 09:29:31 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 100 Continue
+2019-11-01 09:29:31 DEBUG wire:87 - http-outgoing-0 >> "C:\Users\Erik\Desktop\S3Tests\UploadMe.txt"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "x-amz-id-2: j4fj8ZuJQsj8EziyNUUQFLgjjIpIHxLFGfIvimlEpJMmTYsT86QYNdRlvTrojXxoc2YFHbMygNo=[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "x-amz-request-id: 2F0E38BF4C23E610[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "Date: Fri, 01 Nov 2019 14:29:35 GMT[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "x-amz-version-id: urnNjiurUj2uD1oDfc6Ivj6j_7qu41b8[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "x-amz-server-side-encryption: AES256[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "ETag: "49a3b379a193480c227e0bee50fed64f"[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+2019-11-01 09:29:31 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-11-01 09:29:31 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2019-11-01 09:29:31 DEBUG headers:125 - http-outgoing-0 << x-amz-id-2: j4fj8ZuJQsj8EziyNUUQFLgjjIpIHxLFGfIvimlEpJMmTYsT86QYNdRlvTrojXxoc2YFHbMygNo=
+2019-11-01 09:29:31 DEBUG headers:125 - http-outgoing-0 << x-amz-request-id: 2F0E38BF4C23E610
+2019-11-01 09:29:31 DEBUG headers:125 - http-outgoing-0 << Date: Fri, 01 Nov 2019 14:29:35 GMT
+2019-11-01 09:29:31 DEBUG headers:125 - http-outgoing-0 << x-amz-version-id: urnNjiurUj2uD1oDfc6Ivj6j_7qu41b8
+2019-11-01 09:29:31 DEBUG headers:125 - http-outgoing-0 << x-amz-server-side-encryption: AES256
+2019-11-01 09:29:31 DEBUG headers:125 - http-outgoing-0 << ETag: "49a3b379a193480c227e0bee50fed64f"
+2019-11-01 09:29:31 DEBUG headers:125 - http-outgoing-0 << Content-Length: 0
+2019-11-01 09:29:31 DEBUG headers:125 - http-outgoing-0 << Server: AmazonS3
+2019-11-01 09:29:31 DEBUG MainClientExec:285 - Connection can be kept alive for 60000 MILLISECONDS
+2019-11-01 09:29:31 DEBUG PoolingHttpClientConnectionManager:342 - Connection [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443] can be kept alive for 60.0 seconds
+2019-11-01 09:29:31 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2019-11-01 09:29:31 DEBUG PoolingHttpClientConnectionManager:349 - Connection released: [id: 0][route: {s}->https://lighthouse18882819.s3.us-east-2.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+2019-11-01 09:29:31 DEBUG request:86 - Received successful response: 200, AWS Request ID: 2F0E38BF4C23E610
+2019-11-01 09:29:31 DEBUG requestId:138 - x-amzn-RequestId: not available
+2019-11-01 09:29:31 DEBUG requestId:158 - AWS Request ID: 2F0E38BF4C23E610
+2019-11-01 09:29:31 DEBUG requestId:179 - AWS Extended Request ID: j4fj8ZuJQsj8EziyNUUQFLgjjIpIHxLFGfIvimlEpJMmTYsT86QYNdRlvTrojXxoc2YFHbMygNo=

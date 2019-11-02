@@ -2,19 +2,51 @@ package com.revature.dao;
 
 import java.util.List;
 
-/*
- * Author - Robert Li
+import com.revature.pojo.ForumThread;
+
+/**
+ * This is the interface for the ThreadDAOImpl Class
+ * Ensures that all CRUD methods will be implemented
+ * 
+ * thread referes to a ForumThread object
+ * @author Robert Li
+ *
  */
 
 public interface ThreadDAO {
 	
-	public Thread getThread(int threadID);
+	/**
+	 * Retrieves a thread from the database based on the ID
+	 * 
+	 * @param threadID
+	 * @return ForumThread
+	 */
+	public ForumThread getThread(int threadID);
 	
-	public List<Thread> getAllThreads();
+	/**
+	 * Retrieves all threads from the database
+	 * 
+	 * @return List<ForumThread>
+	 */
 	
-	public void createThread(Thread thread);
+	public List<ForumThread> getAllThreads();
 	
-	public void updateThread(Thread thread);
+	/**
+	 * Inserts new thread into database
+	 * @param thread
+	 */
+	public void createThread(ForumThread thread);
 	
-	public void deleteThread(Thread thread);
+	/**
+	 * Updates a thread in the database
+	 * @param thread
+	 */
+	public void updateThread(ForumThread thread);
+	
+	
+	/**
+	 * Deletes a thread from the database
+	 * @param thread
+	 */
+	public void deleteThread(ForumThread thread);
 }
