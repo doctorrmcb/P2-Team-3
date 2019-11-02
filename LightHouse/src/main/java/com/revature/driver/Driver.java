@@ -11,15 +11,6 @@ public class Driver {
 		
 		System.out.println(user);
 		
-		User user2 = new User();
-		user2.setUserID(2);
-		user2.setUsername("test");
-		user2.setPassword("test");
-		user2.setEmailName("test");
-		user2.setRoles("associate");
-		user2.setFullName("test");
-		user2.setBatchID("test");
 		
-		userDAO.createUser(user2);
 	}
 }

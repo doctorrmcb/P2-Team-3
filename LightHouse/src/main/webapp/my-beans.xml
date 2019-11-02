@@ -15,10 +15,16 @@
 	<mvc:annotation-driven></mvc:annotation-driven>
 	<!-- Probably need to change this line. -->
 	<mvc:resources
-		location="C:\Revature\repos\P2-Team-3\Angular-LightHouse\"
-		mapping="C:\Revature\repos\P2-Team-3\Angular-LightHouse\**"></mvc:resources>
+		location="/Angular-LightHouse/"
+		mapping="/Angular-LightHouse/**"></mvc:resources>
 
 
+<!-- 	<bean id="userDAO" class="com.revature.dao.UserDAOImpl"	 -->
+<!-- 		scope="prototype" autowire="byName"></bean>	 -->
+<!-- 	<bean id="userService"	 -->
+<!-- 		class="com.revature.service.UserServiceImpl" scope="prototype"	 -->
+<!-- 		autowire="byName"></bean>	 -->
+<!-- 	<bean id="sf" class="com.revature.util.SessionFactoryUtil" autowire="byName"></bean> -->
 
 	<!-- Configure View Resolver -->
 	<!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 

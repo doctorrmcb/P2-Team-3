@@ -26,10 +26,12 @@ export class LoginComponent implements OnInit {
     console.log("CLICK!!!");
 
     let url = 'http://localhost:8080/LightHouse/login';
-    let result = this.http.post<Observable<boolean>>(url, {
+    let result = this.http.post<Observable<string>>(url, {
       username: this.username,
       password: this.password
-    }).subscribe(isValid => {
+    }).subscribe(console.log("isValid");
+    isValid => {
+      console.log(isValid);
       if (isValid) {
         sessionStorage.setItem(
           'token',
