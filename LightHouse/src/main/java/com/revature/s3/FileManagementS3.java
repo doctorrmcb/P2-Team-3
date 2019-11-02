@@ -1,6 +1,7 @@
 package com.revature.s3;
 
 import com.amazonaws.AmazonServiceException;
+import com.amazonaws.SdkClientException;
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
@@ -8,6 +9,8 @@ import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.GetObjectRequest;
+import com.amazonaws.services.s3.model.ObjectMetadata;
+import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.amazonaws.services.s3.model.S3Object;
 import com.revature.dao.S3FileDAO;
 import com.revature.pojo.S3File;
@@ -15,6 +18,7 @@ import static com.revature.util.LoggerUtil.*;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,8 +27,8 @@ import java.io.InputStreamReader;
 public class FileManagementS3 implements S3FileDAO{
 	
 	AWSCredentials credentials = new BasicAWSCredentials(
-	  "replace me", 
-	  "replace me too"
+	  "AKIAI5X6KR4JJSTWZF2A", 
+	  "/1XGB14E/Bctbnbvs+G4x7R7w86Tru7dkPRRwXKF"
 	);
 							
 	AmazonS3 s3client = AmazonS3ClientBuilder
@@ -52,12 +56,25 @@ public class FileManagementS3 implements S3FileDAO{
 	public boolean uploadFile(S3File file) {
 		
 		try {
-			s3client.putObject(file.getBucketName(), file.getKeyName(), file.getFilePath());
+			PutObjectRequest request = new PutObjectRequest(file.getBucketName(), file.getKeyName(), new File(file.getFilePath()));
+            ObjectMetadata metadata = new ObjectMetadata();
+            //metadata.setContentType("plain/text");
+            metadata.addUserMetadata("x-amz-meta-title", "someTitle");
+            request.setMetadata(metadata);
+            s3client.putObject(request);
 		} catch (AmazonServiceException e) {
+			// The call was transmitted successfully, but Amazon S3 couldn't process 
+            // it, so it returned an error response.
 			error(e.getErrorMessage());
 			//System.exit(1);
 			return false;
-		}
+		} catch (SdkClientException e) {
+            // Amazon S3 couldn't be contacted for a response, or the client
+            // couldn't parse the response from Amazon S3.
+            //e.printStackTrace();
+			error(e.getLocalizedMessage());
+            return false;
+        }
 		
 		return true;
 	}

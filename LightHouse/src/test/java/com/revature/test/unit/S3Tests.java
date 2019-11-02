@@ -60,7 +60,8 @@ private static FileManagementS3 fileMan = new FileManagementS3();
 	{
 		S3File testFile = new S3File();
 		testFile.setKeyName("UploadMe.txt");
-		testFile.setFilePath("C:\\Users\\Erik\\Desktop");
+		//Downloaded.txt is the name given to the file when it is downloaded
+		testFile.setFilePath("C:\\Users\\Erik\\Desktop\\S3Tests\\Downloaded.txt");
 		
 		assertEquals(true, fileMan.downloadFile(testFile));
 	}
