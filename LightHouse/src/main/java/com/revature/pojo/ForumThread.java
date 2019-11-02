@@ -13,6 +13,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
+
 /**
  * This class is for all threads on the forum
  * It is named ForumThread to avoid conflict with the Java Thread object
@@ -21,6 +23,7 @@ import javax.persistence.Table;
  *
  */
 
+@Component
 @Entity
 @Table(name = "Threads")
 public class ForumThread {
