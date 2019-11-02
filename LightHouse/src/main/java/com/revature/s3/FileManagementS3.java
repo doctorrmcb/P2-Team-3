@@ -27,8 +27,8 @@ import java.io.InputStreamReader;
 public class FileManagementS3 implements S3FileDAO{
 	
 	AWSCredentials credentials = new BasicAWSCredentials(
-	  "AKIAI5X6KR4JJSTWZF2A", 
-	  "/1XGB14E/Bctbnbvs+G4x7R7w86Tru7dkPRRwXKF"
+	  "replace me", 
+	  "replace me"
 	);
 							
 	AmazonS3 s3client = AmazonS3ClientBuilder
