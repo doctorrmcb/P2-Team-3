@@ -6,6 +6,8 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.revature.util.SessionFactoryUtil;
 import com.revature.pojo.ForumThread;
@@ -18,12 +20,18 @@ import com.revature.util.LoggerUtil.*;
  * @author Robert Li
  *
  */
+@Component
 public class ThreadDAOImpl implements ThreadDAO {
 
 	/**
 	 * SessionFactory that creates sessions
 	 */
-	private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
+	private static SessionFactory sf;
+	
+	@Autowired
+	public void setSessionFactory(SessionFactory sf) {
+		this.sf = sf;
+	}
 	
 	/**
 	 * Retrieves a thread object from the database

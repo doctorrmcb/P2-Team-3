@@ -13,6 +13,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
+
 
 /**
  * Class for all posts
@@ -20,6 +22,7 @@ import javax.persistence.Table;
  *
  */
 
+@Component
 @Entity
 @Table(name = "Posts")
 public class Post {
@@ -38,7 +41,7 @@ public class Post {
 	 */
 	@ManyToOne
 	@JoinColumn(name = "thread_id")
-	private Thread threadID;
+	private ForumThread threadID;
 	
 	/**
 	 * The user who posted the Post
@@ -73,11 +76,11 @@ public class Post {
 		this.postID = postID;
 	}
 
-	public Thread getThreadID() {
+	public ForumThread getThreadID() {
 		return threadID;
 	}
 
-	public void setThreadID(Thread threadID) {
+	public void setThreadID(ForumThread threadID) {
 		this.threadID = threadID;
 	}
 
@@ -171,7 +174,7 @@ public class Post {
 				+ contents + ", postDate=" + postDate + ", postTime=" + postTime + "]";
 	}
 
-	public Post(int postID, Thread threadID, User posted_by, String contents, LocalDate postDate, LocalTime postTime) {
+	public Post(int postID, ForumThread threadID, User posted_by, String contents, LocalDate postDate, LocalTime postTime) {
 		super();
 		this.postID = postID;
 		this.threadID = threadID;

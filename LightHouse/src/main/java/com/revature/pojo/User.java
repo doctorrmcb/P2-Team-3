@@ -8,7 +8,10 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
 
+
+@Component
 @Entity
 @Table(name = "users")
 public class User {
@@ -21,10 +24,10 @@ public class User {
 	
 	
 	@Column(name = "username")
-	private String userName;
+	private String username;
 
 	@Column(name = "passwords")
-	private String passWord;
+	private String password;
 
 	@Column(name = "fullName")
 	private String fullName;
@@ -43,12 +46,12 @@ public class User {
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(int userID, String userName, String passWord, String fullName, String emailName, String roles,
+	public User(int userID, String username, String password, String fullName, String emailName, String roles,
 			String batchID) {
 		super();
 		this.userID = userID;
-		this.userName = userName;
-		this.passWord = passWord;
+		this.username = username;
+		this.password = password;
 		this.fullName = fullName;
 		this.emailName = emailName;
 		this.roles = roles;
@@ -63,20 +66,20 @@ public class User {
 		this.userID = userID;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUsername(String userName) {
+		this.username = userName;
 	}
 
-	public String getPassWord() {
-		return passWord;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPassWord(String passWord) {
-		this.passWord = passWord;
+	public void setPassword(String passWord) {
+		this.password = passWord;
 	}
 
 	public String getFullName() {
@@ -118,10 +121,10 @@ public class User {
 		result = prime * result + ((batchID == null) ? 0 : batchID.hashCode());
 		result = prime * result + ((emailName == null) ? 0 : emailName.hashCode());
 		result = prime * result + ((fullName == null) ? 0 : fullName.hashCode());
-		result = prime * result + ((passWord == null) ? 0 : passWord.hashCode());
+		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((roles == null) ? 0 : roles.hashCode());
 		result = prime * result + userID;
-		result = prime * result + ((userName == null) ? 0 : userName.hashCode());
+		result = prime * result + ((username == null) ? 0 : username.hashCode());
 		return result;
 	}
 
@@ -149,10 +152,10 @@ public class User {
 				return false;
 		} else if (!fullName.equals(other.fullName))
 			return false;
-		if (passWord == null) {
-			if (other.passWord != null)
+		if (password == null) {
+			if (other.password != null)
 				return false;
-		} else if (!passWord.equals(other.passWord))
+		} else if (!password.equals(other.password))
 			return false;
 		if (roles == null) {
 			if (other.roles != null)
@@ -161,17 +164,17 @@ public class User {
 			return false;
 		if (userID != other.userID)
 			return false;
-		if (userName == null) {
-			if (other.userName != null)
+		if (username == null) {
+			if (other.username != null)
 				return false;
-		} else if (!userName.equals(other.userName))
+		} else if (!username.equals(other.username))
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "User [userID=" + userID + ", userName=" + userName + ", passWord=" + passWord + ", fullName=" + fullName
+		return "User [userID=" + userID + ", userName=" + username + ", passWord=" + password + ", fullName=" + fullName
 				+ ", emailName=" + emailName + ", roles=" + roles + ", batchID=" + batchID + "]";
 	}
 

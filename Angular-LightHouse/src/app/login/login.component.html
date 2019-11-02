@@ -1,0 +1,28 @@
+<div id="outer-container">
+  <br>
+        <body>
+          <div class="container">
+            <div class="form">
+              <h1 class="title">{{title}}</h1>
+              <form name="login" action="login" method="POST" class="login-form">
+                <label class="label" id="label-username" for="username">Username:</label>
+                <input name="username" id="username" type="text" class="form-control" [(ngModel)]="username"
+                  placeholder="username" />
+      
+                <br>
+      
+                <label class="label" id="label-password" for="password">Password:</label>
+                <input name="password" id="password" type="password" class="form-control" [(ngModel)]="password"
+                  placeholder="password" />
+      
+                <br>
+      
+                <button name="login" id="login" type="button" class="btn btn-lg" (click)="onLogin()">{{ login | uppercase }}                   
+                </button>
+                <button name = "register" id = "register" type = "button" class = "btn btn-lg" (click) = "onRegister()">{{ register | uppercase }}
+                </button>
+              </form>
+            </div>
+          </div>
+        </body>
+      </div>
