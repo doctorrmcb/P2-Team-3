@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -26,11 +26,10 @@ export class LoginComponent implements OnInit {
     console.log("CLICK!!!");
 
     let url = 'http://localhost:8080/LightHouse/login';
-    let result = this.http.post<Observable<string>>(url, {
+    let result = this.http.post<Observable<HttpResponse<string>>>(url, {
       username: this.username,
       password: this.password
-    }).subscribe(console.log("isValid");
-    isValid => {
+    }).subscribe( isValid => {
       console.log(isValid);
       if (isValid) {
         sessionStorage.setItem(

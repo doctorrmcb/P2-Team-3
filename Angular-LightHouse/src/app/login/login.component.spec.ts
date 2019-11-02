@@ -3,6 +3,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { LoginComponent } from './login.component';
 import { FormsModule } from '@angular/forms';
 import { RouterTestingModule} from '@angular/router/testing';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
@@ -12,10 +14,11 @@ describe('LoginComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         FormsModule,
-        RouterTestingModule
+        RouterTestingModule,
+        HttpClientModule
         ],
       declarations: [ LoginComponent ],
-      providers: []
+      providers: [HttpClient]
     })
     .compileComponents();
   }));
@@ -64,5 +67,6 @@ describe('LoginComponent', () => {
     compiled.click();
     expect(component.onRegister).toHaveBeenCalled();
   });
+
 
 });
