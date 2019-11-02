@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.pojo.User;
 import com.revature.service.UserServiceImpl;
+import static com.revature.util.LoggerUtil.*;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -25,7 +26,7 @@ public class LoginController {
 		this.userService = userService;
 	}
 	
-	
+	/*
 	@GetMapping("/login")
 	public String loginGet(HttpSession sess, ModelMap modelMap) {
 		
@@ -36,10 +37,10 @@ public class LoginController {
 		
 		return "login";
 	}
-	
+	*/
 	@PostMapping("/login")
 	public User loginPost(@RequestBody User user, ModelMap modelMap, HttpSession sess) {
-		System.out.println(user);
+		info(user + "");
 		
 		User authUser = userService.loginUser(user.getUsername(), user.getPassword());
 		

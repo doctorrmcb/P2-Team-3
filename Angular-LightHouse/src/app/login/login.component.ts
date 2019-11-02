@@ -18,19 +18,14 @@ export class LoginComponent implements OnInit {
 
   onRegister(): void{
     this.router.navigate(['registration']);
-    console.log("clicking");
-  }
+    }
   onLogin(): void {
-    console.log(this.username);
-    console.log(this.password);
-    console.log("CLICK!!!");
-
+    
     let url = 'http://localhost:8080/LightHouse/login';
     let result = this.http.post<Observable<boolean>>(url, {
       username: this.username,
       password: this.password
     }).subscribe(isValid => {
-      console.log(isValid);
       if (isValid) {
         console.log("Truthy");
         sessionStorage.setItem(

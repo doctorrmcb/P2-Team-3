@@ -42,7 +42,7 @@ describe('RegistrationComponent', () => {
     expect(compiled.querySelector('#fullName').name).toContain("full name");
   });
 
-  it('should contain full name input', () => {
+  it('should contain email name input', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('#email').name).toContain("email");
   });
