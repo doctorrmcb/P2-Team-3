@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RegistrationComponent } from './registration.component';
+import { FormsModule } from '@angular/forms';
+import { RouterTestingModule} from '@angular/router/testing';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 describe('RegistrationComponent', () => {
   let component: RegistrationComponent;
@@ -8,7 +11,13 @@ describe('RegistrationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RegistrationComponent ]
+      imports: [
+        FormsModule,
+        RouterTestingModule,
+        HttpClientModule
+        ],
+      declarations: [ RegistrationComponent ],
+      providers: [HttpClient]
     })
     .compileComponents();
   }));
@@ -39,7 +48,7 @@ describe('RegistrationComponent', () => {
 
   it('should contain full name input', () => {
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('#fullName').name).toContain("full name");
+    expect(compiled.querySelector('#fullName').name).toContain("fullName");
   });
 
   it('should contain email name input', () => {

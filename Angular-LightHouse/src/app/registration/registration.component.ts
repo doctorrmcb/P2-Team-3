@@ -32,7 +32,10 @@ export class RegistrationComponent implements OnInit {
     let url = 'http://localhost:8080/LightHouse/register';
     let result = this.http.post<Observable<boolean>>(url, {
       username: this.username,
-      password: this.password
+      password: this.password,
+      fullName: this.fullName,
+      emailName: this.emailName
+      
     }).subscribe(isValid => {
       if (isValid) {
         console.log("Truthy");
