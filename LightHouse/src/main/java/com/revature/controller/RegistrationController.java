@@ -27,10 +27,13 @@ public class RegistrationController {
 		
 		if (user != null) {
 			user.setRoles("Associate");
+			user.setBatchID("Pending");
 			userService.makeUser(user);
 			sess.setAttribute("user", user);
 			return user;
 		}
+		
+		//TODO: Add check to see if user already exists.
 		return null;
 	}
 }
