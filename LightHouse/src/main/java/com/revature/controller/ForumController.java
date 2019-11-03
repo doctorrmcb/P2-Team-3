@@ -42,7 +42,7 @@ public class ForumController {
 	 * @param subforum
 	 * @return
 	 */
-	@GetMapping("/forum/(subforum)")
+	@GetMapping("/forum/{subforum}")
 	public List<ForumThread> getForumThreads(@PathVariable String subforum){
 		return threadService.getAllThreadsBySubForum(subforum);
 	}
@@ -54,7 +54,7 @@ public class ForumController {
 	 * @param sess       current httpsession
 	 * @return response  Response used to dictate logic flow in angular
 	 */
-	@PostMapping("/forum/(subforum)")
+	@PostMapping("/forum/{subforum}")
 	public ControllerResponse createThread(@PathVariable String subforum, ForumThread thread, HttpSession sess) {
 		
 		ControllerResponse cr = new ControllerResponse();
