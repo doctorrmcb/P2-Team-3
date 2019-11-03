@@ -2,14 +2,18 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GeneralForumInnerComponent } from './general-forum-inner.component';
 import { Forum } from '../types/Forum'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterTestingModule } from '@angular/router/testing';
+import { GeneralForumComponent } from '../general-forum/general-forum.component'
 
-describe('SubForumComponent', () => {
+describe('GeneralForumInnerComponent', () => {
   let component: GeneralForumInnerComponent;
   let fixture: ComponentFixture<GeneralForumInnerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GeneralForumInnerComponent ]
+      imports: [NgbModule, RouterTestingModule],
+      declarations: [ GeneralForumInnerComponent, GeneralForumComponent ]
     })
     .compileComponents();
   }));
