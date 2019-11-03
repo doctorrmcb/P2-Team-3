@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GeneralForumInnerComponent } from './general-forum-inner.component';
+import { Forum } from '../types/Forum'
 
 describe('SubForumComponent', () => {
   let component: GeneralForumInnerComponent;
