@@ -47,6 +47,13 @@ public class ForumController {
 		return threadService.getAllThreadsBySubForum(subforum);
 	}
 	
+	/**
+	 * Creates a thread in the database
+	 * @param subforum   the subforum the thread will be created in
+	 * @param thread     the thread to be created, pulled from website
+	 * @param sess       current httpsession
+	 * @return response  Response used to dictate logic flow in angular
+	 */
 	@PostMapping("/forum/(subforum)")
 	public ControllerResponse createThread(@PathVariable String subforum, ForumThread thread, HttpSession sess) {
 		
@@ -64,7 +71,7 @@ public class ForumController {
 		thread.setLastPost(lastPost);
 		threadService.createThread(thread);
 		
-		response = "sucess";
+		response = "success";
 		cr.setResponse(response);
 		return cr;
 	}
