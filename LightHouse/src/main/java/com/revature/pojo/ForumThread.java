@@ -46,7 +46,7 @@ public class ForumThread {
 	 */
 	@ManyToOne
 	@JoinColumn(name = "user_id")
-	private User posted_by;
+	private User postedBy;
 	
 	/**
 	 * Title of the thread
@@ -56,7 +56,7 @@ public class ForumThread {
 	
 	
 	/**
-	 * Contents of the therad
+	 * Contents of the thread
 	 */
 	@Column(name = "contents")
 	private String contents;
@@ -112,12 +112,12 @@ public class ForumThread {
 		this.threadID = threadID;
 	}
 
-	public User getPosted_by() {
-		return posted_by;
+	public User getPostedBy() {
+		return postedBy;
 	}
 
-	public void setPosted_by(User posted_by) {
-		this.posted_by = posted_by;
+	public void setPostedBy(User postedBy) {
+		this.postedBy = postedBy;
 	}
 
 	public String getTitle() {
@@ -202,7 +202,7 @@ public class ForumThread {
 		result = prime * result + ((lastPost == null) ? 0 : lastPost.hashCode());
 		result = prime * result + ((postDate == null) ? 0 : postDate.hashCode());
 		result = prime * result + ((postTime == null) ? 0 : postTime.hashCode());
-		result = prime * result + ((posted_by == null) ? 0 : posted_by.hashCode());
+		result = prime * result + ((postedBy == null) ? 0 : postedBy.hashCode());
 		result = prime * result + ((subforum == null) ? 0 : subforum.hashCode());
 		result = prime * result + threadID;
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
@@ -243,10 +243,10 @@ public class ForumThread {
 				return false;
 		} else if (!postTime.equals(other.postTime))
 			return false;
-		if (posted_by == null) {
-			if (other.posted_by != null)
+		if (postedBy == null) {
+			if (other.postedBy != null)
 				return false;
-		} else if (!posted_by.equals(other.posted_by))
+		} else if (!postedBy.equals(other.postedBy))
 			return false;
 		if (subforum == null) {
 			if (other.subforum != null)
@@ -270,17 +270,17 @@ public class ForumThread {
 
 	@Override
 	public String toString() {
-		return "ForumThread [threadID=" + threadID + ", posted_by=" + posted_by + ", title=" + title + ", contents="
+		return "ForumThread [threadID=" + threadID + ", posted_by=" + postedBy + ", title=" + title + ", contents="
 				+ contents + ", postDate=" + postDate + ", postTime=" + postTime + ", topic=" + topic + ", subforum="
 				+ subforum + ", lastPost=" + lastPost + ", isReported=" + isReported + ", isSticky=" + isSticky + "]";
 	}
 
-	public ForumThread(int threadID, User posted_by, String title, String contents, LocalDate postDate,
+	public ForumThread(int threadID, User postedBy, String title, String contents, LocalDate postDate,
 			LocalTime postTime, String topic, String subforum, LocalDateTime lastPost, boolean isReported,
 			boolean isSticky) {
 		super();
 		this.threadID = threadID;
-		this.posted_by = posted_by;
+		this.postedBy = postedBy;
 		this.title = title;
 		this.contents = contents;
 		this.postDate = postDate;

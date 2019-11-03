@@ -2,6 +2,10 @@ package com.revature.service;
 
 import java.util.List;
 
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +20,7 @@ import com.revature.pojo.ForumThread;
  *
  */
 @Component
-public class ThreadServiceImpl {
+public class ThreadServiceImpl implements ThreadService {
 	
 	/**
 	 * The dao that will interact with the database
@@ -37,7 +41,6 @@ public class ThreadServiceImpl {
 	public ForumThread getThread(int threadID) {
 		return threadDAO.getThread(threadID);
 	}
-
 	
 	
 	/**
@@ -48,7 +51,16 @@ public class ThreadServiceImpl {
 	public List<ForumThread> getAllThreads(){
 		return threadDAO.getAllThreads();
 	}
-
+	
+	/**
+	 * Retrieves all threads from database based on the subforum the thread belongs to
+	 * 
+	 * @return threadList is the list of threads
+	 */
+	@Override
+	public List<ForumThread> getAllThreadsBySubForum(String subforum){
+		return threadDAO.getAllThreadsBySubForum(subforum);
+	}
 	
 	/**
 	 * Creates a thread in the database
