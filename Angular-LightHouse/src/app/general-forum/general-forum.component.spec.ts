@@ -2,8 +2,10 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GeneralForumComponent } from './general-forum.component';
 import { GeneralForumInnerComponent } from '../general-forum-inner/general-forum-inner.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Forum } from '../types/Forum'
 import { Input } from '@angular/core';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('GeneralForumComponent', () => {
   let component: GeneralForumComponent;
@@ -11,9 +13,9 @@ describe('GeneralForumComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
+      imports: [NgbModule, RouterTestingModule
         ],
-      declarations: [ GeneralForumComponent ]
+      declarations: [ GeneralForumComponent, GeneralForumInnerComponent  ]
     })
     .compileComponents();
   }));
