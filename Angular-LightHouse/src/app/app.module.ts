@@ -12,6 +12,10 @@ import { NavbarOuterComponent } from './navbar-outer/navbar-outer.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule, routing} from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { GeneralForumComponent } from './general-forum/general-forum.component';
+import { SubForumComponent } from './sub-forum/sub-forum.component';
+import { ThreadComponent } from './thread/thread.component';
+import { PostComponent } from './post/post.component';
 
 
 
@@ -22,7 +26,11 @@ import { HomeComponent } from './home/home.component';
     RegistrationComponent,
     NavbarOuterComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    GeneralForumComponent,
+    SubForumComponent,
+    ThreadComponent,
+    PostComponent
     
   ],
   imports: [

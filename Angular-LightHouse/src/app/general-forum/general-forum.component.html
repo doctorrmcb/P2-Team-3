@@ -1,0 +1,6 @@
+<!-- For each Subforum the following should appear -->
+<dl class="SubForums">
+    <dt *ngFor="let String of SubForums">
+        <app-sub-forum [inputSubforum] = 'String'></app-sub-forum>
+    </dt>
+</dl>
