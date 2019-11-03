@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.revature.pojo.ControllerResponse;
 import com.revature.pojo.User;
 import com.revature.service.UserServiceImpl;
 import static com.revature.util.LoggerUtil.*;
@@ -39,19 +40,34 @@ public class LoginController {
 	}
 	*/
 	@PostMapping("/login")
-	public User loginPost(@RequestBody User user, ModelMap modelMap, HttpSession sess) {
+	public ControllerResponse loginPost(@RequestBody User user, ModelMap modelMap, HttpSession sess) {
 		info(user + "");
+		
+		String response = "";
+		ControllerResponse cr = new ControllerResponse();
+		
+		User checkUser = userService.getUserByUsername(user.getUsername());
+		if (checkUser == null) {
+			response = "Incorrect username";
+			cr.setResponse(response);
+			return cr;
+		}
 		
 		User authUser = userService.loginUser(user.getUsername(), user.getPassword());
 		
 		if (authUser != null) {
 			sess.setAttribute("user", authUser);
 			modelMap.addAttribute("user", authUser);
-			
-			return authUser;
+			response = "success";
+			cr.setResponse(response);
+			return cr;
+		} else {
+			response = "Incorrect password";
+			cr.setResponse(response);
+			return cr;
 		}
 		
-		return null;
+		
 	}
 	
 }

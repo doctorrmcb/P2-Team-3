@@ -61,18 +61,21 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public User getUserByUsername(String username) {
 		info("Getting user with username: " + username);
-		
-		//sf = SessionFactoryUtil.getSessionFactory();
-		
-		  Session sess = sf.openSession(); Transaction tx = sess.beginTransaction();
-		  Criteria crit =
-		  sess.createCriteria(User.class).add(Restrictions.eq("username", username));
-		  User user = (User) crit.uniqueResult(); info("Got user with username:" +
-		  user.getUsername()); tx.commit(); sess.close();
-		 
+
+		// sf = SessionFactoryUtil.getSessionFactory();
+
+		Session sess = sf.openSession();
+		Transaction tx = sess.beginTransaction();
+		Criteria crit = sess.createCriteria(User.class).add(Restrictions.eq("username", username));
+		User user = (User) crit.uniqueResult();
+		if (user != null) {
+			info("Got user with username:" + user.getUsername());
+		}
+		tx.commit();
+		sess.close();
+
 		// Test lines.
 
-		
 		/*
 		 * User user = new User(); user.setUsername("fakeUsername");
 		 * user.setPassword("fakePassword");

@@ -5,6 +5,10 @@
             <div class="form">
               <h1 class="title">{{title}}</h1>
               <form name="login" action="login" method="POST" class="login-form">
+
+                <h2 style = "color:red; font-size: 16px;">{{response}}</h2>
+                
+
                 <label class="label" id="label-username" for="username">Username:</label>
                 <input name="username" id="username" type="text" class="form-control" [(ngModel)]="username"
                   placeholder="username" />

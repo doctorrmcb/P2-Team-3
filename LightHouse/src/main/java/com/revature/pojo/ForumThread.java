@@ -1,6 +1,7 @@
 package com.revature.pojo;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 import javax.persistence.Column;
@@ -80,6 +81,24 @@ public class ForumThread {
 	private String topic;
 	
 	/**
+	 * Denotes which subforum the thread belongs in
+	 */
+	@Column(name = "subforum")
+	private String subforum;
+	
+	/**
+	 * Date of last post. Is date of thread creation by default
+	 */
+	@Column(name = "last_post")
+	private LocalDateTime lastPost;
+	
+	/**
+	 * Denotes whether thread has been reported
+	 */
+	@Column(name = "is_reported")
+	private boolean isReported;
+	
+	/**
 	 * Denotes whether the thread should be stickied or not
 	 */
 	@Column(name = "is_sticky")
@@ -148,16 +167,43 @@ public class ForumThread {
 	public void setSticky(boolean isSticky) {
 		this.isSticky = isSticky;
 	}
+	
+	public String getSubforum() {
+		return subforum;
+	}
+
+	public void setSubforum(String subforum) {
+		this.subforum = subforum;
+	}
+
+	public LocalDateTime getLastPost() {
+		return lastPost;
+	}
+
+	public void setLastPost(LocalDateTime lastPost) {
+		this.lastPost = lastPost;
+	}
+
+	public boolean getIsReported() {
+		return isReported;
+	}
+
+	public void setIsReported(boolean isReported) {
+		this.isReported = isReported;
+	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((contents == null) ? 0 : contents.hashCode());
+		result = prime * result + (isReported ? 1231 : 1237);
 		result = prime * result + (isSticky ? 1231 : 1237);
+		result = prime * result + ((lastPost == null) ? 0 : lastPost.hashCode());
 		result = prime * result + ((postDate == null) ? 0 : postDate.hashCode());
 		result = prime * result + ((postTime == null) ? 0 : postTime.hashCode());
 		result = prime * result + ((posted_by == null) ? 0 : posted_by.hashCode());
+		result = prime * result + ((subforum == null) ? 0 : subforum.hashCode());
 		result = prime * result + threadID;
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
 		result = prime * result + ((topic == null) ? 0 : topic.hashCode());
@@ -178,7 +224,14 @@ public class ForumThread {
 				return false;
 		} else if (!contents.equals(other.contents))
 			return false;
+		if (isReported != other.isReported)
+			return false;
 		if (isSticky != other.isSticky)
+			return false;
+		if (lastPost == null) {
+			if (other.lastPost != null)
+				return false;
+		} else if (!lastPost.equals(other.lastPost))
 			return false;
 		if (postDate == null) {
 			if (other.postDate != null)
@@ -194,6 +247,11 @@ public class ForumThread {
 			if (other.posted_by != null)
 				return false;
 		} else if (!posted_by.equals(other.posted_by))
+			return false;
+		if (subforum == null) {
+			if (other.subforum != null)
+				return false;
+		} else if (!subforum.equals(other.subforum))
 			return false;
 		if (threadID != other.threadID)
 			return false;
@@ -213,12 +271,13 @@ public class ForumThread {
 	@Override
 	public String toString() {
 		return "ForumThread [threadID=" + threadID + ", posted_by=" + posted_by + ", title=" + title + ", contents="
-				+ contents + ", postDate=" + postDate + ", postTime=" + postTime + ", topic=" + topic + ", isSticky="
-				+ isSticky + "]";
+				+ contents + ", postDate=" + postDate + ", postTime=" + postTime + ", topic=" + topic + ", subforum="
+				+ subforum + ", lastPost=" + lastPost + ", isReported=" + isReported + ", isSticky=" + isSticky + "]";
 	}
 
 	public ForumThread(int threadID, User posted_by, String title, String contents, LocalDate postDate,
-			LocalTime postTime, String topic, boolean isSticky) {
+			LocalTime postTime, String topic, String subforum, LocalDateTime lastPost, boolean isReported,
+			boolean isSticky) {
 		super();
 		this.threadID = threadID;
 		this.posted_by = posted_by;
@@ -227,6 +286,9 @@ public class ForumThread {
 		this.postDate = postDate;
 		this.postTime = postTime;
 		this.topic = topic;
+		this.subforum = subforum;
+		this.lastPost = lastPost;
+		this.isReported = isReported;
 		this.isSticky = isSticky;
 	}
 
@@ -235,6 +297,9 @@ public class ForumThread {
 		// TODO Auto-generated constructor stub
 	}
 
+	
+
+	
 	
 	
 	

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { ControllerResponse } from '../types/ControllerResponse';
 
 @Component({
   selector: 'app-login',
@@ -13,8 +14,10 @@ export class LoginComponent implements OnInit {
   title = 'Welcome to LightHouse';
   username: ""
   password: ""
-  login = "Log In";
+  response: string;
+  login = "log In";
   register = "register";
+
 
   onRegister(): void{
     this.router.navigate(['registration']);
@@ -22,20 +25,21 @@ export class LoginComponent implements OnInit {
   onLogin(): void {
     
     let url = 'http://localhost:8080/LightHouse/login';
-    let result = this.http.post<Observable<boolean>>(url, {
+    let result = this.http.post<ControllerResponse>(url, {
       username: this.username,
       password: this.password
-    }).subscribe(isValid => {
-      if (isValid) {
-        console.log("Truthy");
+    }).subscribe(cr => {
+      if (cr.response === "success") {
+        console.log("Response" + cr.response);
         sessionStorage.setItem(
           'token',
           btoa(this.username + ":" + this.password)
         );
         this.router.navigate(['home']);
       } else {
-        console.log("Falsey");
-        alert("Authentication failed.");
+        console.log("Response" + cr.response);
+        this.response = cr.response;
+        //alert("Authentication failed.");
       }
     });
   }
