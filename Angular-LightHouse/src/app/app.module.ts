@@ -13,9 +13,10 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule, routing} from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { GeneralForumComponent } from './general-forum/general-forum.component';
-import { SubForumComponent } from './sub-forum/sub-forum.component';
+import { GeneralForumInnerComponent } from './general-forum-inner/general-forum-inner.component';
 import { ThreadComponent } from './thread/thread.component';
 import { PostComponent } from './post/post.component';
+import { SubForumComponent } from './sub-forum/sub-forum.component';
 
 
 
@@ -28,9 +29,10 @@ import { PostComponent } from './post/post.component';
     LoginComponent,
     HomeComponent,
     GeneralForumComponent,
-    SubForumComponent,
+    GeneralForumInnerComponent,
     ThreadComponent,
-    PostComponent
+    PostComponent,
+    SubForumComponent
     
   ],
   imports: [

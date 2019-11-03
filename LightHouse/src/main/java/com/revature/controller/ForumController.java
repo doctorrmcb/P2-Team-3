@@ -18,6 +18,7 @@ import com.revature.pojo.ControllerResponse;
 import com.revature.pojo.ForumThread;
 import com.revature.pojo.User;
 import com.revature.service.ThreadServiceImpl;
+import static com.revature.util.LoggerUtil.*;
 
 /**
  * This controller will control everything to do with threads
@@ -44,6 +45,9 @@ public class ForumController {
 	 */
 	@GetMapping("/forum/{subforum}")
 	public List<ForumThread> getForumThreads(@PathVariable String subforum){
+		info("Reached getForumThreads");
+		List<ForumThread> threadList = threadService.getAllThreads(); //getAllThreadsBySubForum(subforum);
+		info("ThreadList: " + threadList);
 		return threadService.getAllThreadsBySubForum(subforum);
 	}
 	

@@ -1,6 +1,8 @@
 <!-- For each Subforum the following should appear -->
-<dl class="SubForums">
-    <dt *ngFor="let String of SubForums">
-        <app-sub-forum [inputSubforum] = 'String'></app-sub-forum>
-    </dt>
-</dl>
+<div class="container">
+    <dl class="SubForums">
+        <dt *ngFor="let Forum of Forums">
+            <app-general-forum-inner [inputForum]='Forum'></app-general-forum-inner>
+        </dt>
+    </dl>
+</div>

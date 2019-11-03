@@ -61,7 +61,7 @@ public class ThreadDAOImpl implements ThreadDAO {
 		
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
-		Criteria crit = sess.createCriteria(Thread.class);
+		Criteria crit = sess.createCriteria(ForumThread.class);
 		List<ForumThread> threadList = crit.list();
 		tx.commit();
 		sess.close();
@@ -77,7 +77,7 @@ public class ThreadDAOImpl implements ThreadDAO {
 	public List<ForumThread> getAllThreadsBySubForum(String subforum){
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
-		Criteria crit = sess.createCriteria(Thread.class).add(Restrictions.eq("subforum", subforum));
+		Criteria crit = sess.createCriteria(ForumThread.class).add(Restrictions.eq("subforum", subforum));
 		List<ForumThread> threadList = crit.list();
 		tx.commit();
 		sess.close();
