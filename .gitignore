@@ -43,6 +43,9 @@ hs_err_pid*
 #properties
 **/*.properties
 
+#hibernate config
+**/hibernate.cfg.xml
+
 #JDBC database.properties
 StudyAide/src/main/resources/database.properties
 
