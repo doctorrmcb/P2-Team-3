@@ -44,7 +44,7 @@ private static FileManagementS3 fileMan = new FileManagementS3();
 		testFile.setKeyName("UploadMe.txt");
 		testFile.setFilePath("C:\\Users\\Erik\\Desktop\\S3Tests\\UploadMe.txt");
 		
-		assertEquals(true, fileMan.uploadFile(testFile));
+		assertEquals(true, fileMan.uploadFile(testFile, "classNotes"));
 	}
 	
 	/**
@@ -60,7 +60,7 @@ private static FileManagementS3 fileMan = new FileManagementS3();
 	{
 		S3File testFile = new S3File();
 		testFile.setKeyName("UploadMe.txt");
-		testFile.setFilePath("C:\\Users\\Erik\\Desktop");
+		testFile.setFilePath("C:\\Users\\Erik\\Desktop\\UploadMe.txt");
 		
 		assertEquals(true, fileMan.downloadFile(testFile));
 	}
