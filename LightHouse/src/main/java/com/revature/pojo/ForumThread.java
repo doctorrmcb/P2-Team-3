@@ -1,6 +1,7 @@
 package com.revature.pojo;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 import javax.persistence.Column;
@@ -13,6 +14,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
+
 /**
  * This class is for all threads on the forum
  * It is named ForumThread to avoid conflict with the Java Thread object
@@ -21,6 +24,7 @@ import javax.persistence.Table;
  *
  */
 
+@Component
 @Entity
 @Table(name = "Threads")
 public class ForumThread {
@@ -42,7 +46,7 @@ public class ForumThread {
 	 */
 	@ManyToOne
 	@JoinColumn(name = "user_id")
-	private User posted_by;
+	private User postedBy;
 	
 	/**
 	 * Title of the thread
@@ -52,7 +56,7 @@ public class ForumThread {
 	
 	
 	/**
-	 * Contents of the therad
+	 * Contents of the thread
 	 */
 	@Column(name = "contents")
 	private String contents;
@@ -77,6 +81,24 @@ public class ForumThread {
 	private String topic;
 	
 	/**
+	 * Denotes which subforum the thread belongs in
+	 */
+	@Column(name = "subforum")
+	private String subforum;
+	
+	/**
+	 * Date of last post. Is date of thread creation by default
+	 */
+	@Column(name = "last_post")
+	private LocalDateTime lastPost;
+	
+	/**
+	 * Denotes whether thread has been reported
+	 */
+	@Column(name = "is_reported")
+	private boolean isReported;
+	
+	/**
 	 * Denotes whether the thread should be stickied or not
 	 */
 	@Column(name = "is_sticky")
@@ -90,12 +112,12 @@ public class ForumThread {
 		this.threadID = threadID;
 	}
 
-	public User getPosted_by() {
-		return posted_by;
+	public User getPostedBy() {
+		return postedBy;
 	}
 
-	public void setPosted_by(User posted_by) {
-		this.posted_by = posted_by;
+	public void setPostedBy(User postedBy) {
+		this.postedBy = postedBy;
 	}
 
 	public String getTitle() {
@@ -145,16 +167,43 @@ public class ForumThread {
 	public void setSticky(boolean isSticky) {
 		this.isSticky = isSticky;
 	}
+	
+	public String getSubforum() {
+		return subforum;
+	}
+
+	public void setSubforum(String subforum) {
+		this.subforum = subforum;
+	}
+
+	public LocalDateTime getLastPost() {
+		return lastPost;
+	}
+
+	public void setLastPost(LocalDateTime lastPost) {
+		this.lastPost = lastPost;
+	}
+
+	public boolean getIsReported() {
+		return isReported;
+	}
+
+	public void setIsReported(boolean isReported) {
+		this.isReported = isReported;
+	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((contents == null) ? 0 : contents.hashCode());
+		result = prime * result + (isReported ? 1231 : 1237);
 		result = prime * result + (isSticky ? 1231 : 1237);
+		result = prime * result + ((lastPost == null) ? 0 : lastPost.hashCode());
 		result = prime * result + ((postDate == null) ? 0 : postDate.hashCode());
 		result = prime * result + ((postTime == null) ? 0 : postTime.hashCode());
-		result = prime * result + ((posted_by == null) ? 0 : posted_by.hashCode());
+		result = prime * result + ((postedBy == null) ? 0 : postedBy.hashCode());
+		result = prime * result + ((subforum == null) ? 0 : subforum.hashCode());
 		result = prime * result + threadID;
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
 		result = prime * result + ((topic == null) ? 0 : topic.hashCode());
@@ -175,7 +224,14 @@ public class ForumThread {
 				return false;
 		} else if (!contents.equals(other.contents))
 			return false;
+		if (isReported != other.isReported)
+			return false;
 		if (isSticky != other.isSticky)
+			return false;
+		if (lastPost == null) {
+			if (other.lastPost != null)
+				return false;
+		} else if (!lastPost.equals(other.lastPost))
 			return false;
 		if (postDate == null) {
 			if (other.postDate != null)
@@ -187,10 +243,15 @@ public class ForumThread {
 				return false;
 		} else if (!postTime.equals(other.postTime))
 			return false;
-		if (posted_by == null) {
-			if (other.posted_by != null)
+		if (postedBy == null) {
+			if (other.postedBy != null)
 				return false;
-		} else if (!posted_by.equals(other.posted_by))
+		} else if (!postedBy.equals(other.postedBy))
+			return false;
+		if (subforum == null) {
+			if (other.subforum != null)
+				return false;
+		} else if (!subforum.equals(other.subforum))
 			return false;
 		if (threadID != other.threadID)
 			return false;
@@ -209,21 +270,25 @@ public class ForumThread {
 
 	@Override
 	public String toString() {
-		return "ForumThread [threadID=" + threadID + ", posted_by=" + posted_by + ", title=" + title + ", contents="
-				+ contents + ", postDate=" + postDate + ", postTime=" + postTime + ", topic=" + topic + ", isSticky="
-				+ isSticky + "]";
+		return "ForumThread [threadID=" + threadID + ", posted_by=" + postedBy + ", title=" + title + ", contents="
+				+ contents + ", postDate=" + postDate + ", postTime=" + postTime + ", topic=" + topic + ", subforum="
+				+ subforum + ", lastPost=" + lastPost + ", isReported=" + isReported + ", isSticky=" + isSticky + "]";
 	}
 
-	public ForumThread(int threadID, User posted_by, String title, String contents, LocalDate postDate,
-			LocalTime postTime, String topic, boolean isSticky) {
+	public ForumThread(int threadID, User postedBy, String title, String contents, LocalDate postDate,
+			LocalTime postTime, String topic, String subforum, LocalDateTime lastPost, boolean isReported,
+			boolean isSticky) {
 		super();
 		this.threadID = threadID;
-		this.posted_by = posted_by;
+		this.postedBy = postedBy;
 		this.title = title;
 		this.contents = contents;
 		this.postDate = postDate;
 		this.postTime = postTime;
 		this.topic = topic;
+		this.subforum = subforum;
+		this.lastPost = lastPost;
+		this.isReported = isReported;
 		this.isSticky = isSticky;
 	}
 
@@ -232,6 +297,9 @@ public class ForumThread {
 		// TODO Auto-generated constructor stub
 	}
 
+	
+
+	
 	
 	
 	

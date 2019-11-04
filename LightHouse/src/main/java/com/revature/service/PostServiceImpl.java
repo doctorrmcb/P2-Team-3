@@ -3,6 +3,7 @@ package com.revature.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.revature.dao.PostDAO;
 import com.revature.pojo.Post;
@@ -13,6 +14,7 @@ import com.revature.pojo.Post;
  * @author Robert Li
  *
  */
+@Component
 public class PostServiceImpl {
 	
 	private static PostDAO postDAO;

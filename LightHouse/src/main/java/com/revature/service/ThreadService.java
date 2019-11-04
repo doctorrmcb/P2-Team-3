@@ -29,6 +29,13 @@ public interface ThreadService {
 	 * @return List of all threads
 	 */
 	public List<ForumThread> getAllThreads();
+	
+	/**
+	 * Retrieves all threads based on subforum
+	 * 
+	 * @return List<ForumThread> is a list of threads from that specific subforum
+	 */
+	public List<ForumThread> getAllThreadsBySubForum(String subforum);
 
 	
 	/**

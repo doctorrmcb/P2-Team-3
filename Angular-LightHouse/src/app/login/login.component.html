@@ -5,6 +5,10 @@
             <div class="form">
               <h1 class="title">{{title}}</h1>
               <form name="login" action="login" method="POST" class="login-form">
+
+                <h2 style = "color:red; font-size: 16px;">{{response}}</h2>
+                
+
                 <label class="label" id="label-username" for="username">Username:</label>
                 <input name="username" id="username" type="text" class="form-control" [(ngModel)]="username"
                   placeholder="username" />
@@ -17,9 +21,10 @@
       
                 <br>
       
-                <button name="login" id="login" type="button" class="btn btn-lg" (click)="onLogin()">{{ login | uppercase }}
-                  ></button>
-      
+                <button name="login" id="login" type="button" class="btn btn-lg" (click)="onLogin()">{{ login | uppercase }}                   
+                </button>
+                <button name = "register" id = "register" type = "button" class = "btn btn-lg" (click) = "onRegister()">{{ register | uppercase }}
+                </button>
               </form>
             </div>
           </div>

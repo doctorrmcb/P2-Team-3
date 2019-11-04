@@ -6,6 +6,9 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.revature.util.SessionFactoryUtil;
 import com.revature.pojo.ForumThread;
@@ -18,12 +21,18 @@ import com.revature.util.LoggerUtil.*;
  * @author Robert Li
  *
  */
+@Component
 public class ThreadDAOImpl implements ThreadDAO {
 
 	/**
 	 * SessionFactory that creates sessions
 	 */
-	private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
+	private static SessionFactory sf;
+	
+	@Autowired
+	public void setSessionFactory(SessionFactory sf) {
+		this.sf = sf;
+	}
 	
 	/**
 	 * Retrieves a thread object from the database
@@ -52,7 +61,23 @@ public class ThreadDAOImpl implements ThreadDAO {
 		
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
-		Criteria crit = sess.createCriteria(Thread.class);
+		Criteria crit = sess.createCriteria(ForumThread.class);
+		List<ForumThread> threadList = crit.list();
+		tx.commit();
+		sess.close();
+		return threadList;
+	}
+	
+	/**
+	 * Retrieves all threads from database based on the subforum the thread belongs to
+	 * 
+	 * @return threadList is the list of threads
+	 */
+	@Override
+	public List<ForumThread> getAllThreadsBySubForum(String subforum){
+		Session sess = sf.openSession();
+		Transaction tx = sess.beginTransaction();
+		Criteria crit = sess.createCriteria(ForumThread.class).add(Restrictions.eq("subforum", subforum));
 		List<ForumThread> threadList = crit.list();
 		tx.commit();
 		sess.close();

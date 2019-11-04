@@ -13,6 +13,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
+
 
 /**
  * Class for all posts
@@ -20,6 +22,7 @@ import javax.persistence.Table;
  *
  */
 
+@Component
 @Entity
 @Table(name = "Posts")
 public class Post {
@@ -38,7 +41,7 @@ public class Post {
 	 */
 	@ManyToOne
 	@JoinColumn(name = "thread_id")
-	private Thread threadID;
+	private ForumThread threadID;
 	
 	/**
 	 * The user who posted the Post
@@ -64,6 +67,12 @@ public class Post {
 	 */
 	@Column(name = "post_time")
 	private LocalTime postTime;
+	
+	/**
+	 * Denotes whether the post has been reported
+	 */
+	@Column(name = "is_reported")
+	private boolean isReported;
 
 	public int getPostID() {
 		return postID;
@@ -73,11 +82,11 @@ public class Post {
 		this.postID = postID;
 	}
 
-	public Thread getThreadID() {
+	public ForumThread getThreadID() {
 		return threadID;
 	}
 
-	public void setThreadID(Thread threadID) {
+	public void setThreadID(ForumThread threadID) {
 		this.threadID = threadID;
 	}
 
@@ -113,11 +122,20 @@ public class Post {
 		this.postTime = postTime;
 	}
 
+	public boolean isReported() {
+		return isReported;
+	}
+
+	public void setReported(boolean isReported) {
+		this.isReported = isReported;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((contents == null) ? 0 : contents.hashCode());
+		result = prime * result + (isReported ? 1231 : 1237);
 		result = prime * result + ((postDate == null) ? 0 : postDate.hashCode());
 		result = prime * result + postID;
 		result = prime * result + ((postTime == null) ? 0 : postTime.hashCode());
@@ -139,6 +157,8 @@ public class Post {
 			if (other.contents != null)
 				return false;
 		} else if (!contents.equals(other.contents))
+			return false;
+		if (isReported != other.isReported)
 			return false;
 		if (postDate == null) {
 			if (other.postDate != null)
@@ -168,10 +188,11 @@ public class Post {
 	@Override
 	public String toString() {
 		return "Post [postID=" + postID + ", threadID=" + threadID + ", posted_by=" + posted_by + ", contents="
-				+ contents + ", postDate=" + postDate + ", postTime=" + postTime + "]";
+				+ contents + ", postDate=" + postDate + ", postTime=" + postTime + ", isReported=" + isReported + "]";
 	}
 
-	public Post(int postID, Thread threadID, User posted_by, String contents, LocalDate postDate, LocalTime postTime) {
+	public Post(int postID, ForumThread threadID, User posted_by, String contents, LocalDate postDate,
+			LocalTime postTime, boolean isReported) {
 		super();
 		this.postID = postID;
 		this.threadID = threadID;
@@ -179,12 +200,15 @@ public class Post {
 		this.contents = contents;
 		this.postDate = postDate;
 		this.postTime = postTime;
+		this.isReported = isReported;
 	}
 
 	public Post() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
+	
 	
 	
 	
