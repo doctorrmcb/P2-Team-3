@@ -1,4 +1,4 @@
-package com.revature.dao;
+package com.revature.service;
 
 import java.util.List;
 
@@ -6,12 +6,14 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.S3Object;
 import com.revature.pojo.S3File;
 
+
 /**
- * This is the interface to for S3 bucket file uploading, downloading, and retrieval
+ * Interface for the S3FileService object
+ * Acts as the liaison between the DAOs and the servlet
  * 
- * @author ErikHaklar
+ * @author Erik
  */
-public interface S3FileDAO {
+public interface S3FileService {
 
 	/**
 	 * For uploading files to the S3 bucket
@@ -24,11 +26,11 @@ public interface S3FileDAO {
 	public boolean uploadFile(S3File file, String category);
 	
 	/**
-	 * For downloading files from the S3 bucket directly from Java. For use with Angular,
-	 * use sendFile() instead.
+	 * For downloading files from the S3 bucket
 	 * 
 	 * @author ErikHaklar
 	 * @param file
+	 * @param category
 	 * @return boolean
 	 */
 	public boolean downloadFile(S3File file);
