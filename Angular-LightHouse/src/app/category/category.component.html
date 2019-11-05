@@ -9,11 +9,13 @@
         <div class="card">
             <div class="card-body">
             Please type in a category name:
-            <form action="/action">
-              Category Name: <input type="text" name="catName" placeholder="Place input here...">
+            
+              Category Name: <input type="text" name="catName" [(ngModel)]="name" placeholder="Place input here...">
                 <br>
-                <input type="submit" value="Enter">
-            </form>
+                <br>
+                <button name="createCat" id="createCat" type="button" class="btn" (click)="onCreateCat()">Create                    
+                </button>
+            
             </div>
         </div>
     </div>

@@ -15,7 +15,7 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name = "category")
+@Table(name = "lighthouse.category")
 public class Category {
 
 	/**

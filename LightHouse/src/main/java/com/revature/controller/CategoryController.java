@@ -27,7 +27,9 @@ public class CategoryController {
 	@PostMapping("/category")
 	public ControllerResponse createCategory(@RequestBody String catName, ModelMap modelMap, HttpSession sess) {
 		info(catName + "");
-	
+		catName = catName.replace("{\"name\":\"", "");
+		catName = catName.replace("}", "");
+		catName = catName.replace("\"", "");
 		String response = "";
 		ControllerResponse cr = new ControllerResponse();
 		boolean checkCat = catService.createCategory(catName);

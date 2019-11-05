@@ -26,7 +26,7 @@ public class CategoryServiceImpl implements CategoryService{
 	public boolean createCategory(String catName) {
 		debug("Checking to see if the category exists with the name: "+catName);
 		Category cat = catDAO.getCat(catName);
-		if((cat != null)||(catName =="")) {
+		if((cat != null)||(catName =="{}")) {
 		return false;
 		}else {
 			catDAO.createCategory(catName);
