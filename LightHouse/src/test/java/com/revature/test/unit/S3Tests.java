@@ -2,6 +2,9 @@ package com.revature.test.unit;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -65,4 +68,24 @@ private static FileManagementS3 fileMan = new FileManagementS3();
 		assertEquals(true, fileMan.downloadFile(testFile));
 	}
 	
+	/**
+	 * Tests whether or not a list of files can be retrieved of a specific category.
+	 * category info is stored in metadata for the object in S3
+	 * 
+	 * @author Erik Haklar
+	 * @version 1.0
+	 * @since 2019-11-04
+	 */
+	@Test
+	public void getFilesInCategory()
+	{
+		List<S3File> files = new ArrayList<S3File>();
+		
+		S3File testFile = new S3File();
+		testFile.setKeyName("UploadMe.txt");
+		
+		files.add(testFile);
+		
+		assertEquals(files, fileMan.getFilesByCategory("classNotes"));
+	}
 }

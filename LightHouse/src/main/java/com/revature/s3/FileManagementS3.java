@@ -161,11 +161,18 @@ public class FileManagementS3 implements S3FileDAO{
             Map userMetadataMap = objectMetadata.getUserMetadata();
             //Map rowMetadataMap = objectMetadata.getRawMetadata();
             
-            if (userMetadataMap.get(category) != null)
+            //System.out.println(userMetadataMap);
+            //System.out.println(userMetadataMap.toString());
+            //System.out.println("{x-amz-meta-" + category.toLowerCase() + "=" + category + "}");
+            
+            if (userMetadataMap.toString().contentEquals("{x-amz-meta-" + category.toLowerCase() + "=" + category + "}"))
             {
             	files.add(new S3File(bucketName, objectSummary.getKey(), ""));
             }
         }
+        
+        //files.add(new S3File(bucketName, "UploadMe.txt", ""));
+        //System.out.println(files);
 		
 		return files;
 	}
