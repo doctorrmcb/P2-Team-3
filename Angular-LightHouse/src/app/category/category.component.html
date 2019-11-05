@@ -1,0 +1,21 @@
+<div>
+    <p>
+        <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+            Create A New Category
+        </button>
+    </p>
+    <div id="collapseExample" [ngbCollapse]="!isCollapsed">
+        <div class="card">
+            <div class="card-body">
+            Please type in a category name:
+            <form action="/action">
+              Category Name: <input type="text" name="catName" placeholder="Place input here...">
+                <br>
+                <input type="submit" value="Enter">
+            </form>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>

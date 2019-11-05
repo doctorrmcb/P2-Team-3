@@ -32,11 +32,11 @@ public class CategoryController {
 		ControllerResponse cr = new ControllerResponse();
 		boolean checkCat = catService.createCategory(catName);
 		if(checkCat == false) {
-			response = "Category already exists!";
+			response = "Category already exists or Category name cannot be empty!";
 			cr.setResponse(response);
 			return cr;
 		}else
-			response = "Question created!";
+			response = "Category created!";
 		cr.setResponse(response);
 		return cr;
 		

@@ -17,6 +17,7 @@ import { GeneralForumInnerComponent } from './general-forum-inner/general-forum-
 import { ThreadComponent } from './thread/thread.component';
 import { PostComponent } from './post/post.component';
 import { SubForumComponent } from './sub-forum/sub-forum.component';
+import { CategoryComponent } from './category/category.component';
 
 
 
@@ -32,7 +33,8 @@ import { SubForumComponent } from './sub-forum/sub-forum.component';
     GeneralForumInnerComponent,
     ThreadComponent,
     PostComponent,
-    SubForumComponent
+    SubForumComponent,
+    CategoryComponent
     
   ],
   imports: [
