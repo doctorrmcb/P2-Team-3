@@ -177,6 +177,25 @@ public class FileManagementS3 implements S3FileDAO{
 		return files;
 	}
 
+	@Override
+	public S3Object sendFile(S3File file) {
+
+		S3Object object = s3client.getObject(new GetObjectRequest(file.getBucketName(), file.getKeyName()));
+		
+		return object;
+	}
+
+	@Override
+	public boolean deleteFile(S3File file) {
+
+		boolean removed = false;
+		
+		s3client.deleteObject(file.getBucketName(), file.getKeyName());
+		removed = true;
+		
+		return removed;
+	}
+
 	
 	/**
 	 * For Reference

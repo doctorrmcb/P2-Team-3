@@ -14,6 +14,7 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
+import com.amazonaws.services.s3.model.S3Object;
 import com.revature.pojo.S3File;
 import com.revature.s3.FileManagementS3;
 
@@ -87,5 +88,47 @@ private static FileManagementS3 fileMan = new FileManagementS3();
 		files.add(testFile);
 		
 		assertEquals(files, fileMan.getFilesByCategory("classNotes"));
+	}
+	
+	/**
+	 * Tests whether or not a file object can be sent from the S3 Bucket.
+	 * 
+	 * @author ErikHaklar
+	 * @version 1.0
+	 * @since 2019-11-05
+	 */
+	@Test
+	public void sendFile()
+	{
+		boolean works = false;
+		S3Object object = null;
+		
+		S3File testFile = new S3File();
+		testFile.setKeyName("UploadMe.txt");
+		
+		object = fileMan.sendFile(testFile);
+		
+		if (object.getKey() == testFile.getKeyName())
+		{
+			works = true;
+		}
+		
+		assertEquals(true, works);
+	}
+	
+	/**
+	 * Tests whether or not a file can be deleted from the S3 bucket.
+	 * 
+	 * @author ErikHaklar
+	 * @version 1.0
+	 * @since 2019-11-05
+	 */
+	@Test
+	public void deleteFile()
+	{
+		S3File testFile = new S3File();
+		testFile.setKeyName("UploadMe.txt");
+		
+		assertEquals(true, fileMan.deleteFile(testFile));
 	}
 }
