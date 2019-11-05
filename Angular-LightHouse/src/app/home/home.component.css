@@ -1,0 +1,90 @@
+/* Sets all font on the page to match revature style */
+* {
+    font-family: 'Futura-PT';
+}
+
+/*
+#outer-container {
+    background-image: url("../../assets/nik-macmillan-YXemfQiPR_E-unsplash.jpg");
+    background-size: cover;
+    min-height: 87vh;
+}
+*/
+
+body {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.form-control {
+    max-width: 100%;
+    margin: auto;
+    border-color: #F26925;
+    border: 3px, solid, #F26925!important;
+    border-width: 3px;
+    border-radius: 12px;
+    padding-left: 18px; 
+    padding-top: 8px;
+    padding-right: 18px;
+    padding-bottom: 8px;
+    height: 50px;    
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#quiz{
+    float:left;
+    width: 30%;
+}
+#resources{
+    float:left;
+    width: 30%;
+}
+#forum{
+    float:left;
+    width: 30%;
+}
+
+.title {
+    text-align: center;
+}
+
+.btn {
+    background-color: #F26925;
+    border-color: #F26925;
+    color: #FFFFFF;
+    border-radius: 28px;
+    padding-left: 30px; 
+    padding-top: 12px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    font-family: 'Futura-PT';
+    font-size: 15px;
+    font-weight: 700;
+    width: 80%;
+    position: relative; 
+    
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background-color: #FFFFFF;
+    color: #FCB414;
+    box-shadow: none;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    
+}
+
+.form {
+    margin-top: 10%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    min-width: 50vh;
+    background-color: rgba(255, 255, 255, .6);
+}
