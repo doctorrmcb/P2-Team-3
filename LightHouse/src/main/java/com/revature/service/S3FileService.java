@@ -1,16 +1,18 @@
-package com.revature.dao;
+package com.revature.service;
 
 import java.util.List;
 
 import com.amazonaws.services.s3.AmazonS3;
 import com.revature.pojo.S3File;
 
+
 /**
- * This is the interface to for S3 bucket file uploading, downloading, and retrieval
+ * Interface for the S3FileService object
+ * Acts as the liaison between the DAOs and the servlet
  * 
- * @author ErikHaklar
+ * @author Erik
  */
-public interface S3FileDAO {
+public interface S3FileService {
 
 	/**
 	 * For uploading files to the S3 bucket
