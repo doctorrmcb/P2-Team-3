@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Entity
-@Table(name = "users")
+@Table(name = "lighthouse.users")
 public class User {
 
 	@Id
