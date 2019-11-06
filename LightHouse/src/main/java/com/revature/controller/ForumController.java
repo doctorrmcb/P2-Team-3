@@ -73,6 +73,7 @@ public class ForumController {
 		thread.setPostDate(postDate);
 		thread.setPostTime(postTime);
 		thread.setLastPost(lastPost);
+		thread.setTopic(subforum);
 		threadService.createThread(thread);
 		
 		response = "success";
