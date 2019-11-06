@@ -17,11 +17,9 @@ import { GeneralForumInnerComponent } from './general-forum-inner/general-forum-
 import { ThreadComponent } from './thread/thread.component';
 import { PostComponent } from './post/post.component';
 import { SubForumComponent } from './sub-forum/sub-forum.component';
-import { CategoryComponent } from './category/category.component';
+
+import { ResourcesPageComponent } from './resources-page/resources-page.component';
 import { QuizComponent } from './quiz/quiz.component';
-import { QuizNavbarComponent } from './quiz-navbar/quiz-navbar.component';
-
-
 
 @NgModule({
   declarations: [
@@ -36,10 +34,8 @@ import { QuizNavbarComponent } from './quiz-navbar/quiz-navbar.component';
     ThreadComponent,
     PostComponent,
     SubForumComponent,
-    CategoryComponent,
-    QuizComponent,
-    QuizNavbarComponent
-    
+    ResourcesPageComponent,
+    QuizComponent
   ],
   imports: [
     routing,
