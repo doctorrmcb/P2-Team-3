@@ -1,5 +1,5 @@
 .btn {
-    min-width: 100%;
+    min-width: 30%;
     background-color: #F26925;
     border-color: #F26925;
     color: #FFFFFF;
@@ -11,6 +11,7 @@
     font-family: 'Futura-PT';
     font-size: 15px;
     font-weight: 700;
+    
 }
 
 .btn:hover, .btn:active, .btn:focus {
