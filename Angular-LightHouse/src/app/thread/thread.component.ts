@@ -49,7 +49,7 @@ export class ThreadComponent implements OnInit {
   }
 
   onSubmit() {
-    let url = 'http://localhost:8080/LightHouse/forum/' + this.id;
+    let url = 'http://localhost:8080/LightHouse/' + this.id + "/post";
     //let headers = new HttpHeaders();
     //headers.append("allow-control-allow-credentials", "true");
     let result = this.http.post<ControllerResponse>(url, {

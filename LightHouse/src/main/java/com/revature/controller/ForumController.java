@@ -108,4 +108,29 @@ public class ForumController {
 		info("PostList: " + postList);
 		return postList;
 	}
+	
+	
+	@PostMapping("/{title}/post")
+	public ControllerResponse createPost(@PathVariable String title, @RequestBody Post post, HttpSession sess) {
+		
+		ControllerResponse cr = new ControllerResponse();
+		String response = "";
+		
+		User user = (User) sess.getAttribute("user");
+		info("Inside session of post " + sess.getAttribute("user"));
+		LocalDate postDate = LocalDate.now();
+		LocalTime postTime = LocalTime.now();
+		//LocalDateTime lastPost = LocalDateTime.of(postDate, postTime);
+		post.setPostID(-1);
+		post.setThreadID(threadService.getThreadByTitle(title));
+		post.setPosted_by(user);
+		post.setPostDate(postDate);
+		post.setPostTime(postTime);
+		post.setContents(post.getContents());
+		postService.createPost(post);
+		
+		response = "success";
+		cr.setResponse(response);
+		return cr;
+	}
 }
