@@ -337,13 +337,15 @@ public class QuestionDAOImpl implements QuestionDAO {
 	 **/
 	@Override
 	public boolean updateQuestion(Question qNew, Question qOld) {
-		// it is easier to delete and create a question than to delete it
+		// it is easier to delete and create a question than to update it
 		// if delete question == true && if create question is true
 		// this method returns true
 		// else it return false
-		if (deleteQuestion(qOld.getQuestionID()) && createQuestion(qNew))
+		if ((deleteQuestion(qOld.getQuestionID()) == true) && (createQuestion(qNew) == true)) {
 			return true;
+		}else {
 		return false;
+		}
 	}
 
 	/**
@@ -499,5 +501,58 @@ public class QuestionDAOImpl implements QuestionDAO {
 			info("Closing the session");
 			session.close();
 		}
+	}
+
+	@Override
+	public Question getQuestionByName(String nameQ) {
+		
+		Session session = null;
+		Criteria criteria = null;
+		Transaction tx = null;
+		Question q = new Question();
+
+		try {
+
+			// creating session
+			info("Opening session..");
+			session = sf.openSession();
+
+			// starting a transaction
+			info("Beginning transaction...");
+			tx = session.beginTransaction();
+
+			// creating criteria
+			info("creating criteria...");
+			criteria = session.createCriteria(Question.class);
+			criteria.add(Restrictions.eq("questionName", nameQ));
+
+			q = (Question) criteria.uniqueResult();
+			// if question is not null return the question object
+			if (q != null) {
+				info("Question is found!");
+				// returning the question
+				return q;
+			}
+
+			// committing the transaction
+			tx.commit();
+			info("commiting the transaction...");
+
+		} catch (NullPointerException e) {
+			e.printStackTrace();
+			error("getQuestion method failed!");
+			// if transaction is not null, rolls it back
+			if (tx != null)
+				tx.rollback();
+			// transaction has failed, so return null
+			info("getQuestion transaction has failed");
+			q = null;
+
+		} finally {
+			// closing the session
+			info("Closing the session...");
+			session.close();
+		}
+		return q;
 	}
 }

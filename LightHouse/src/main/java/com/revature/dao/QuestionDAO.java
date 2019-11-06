@@ -26,6 +26,13 @@ public interface QuestionDAO {
 	 * @return the question if the question was fetched and null otherwise
 	 **/
 	public Question getQuestion(int questionID);
+	
+	/**
+	 * Read a Question from the database using the question name
+	 * @param nameQ
+	 * @return the question if the question was fetched and null otherwise
+	 **/
+	public Question getQuestionByName(String nameQ);
 
 	/**
 	 * Read all the questions from the database

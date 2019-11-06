@@ -18,6 +18,8 @@ import { ThreadComponent } from './thread/thread.component';
 import { PostComponent } from './post/post.component';
 import { SubForumComponent } from './sub-forum/sub-forum.component';
 import { CategoryComponent } from './category/category.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { QuizNavbarComponent } from './quiz-navbar/quiz-navbar.component';
 
 
 
@@ -34,7 +36,9 @@ import { CategoryComponent } from './category/category.component';
     ThreadComponent,
     PostComponent,
     SubForumComponent,
-    CategoryComponent
+    CategoryComponent,
+    QuizComponent,
+    QuizNavbarComponent
     
   ],
   imports: [
