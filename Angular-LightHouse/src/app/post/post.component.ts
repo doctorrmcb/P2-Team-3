@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Post } from '../types/Post';
 
 
@@ -9,7 +9,7 @@ import { Post } from '../types/Post';
 })
 export class PostComponent implements OnInit {
 
-  //@Input inputPost: Post;
+  @Input() inputPost: Post;
   constructor() { }
 
   ngOnInit() {
