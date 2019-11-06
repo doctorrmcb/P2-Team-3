@@ -21,7 +21,7 @@ public interface S3FileDAO {
 	 * @param category
 	 * @return boolean
 	 */
-	public boolean uploadFile(S3File file, String category);
+	public boolean uploadFile(S3File file);
 	
 	/**
 	 * For downloading files from the S3 bucket directly from Java. For use with Angular,

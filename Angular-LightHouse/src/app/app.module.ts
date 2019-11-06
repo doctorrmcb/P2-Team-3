@@ -18,7 +18,8 @@ import { ThreadComponent } from './thread/thread.component';
 import { PostComponent } from './post/post.component';
 import { SubForumComponent } from './sub-forum/sub-forum.component';
 
-
+import { ResourcesPageComponent } from './resources-page/resources-page.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +33,9 @@ import { SubForumComponent } from './sub-forum/sub-forum.component';
     GeneralForumInnerComponent,
     ThreadComponent,
     PostComponent,
-    SubForumComponent
-    
+    SubForumComponent,
+    ResourcesPageComponent,
+    QuizComponent
   ],
   imports: [
     routing,
