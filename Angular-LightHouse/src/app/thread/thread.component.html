@@ -1,10 +1,67 @@
-<p>{{ title }}</p>
-<p>Discussion in {{ id }} forum</p>
-<dl class="Posts">
-    <dt *ngFor="let post of posts">
-        <div class="post-container">
-            <app-post [inputPost]='post'></app-post>
-        </div>
-        <br>
-    </dt>
-</dl>
+<div class="outer-container">
+    <br>
+    <p id="title">{{ title }}</p>
+    <div id="inner">
+        <p id="subheader">Discussion in {{ id }} forum</p>
+        <dl class="Posts">
+            <br>
+            <dt *ngFor="let post of posts">
+                <div class="post-container">
+                    <app-post [inputPost]='post'></app-post>
+                </div>
+                <br>
+            </dt>
+        </dl>
+    </div>
+    <br>
+    <button name="createNewPost" id="createNewPost" class="btn" (click)="createNewPost()">CREATE A NEW
+        POST</button>
+</div>
+
+<div class="backdrop" [ngStyle]="{'display':display}"></div>
+
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':display}">
+
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <!-- <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()"><span aria-hidden="true">&times;</span></button>
+  -->
+                <h4 class="modal-title">Create a New Post</h4>
+
+            </div>
+
+            <div class="modal-body">
+                <form>
+                    <!-- <p>Model body text</p> -->
+                    <label class="label" id="label-contents" for="contents">Contents:</label>
+                    <textarea name="contents" id="contents" maxlength="6000" rows="7" cols="50" type="textarea"
+                        class="form-control" [(ngModel)]="contents" placeholder="contents"></textarea>
+                    <!-- <br>
+                    <label class="label" id="label-dropdown" for="dropdown">Topic:</label>
+                    <br>
+                    <select #selection [(ngModel)]="selected" (change)="search(selection.value)">
+
+                        <option *ngFor="let option of options" [value]="option">
+                            {{ option }}
+                        </option>
+                    </select> -->
+                </form>
+                <h2 style="color:red; font-size: 16px;">{{response}}</h2>
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-default" (click)="onCloseHandled()">Close</button>
+                <button type="button" class="btn btn-default" (click)="onSubmit()">Submit</button>
+
+            </div>
+
+        </div><!-- /.modal-content -->
+
+    </div><!-- /.modal-dialog -->
+
+</div><!-- /.modal !-->
