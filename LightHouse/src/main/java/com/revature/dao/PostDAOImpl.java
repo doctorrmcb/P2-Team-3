@@ -55,7 +55,7 @@ public class PostDAOImpl implements PostDAO {
 	public List<Post> getPostsByThread(ForumThread thread){
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
-		Criteria crit = sess.createCriteria(Post.class).add(Restrictions.eq("threadID", thread.getId()));
+		Criteria crit = sess.createCriteria(Post.class).add(Restrictions.eq("threadID", thread.getThreadID()));
 		List<Post> postList = crit.list();
 		tx.commit();
 		sess.clear();
