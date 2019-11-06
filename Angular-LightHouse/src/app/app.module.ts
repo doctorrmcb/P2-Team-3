@@ -11,13 +11,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarOuterComponent } from './navbar-outer/navbar-outer.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ResourcesPageComponent } from './resources-page/resources-page.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
     NavbarOuterComponent,
-    LoginComponent
+    LoginComponent,
+    ResourcesPageComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,

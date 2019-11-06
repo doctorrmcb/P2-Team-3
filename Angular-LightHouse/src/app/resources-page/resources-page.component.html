@@ -1,0 +1,78 @@
+
+<div class="paddingClass">
+
+  <h1>Resources and Documentation</h1>
+
+<p>Take a look at our reccommended resources for studying!</p>
+
+<div>
+  <h6> Sort by category: </h6>
+  <select #selection [(ngModel)]="selected" (change)="search(selection.value)">
+    
+      <option *ngFor="let option of options" 
+              [value]="option"> 
+        {{ option }}
+      </option>
+ </select>
+</div>
+<p></p>
+<div>Selected Option: {{ selected }}</div>
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+<table id="myTable" class="table table-striped mb-0">
+  <thead>
+  <tr>
+    <th scope="col">Resource / Documentation</th>
+    <th scope="col">Link</th>
+    <th scope="col"></th>
+    <th scope="col">Rating</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let resource of resources">
+    <td>
+      {{ resource.name }}
+    </td>
+    <td><a href=resource.link>{{ resource.link}} </a></td>
+    <td></td>
+    <td> <span style="font-size:150%;color:yellow;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<br>
+<br>
+<h2>Upload and download your own resources!</h2>
+
+
+<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+<br>
+<br>
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+  <table id="myTable" class="table table-striped mb-0">
+    <thead>
+    <tr>
+      <th scope="col">Resource / Documentation</th>
+      <th scope="col">Download</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let resource of resources">
+      <td>
+        {{ resource.name }}
+      </td>
+      <td><button
+        (click)="deletePost(post)"
+         class="btn btn-primary btn-sm">Download</button></td>
+      <td></td>
+     
+    </tr>
+    </tbody>
+  </table>
+  </div>
+
+</div>
