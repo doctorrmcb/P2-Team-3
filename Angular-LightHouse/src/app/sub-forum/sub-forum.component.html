@@ -1,15 +1,20 @@
-<h1>{{ id }}</h1>
-<br>
-<span>Threads</span>
-<dl class="Threads">
-    <dt *ngFor="let thread of threads">
-        <div class="anchor-container">
-            <a [routerLink]="['../', id, thread.title]">{{ thread.title }}</a>
-        </div>
-    </dt>
-</dl>
-<button name="createNewThread" id="createNewThread" class="btn" (click)="createNewThread()">CREATE A NEW THREAD</button>
-
+<div class="container">
+    <br>
+    <h1>{{ id }}</h1>
+    <div class="inner-container">
+        <span id="label">Threads</span>
+        <dl class="Threads">
+            <dt *ngFor="let thread of threads">
+                <div class="anchor-container">
+                    <a [routerLink]="['../', id, thread.title]">{{ thread.title }}</a>
+                </div>
+            </dt>
+        </dl>
+    </div>
+    <br>
+    <button name="createNewThread" id="createNewThread" class="btn" (click)="createNewThread()">CREATE A NEW
+        THREAD</button>
+</div>
 
 
 <div class="backdrop" [ngStyle]="{'display':display}"></div>
@@ -36,8 +41,8 @@
                         placeholder="title" />
                     <br>
                     <label class="label" id="label-contents" for="contents">Contents:</label>
-                    <textarea name="contents" id="contents" maxlength="6000" rows="7" cols="50" type="textarea" class="form-control" [(ngModel)]="contents"
-                        placeholder="contents"></textarea>
+                    <textarea name="contents" id="contents" maxlength="6000" rows="7" cols="50" type="textarea"
+                        class="form-control" [(ngModel)]="contents" placeholder="contents"></textarea>
                     <!-- <br>
                     <label class="label" id="label-dropdown" for="dropdown">Topic:</label>
                     <br>
@@ -48,7 +53,7 @@
                         </option>
                     </select> -->
                 </form>
-                <h2 style = "color:red; font-size: 16px;">{{response}}</h2>
+                <h2 style="color:red; font-size: 16px;">{{response}}</h2>
             </div>
 
             <div class="modal-footer">
