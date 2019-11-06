@@ -4,7 +4,7 @@ import { User } from './User';
 export class Post{
     postID: number;
     threadID: Thread;
-    postedBy: User;
+    posted_by: User;
     contents: string;
     //postDate: Date;
     //postTime: Time;

@@ -18,8 +18,9 @@ export class PostComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.inputPost);
     this.contents = this.inputPost.contents;
-    this.username = this.inputPost.postedBy.username;
+    this.username = this.inputPost.posted_by.username;
     this.postDate = this.inputPost.postDate[0].toString() + "/" + this.inputPost.postDate[1].toString() + "/" + this.inputPost.postDate[2].toString();
     this.postTime = this.inputPost.postTime[0].toString() + ":" + this.inputPost.postTime[1];
   }
