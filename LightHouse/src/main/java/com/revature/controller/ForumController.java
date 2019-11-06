@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.pojo.ControllerResponse;
@@ -59,7 +60,7 @@ public class ForumController {
 	 * @return response  Response used to dictate logic flow in angular
 	 */
 	@PostMapping("/forum/{subforum}")
-	public ControllerResponse createThread(@PathVariable String subforum, ForumThread thread, HttpSession sess) {
+	public ControllerResponse createThread(@PathVariable String subforum, @RequestBody ForumThread thread, HttpSession sess) {
 		
 		ControllerResponse cr = new ControllerResponse();
 		String response = "";
@@ -74,6 +75,7 @@ public class ForumController {
 		thread.setPostTime(postTime);
 		thread.setLastPost(lastPost);
 		thread.setTopic(subforum);
+		thread.setSubforum(subforum);
 		threadService.createThread(thread);
 		
 		response = "success";
