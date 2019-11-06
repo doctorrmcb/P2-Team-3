@@ -13,6 +13,8 @@ export class SubForumComponent implements OnInit {
 
   id: string;
   threads: Thread[];
+  display = 'none';
+  options = ['Java', 'SQL', 'HTML', 'CSS', 'JavaScript'];
 
   constructor(private route: ActivatedRoute,
     private http: HttpClient) { }
@@ -31,5 +33,15 @@ export class SubForumComponent implements OnInit {
       console.log(this.threads);
     });
   }
+
+  createNewThread() {
+    this.display='block';
+  }
+
+  onCloseHandled(){
+ 
+    this.display='none';
+
+ }
 
 }

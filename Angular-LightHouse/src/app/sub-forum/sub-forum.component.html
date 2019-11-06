@@ -8,3 +8,57 @@
         </div>
     </dt>
 </dl>
+<button name="createNewThread" id="createNewThread" class="btn" (click)="createNewThread()">CREATE A NEW THREAD</button>
+
+
+
+<div class="backdrop" [ngStyle]="{'display':display}"></div>
+
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':display}">
+
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <!-- <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()"><span aria-hidden="true">&times;</span></button>
+  -->
+                <h4 class="modal-title">Model Title</h4>
+
+            </div>
+
+            <div class="modal-body">
+                <form>
+                    <!-- <p>Model body text</p> -->
+                    <label class="label" id="label-title" for="title">Title:</label>
+                    <input name="title" id="title" type="text" class="form-control" [(ngModel)]="title"
+                        placeholder="title" />
+                    <br>
+                    <label class="label" id="label-contents" for="contents">Contents:</label>
+                    <textarea name="contents" id="contents" maxlength="6000" rows="7" cols="50" type="textarea" class="form-control" [(ngModel)]="contents"
+                        placeholder="contents"></textarea>
+                    <!-- <br>
+                    <label class="label" id="label-dropdown" for="dropdown">Topic:</label>
+                    <br>
+                    <select #selection [(ngModel)]="selected" (change)="search(selection.value)">
+
+                        <option *ngFor="let option of options" [value]="option">
+                            {{ option }}
+                        </option>
+                    </select> -->
+                </form>
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-default" (click)="onCloseHandled()">Close</button>
+                <button type="button" class="btn btn-default" (click)="onSubmit()">Submit</button>
+
+            </div>
+
+        </div><!-- /.modal-content -->
+
+    </div><!-- /.modal-dialog -->
+
+</div><!-- /.modal !-->
