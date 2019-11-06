@@ -23,7 +23,7 @@ public interface S3FileService {
 	 * @param category
 	 * @return boolean
 	 */
-	public boolean uploadFile(S3File file, String category);
+	public boolean uploadFile(S3File file);
 	
 	/**
 	 * For downloading files from the S3 bucket
