@@ -11,7 +11,7 @@
     font-family: 'Futura-PT';
     font-size: 15px;
     font-weight: 700;
-    
+    margin-left: 32%;
 }
 
 .btn:hover, .btn:active, .btn:focus {
@@ -36,3 +36,12 @@ a {
     font-size: 16pt;
 }
 
+#label {
+    font-family: 'Futura-PT';
+    font-size: 15px;
+}
+
+.inner-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}

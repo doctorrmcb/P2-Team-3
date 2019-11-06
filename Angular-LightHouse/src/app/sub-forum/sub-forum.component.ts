@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Thread } from '../types/Thread';
 import { ActivatedRoute, Router } from '@angular/router';
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpResponse, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ControllerResponse } from '../types/ControllerResponse';
 
@@ -58,10 +58,12 @@ export class SubForumComponent implements OnInit {
 
   onSubmit() {
     let url = 'http://localhost:8080/LightHouse/forum/' + this.id;
+    //let headers = new HttpHeaders();
+    //headers.append("allow-control-allow-credentials", "true");
     let result = this.http.post<ControllerResponse>(url, {
       title: this.title,
       contents: this.contents
-    }).subscribe(cr => {
+    }/*, { headers: headers }*/).subscribe(cr => {
       if (cr.response === "success") {
         console.log("Response" + cr.response);
         this.onCloseHandled();

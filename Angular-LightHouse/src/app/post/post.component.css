@@ -1,10 +1,16 @@
 .post {
     border-top: solid;
-    border-bottom: dashed;
+    border-bottom: solid;
+    border-bottom-width: 0.5pt;
     border-color: #FCB414;
 }
 
 footer{
     border-bottom: solid;
     border-color: #FCB414;
+}
+
+span {
+    padding-left: 2%;
+    padding-right: 2%;
 }
