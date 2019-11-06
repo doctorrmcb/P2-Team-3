@@ -1,6 +1,10 @@
 <h1>{{ id }}</h1>
+<br>
+<span>Threads</span>
 <dl class="Threads">
     <dt *ngFor="let thread of threads">
-        <a [routerLink]="['../', id, thread.title]">{{ thread.title }}</a>
+        <div class="anchor-container">
+            <a [routerLink]="['../', id, thread.title]">{{ thread.title }}</a>
+        </div>
     </dt>
 </dl>
