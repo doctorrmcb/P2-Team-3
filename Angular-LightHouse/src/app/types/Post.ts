@@ -11,6 +11,6 @@ export class Post{
     isReported: boolean;
     
     postDate: number[];
-    postTIme: number[];
+    postTime: number[];
 
 }
