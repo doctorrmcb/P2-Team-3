@@ -10,7 +10,8 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 export class ThreadComponent implements OnInit {
 
   id: string;
-  title; string;
+  title: string;
+ 
 
   constructor(private route: ActivatedRoute,
     private http: HttpClient) { }

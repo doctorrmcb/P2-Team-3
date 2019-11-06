@@ -57,7 +57,9 @@ public class LoginController {
 		
 		if (authUser != null) {
 			sess.setAttribute("user", authUser);
+			info("Inside HttpSession of logincontroller" + sess.getAttribute("user"));
 			modelMap.addAttribute("user", authUser);
+			info("Inside modelMap of logincontroller" + modelMap.get("user"));
 			response = "success";
 			cr.setResponse(response);
 			return cr;

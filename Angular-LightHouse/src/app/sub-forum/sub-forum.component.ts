@@ -18,6 +18,7 @@ export class SubForumComponent implements OnInit {
   title: "";
   contents: "";
   response: string;
+  username: string;
   display = 'none';
   options = ['Java', 'SQL', 'HTML', 'CSS', 'JavaScript'];
   
@@ -33,7 +34,7 @@ export class SubForumComponent implements OnInit {
   ngOnInit() {
     // Grabs the ID from the URL and adds it to the id paramter in this class.
     this.id = this.route.snapshot.paramMap.get('id');
-
+    
     let url = 'http://localhost:8080/LightHouse/forum/' + this.id;
     let result = this.http.get<Thread[]>(url, {}).subscribe(tr => {
       /* for (let i = 0; i < tr.length; i++) {
