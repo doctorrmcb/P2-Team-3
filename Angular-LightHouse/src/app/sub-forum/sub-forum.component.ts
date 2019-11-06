@@ -64,7 +64,8 @@ export class SubForumComponent implements OnInit {
     }).subscribe(cr => {
       if (cr.response === "success") {
         console.log("Response" + cr.response);
-        this.router.navigate(['sub-forum/' + this.id]);
+        this.onCloseHandled();
+        this.ngOnInit();
       } else {
         console.log("Response" + cr.response);
         this.response = cr.response;

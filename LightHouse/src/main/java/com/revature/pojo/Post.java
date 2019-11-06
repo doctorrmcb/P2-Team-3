@@ -48,7 +48,7 @@ public class Post {
 	 */
 	@ManyToOne
 	@JoinColumn(name = "user_id")
-	private User posted_by;
+	private User postedBy;
 	
 	/**
 	 * Contents of the post
