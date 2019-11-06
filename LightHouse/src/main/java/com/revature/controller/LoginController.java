@@ -18,7 +18,7 @@ import com.revature.service.UserServiceImpl;
 import static com.revature.util.LoggerUtil.*;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = /*"localhost:4200"*/ "*")
 public class LoginController {
 	private UserServiceImpl userService;
 
