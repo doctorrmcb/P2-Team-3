@@ -1,7 +1,18 @@
 #revature-image {
     margin-left: 10%;
-    height: 90%;
-    width: 13%;
+    height: 100%;
+    width: 25%;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
+}
+
+#navbar {
+    height: 80px;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
 }
