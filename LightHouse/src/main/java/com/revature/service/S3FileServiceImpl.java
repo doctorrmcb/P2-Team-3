@@ -33,8 +33,8 @@ public class S3FileServiceImpl implements S3FileService {
 	 * @return boolean
 	 */
 	@Override
-	public boolean uploadFile(S3File file, String category) {
-		return s3FileDAO.uploadFile(file, category);
+	public boolean uploadFile(S3File file) {
+		return s3FileDAO.uploadFile(file);
 	}
 
 	/**
