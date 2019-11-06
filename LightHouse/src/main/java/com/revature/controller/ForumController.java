@@ -122,6 +122,8 @@ public class ForumController {
 		LocalTime postTime = LocalTime.now();
 		//LocalDateTime lastPost = LocalDateTime.of(postDate, postTime);
 		post.setPostID(-1);
+		ForumThread thread = threadService.getThreadByTitle(title);
+		info(thread.toString());
 		post.setThreadID(threadService.getThreadByTitle(title));
 		post.setPosted_by(user);
 		post.setPostDate(postDate);
