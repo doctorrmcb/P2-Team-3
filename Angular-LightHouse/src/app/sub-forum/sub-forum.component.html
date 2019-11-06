@@ -1,6 +1,6 @@
 <h1>{{ id }}</h1>
 <dl class="Threads">
     <dt *ngFor="let thread of threads">
-        <a [routerLink]="['../sub-forum', id, thread.title]">{{ thread.title }}</a>
+        <a [routerLink]="['../', id, thread.title]">{{ thread.title }}</a>
     </dt>
 </dl>
