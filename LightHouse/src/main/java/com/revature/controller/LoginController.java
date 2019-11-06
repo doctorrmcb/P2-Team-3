@@ -42,7 +42,7 @@ public class LoginController {
 	@PostMapping("/login")
 	public ControllerResponse loginPost(@RequestBody User user, ModelMap modelMap, HttpSession sess) {
 		info(user + "");
-		
+		info(org.hibernate.Version.getVersionString());
 		String response = "";
 		ControllerResponse cr = new ControllerResponse();
 		

@@ -58,7 +58,6 @@ public class ThreadDAOImpl implements ThreadDAO {
 	 */
 	@Override
 	public List<ForumThread> getAllThreads() {
-		
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
 		Criteria crit = sess.createCriteria(ForumThread.class);
