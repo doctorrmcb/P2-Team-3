@@ -42,6 +42,9 @@ public class ThreadServiceImpl implements ThreadService {
 		return threadDAO.getThread(threadID);
 	}
 	
+	public ForumThread getThreadByTitle(String title) {
+		return threadDAO.getThreadByTitle(title);
+	}
 	
 	/**
 	 * Gets all threads from the database

@@ -19,7 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.pojo.ControllerResponse;
 import com.revature.pojo.ForumThread;
+import com.revature.pojo.Post;
 import com.revature.pojo.User;
+import com.revature.service.PostServiceImpl;
 import com.revature.service.ThreadServiceImpl;
 import static com.revature.util.LoggerUtil.*;
 
@@ -34,13 +36,20 @@ import static com.revature.util.LoggerUtil.*;
 public class ForumController {
 	
 	private ThreadServiceImpl threadService;
+	private PostServiceImpl postService;
 
 	@Autowired
 	public void setThreadService(ThreadServiceImpl threadService) {
 		this.threadService = threadService;
 	}
 	
-	
+	@Autowired
+	public void setPostService(PostServiceImpl postService) {
+		this.postService = postService;
+	}
+
+
+
 	/**
 	 * Retrieves all threads in a subforum
 	 * @param subforum
@@ -86,4 +95,17 @@ public class ForumController {
 		return cr;
 	}
 
+	/**
+	 * Retrieves all posts in a thread based on thread title
+	 * @param title
+	 * @return list of posts
+	 */
+	@GetMapping("/post/{title}")
+	public List<Post> getPostsByTitle(@PathVariable String title){
+		info("Reached getPostsByTitle of forum controller");
+		ForumThread thread = threadService.getThreadByTitle(title);
+		List<Post> postList = postService.getPostsByThread(thread);
+		info("PostList: " + postList);
+		return postList;
+	}
 }
