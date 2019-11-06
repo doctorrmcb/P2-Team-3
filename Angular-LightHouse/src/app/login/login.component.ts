@@ -32,9 +32,8 @@ export class LoginComponent implements OnInit {
       if (cr.response === "success") {
         console.log("Response" + cr.response);
         sessionStorage.setItem(
-          'token',
-          btoa(this.username + ":" + this.password)
-        );
+          'user', this.username
+        ); 
         this.router.navigate(['home']);
       } else {
         console.log("Response" + cr.response);

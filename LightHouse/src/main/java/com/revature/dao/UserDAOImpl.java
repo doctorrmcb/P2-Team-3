@@ -61,9 +61,6 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public User getUserByUsername(String username) {
 		info("Getting user with username: " + username);
-
-		// sf = SessionFactoryUtil.getSessionFactory();
-
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
 		Criteria crit = sess.createCriteria(User.class).add(Restrictions.eq("username", username));

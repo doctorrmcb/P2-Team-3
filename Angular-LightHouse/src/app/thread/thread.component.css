@@ -1,0 +1,48 @@
+dl {
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.outer-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#title {
+    font-family: 'Futura-PT';
+    font-size: 36pt;
+    font-weight: 700;
+}
+
+#subheader {
+    font-family: 'Futura-PT';
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+.btn {
+    min-width: 30%;
+    background-color: #F26925;
+    border-color: #F26925;
+    color: #FFFFFF;
+    border-radius: 28px;
+    padding-left: 30px; 
+    padding-top: 12px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    font-family: 'Futura-PT';
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 32%;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background-color: #FFFFFF;
+    color: #FCB414;
+    box-shadow: none;
+}
+
+#inner {
+    margin-left: 5%;
+    margin-right: 5%;
+}

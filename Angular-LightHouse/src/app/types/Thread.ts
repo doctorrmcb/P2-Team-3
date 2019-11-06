@@ -2,13 +2,18 @@ import { User } from './User';
 
 export class Thread {
     threadID: number;
-    user: User;
+    postedBy: User;
     title: string;
     contents: string;
-    postDate: Date;
-    postTime: Date;
+    //postDate: Date;
+    //postTime: Date;
     topic: string;
     subforum: string;
-    lastPost: Date;
+    //lastPost: Date;
     isReported: boolean;
+    sticky: boolean;
+
+    postDate: number[];
+    postTime: number[];
+    lastPost: number[];
 }

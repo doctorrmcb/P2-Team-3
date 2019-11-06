@@ -6,9 +6,11 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.revature.pojo.ForumThread;
 import com.revature.pojo.Post;
 import com.revature.util.SessionFactoryUtil;
 
@@ -48,7 +50,17 @@ public class PostDAOImpl implements PostDAO {
 		sess.close();
 		return post;
 	}
-
+	
+	@Override
+	public List<Post> getPostsByThread(ForumThread thread){
+		Session sess = sf.openSession();
+		Transaction tx = sess.beginTransaction();
+		Criteria crit = sess.createCriteria(Post.class).add(Restrictions.eq("threadID", thread));
+		List<Post> postList = crit.list();
+		tx.commit();
+		sess.clear();
+		return postList;
+	}
 	/**
 	 * This method gets all posts from the database
 	 * 

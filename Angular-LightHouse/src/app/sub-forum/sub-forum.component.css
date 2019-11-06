@@ -1,0 +1,47 @@
+.btn {
+    min-width: 30%;
+    background-color: #F26925;
+    border-color: #F26925;
+    color: #FFFFFF;
+    border-radius: 28px;
+    padding-left: 30px; 
+    padding-top: 12px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    font-family: 'Futura-PT';
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 32%;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background-color: #FFFFFF;
+    color: #FCB414;
+    box-shadow: none;
+}
+
+dl {
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.anchor-container {
+    border-bottom: solid;
+    margin: 1%;
+    border-color: #474C55;
+}
+
+a {
+    color: #F26925;
+    font-size: 16pt;
+}
+
+#label {
+    font-family: 'Futura-PT';
+    font-size: 15px;
+}
+
+.inner-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
