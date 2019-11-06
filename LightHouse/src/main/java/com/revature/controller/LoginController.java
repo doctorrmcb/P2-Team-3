@@ -18,7 +18,7 @@ import com.revature.service.UserServiceImpl;
 import static com.revature.util.LoggerUtil.*;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = /*"localhost:4200"*/ "*")
 public class LoginController {
 	private UserServiceImpl userService;
 
@@ -42,7 +42,7 @@ public class LoginController {
 	@PostMapping("/login")
 	public ControllerResponse loginPost(@RequestBody User user, ModelMap modelMap, HttpSession sess) {
 		info(user + "");
-		
+		info(org.hibernate.Version.getVersionString());
 		String response = "";
 		ControllerResponse cr = new ControllerResponse();
 		
@@ -57,7 +57,9 @@ public class LoginController {
 		
 		if (authUser != null) {
 			sess.setAttribute("user", authUser);
+			info("Inside HttpSession of logincontroller" + sess.getAttribute("user"));
 			modelMap.addAttribute("user", authUser);
+			info("Inside modelMap of logincontroller" + modelMap.get("user"));
 			response = "success";
 			cr.setResponse(response);
 			return cr;

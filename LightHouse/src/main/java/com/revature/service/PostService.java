@@ -2,6 +2,7 @@ package com.revature.service;
 
 import java.util.List;
 
+import com.revature.pojo.ForumThread;
 import com.revature.pojo.Post;
 
 /**
@@ -27,6 +28,14 @@ public interface PostService {
 	 * @return List of all posts
 	 */
 	public List<Post> getAllPosts();
+	
+	/**
+	 * Gets all posts belonging to a thread
+	 * 
+	 * @param thread
+	 * @return list of posts
+	 */
+	public List<Post> getPostsByThread(ForumThread thread);
 
 	
 	/**

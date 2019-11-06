@@ -2,6 +2,7 @@ package com.revature.dao;
 
 import java.util.List;
 
+import com.revature.pojo.ForumThread;
 import com.revature.pojo.Post;
 
 /**
@@ -22,12 +23,21 @@ public interface PostDAO {
 	public Post getPost(int postID);
 
 	
+	/**
+	 * Gets all posts belonging to a thread
+	 * 
+	 * @param title of thread
+	 * @return list of posts
+	 */
+	public List<Post> getPostsByThread(ForumThread thread);
+	
 	
 	/**
 	 * Gets all posts from the database
 	 * 
 	 * @return List of all posts
 	 */
+	
 	public List<Post> getAllPosts();
 
 	

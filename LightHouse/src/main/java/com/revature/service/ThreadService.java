@@ -20,8 +20,14 @@ public interface ThreadService {
 	 * @return Thread
 	 */
 	public ForumThread getThread(int threadID);
-
 	
+	/**
+	 * Retrieves a thread from the database based on title
+	 * @param title
+	 * @return Thread
+	 */
+	public ForumThread getThreadByTitle(String title);
+
 	
 	/**
 	 * Gets all threads from the database

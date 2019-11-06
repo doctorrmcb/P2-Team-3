@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.revature.dao.PostDAO;
+import com.revature.pojo.ForumThread;
 import com.revature.pojo.Post;
 
 /**
@@ -15,7 +16,7 @@ import com.revature.pojo.Post;
  *
  */
 @Component
-public class PostServiceImpl {
+public class PostServiceImpl implements PostService{
 	
 	private static PostDAO postDAO;
 	
@@ -44,6 +45,16 @@ public class PostServiceImpl {
 	 */
 	public List<Post> getAllPosts(){
 		return postDAO.getAllPosts();
+	}
+	
+	/**
+	 * Gets all posts belonging to a thread
+	 * 
+	 * @param thread
+	 * @return list of posts
+	 */
+	public List<Post> getPostsByThread(ForumThread thread){
+		return postDAO.getPostsByThread(thread);
 	}
 
 	
