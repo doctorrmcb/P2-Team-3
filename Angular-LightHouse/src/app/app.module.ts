@@ -21,7 +21,8 @@ import { HttpRequestInterceptor } from './types/HttpRequestInterceptor';
 import { ResourcesPageComponent } from './resources-page/resources-page.component';	
 import { QuizComponent } from './quiz/quiz.component';	
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
-import { CategoryComponent } from './category/category.component';	
+import { CategoryComponent } from './category/category.component';
+import { TakeQuizComponent } from './take-quiz/take-quiz.component';
 
 @NgModule({	
   declarations: [	
@@ -38,7 +39,9 @@ import { CategoryComponent } from './category/category.component';
     SubForumComponent,	
     ResourcesPageComponent,	
     QuizComponent,	
-    LeaderboardComponent, CategoryComponent	
+    LeaderboardComponent, 
+    CategoryComponent,
+    TakeQuizComponent	
   ],	
   imports: [	
     routing,	
