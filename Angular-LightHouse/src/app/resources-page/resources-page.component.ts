@@ -109,9 +109,15 @@ export class ResourcesPageComponent {
     });
   }
 
-  downloadFile(S3File): void {
+  downloadFile(file): void {
     let url = 'http://localhost:8080/LightHouse/download-files';
-    let result = this.http.get<S3Files>(url, { 
+
+    let keyName = file.name;
+    let filePath = this.path + file.name;
+    let return0 = "!"+keyName+"!" + filePath+"!";
+
+    let result = this.http.post<ControllerResponse>(url, {
+      return0 
     }).subscribe(cr => {
       //this.filesReturned.files = cr;
       console.log(cr);

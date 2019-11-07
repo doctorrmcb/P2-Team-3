@@ -59,7 +59,7 @@ public class S3FileController {
 		String keyName0 = infoString[1];
 		String filePath0 = infoString[2];
 		String category0 = infoString[3];
-		info(infoString[2]);
+		//info(infoString[2]);
 		S3File s3File = new S3File("lighthouse18882819", keyName0, filePath0, category0);
 		
 		
@@ -91,9 +91,18 @@ public class S3FileController {
 	 * @author ErikHaklar
 	 */
 	@GetMapping("/download-file/{}")
-	public ControllerResponse downloadFile(/*@RequestBody S3File file*/){
+	public ControllerResponse downloadFile(@RequestBody String return0){
+		
+		String[] infoString = return0.split("[!]");
+		
+		String keyName0 = infoString[1];
+		String filePath0 = infoString[2];
+		
 		info("Reached downloadFile in S3FileController");
 		S3File file = new S3File();
+		file.setKeyName(keyName0);
+		file.setFilePath(filePath0);
+		
 		S3Object fileObject;
 		fileObject = s3FileServiceImpl.sendFile(file);
 		
