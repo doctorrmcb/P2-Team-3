@@ -3,6 +3,7 @@ import {Injectable} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Category } from '../types/Category';
+import { Question } from '../types/Question';
 import { ControllerResponse } from '../types/ControllerResponse';
 @Component({
   selector: 'app-take-quiz',
@@ -16,6 +17,7 @@ export class TakeQuizComponent implements OnInit {
   //options =['Java8', 'Html', 'CSS', 'PostgreSQL', 'JavaScript']
   selected: string;
   categories: Category[];
+  questions: Question[];
   
   constructor(
     private route: ActivatedRoute,
@@ -33,6 +35,11 @@ export class TakeQuizComponent implements OnInit {
       });
     }
 
-
+    startQuiz(category) {
+      let url = 'http://localhost:8080/LightHouse/quiz/' + this.selected;
+      let result = this.http.get<Question[]>(url, {}).subscribe(cr =>{
+        this.questions = cr;
+      });
+    }
   
 }
