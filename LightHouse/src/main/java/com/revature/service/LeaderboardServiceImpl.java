@@ -28,8 +28,6 @@ public class LeaderboardServiceImpl implements LeaderboardService {
 			leadDAO.createLeaderboard(lead);
 			return true;
 		}
-		
-		return false;
 	}
 
 	@Override
