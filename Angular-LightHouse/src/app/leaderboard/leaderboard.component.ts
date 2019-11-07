@@ -10,8 +10,8 @@ import { Leaderboard } from '../types/Leaderboard';
 })
 export class LeaderboardComponent implements OnInit {
 
-  id: string;
   lboard: Leaderboard[];
+  options = ['Java', 'SQL', 'HTML', 'CSS', 'JavaScript'];
   
   constructor(private route: ActivatedRoute,
     private router: Router,
@@ -19,7 +19,11 @@ export class LeaderboardComponent implements OnInit {
 
   ngOnInit() {
 
-    this.id = this.id = this.route.snapshot.paramMap.get('id');
+    let url = 'http://localhost:8080/LightHouse/leaderboard';
+    let result = this.http.get<Leaderboard[]>(url, {}).subscribe(tr => {
+      this.lboard = tr;
+      this.lboard.sort((a, b) => (a.quizScore < b.quizScore)? 1: (a.quizScore === b.quizScore) ? ((a.timeTaken < b.timeTaken)?1:-1): -1);
+    })
   }
 
 }

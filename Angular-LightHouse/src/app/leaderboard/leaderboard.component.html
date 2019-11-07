@@ -1,9 +1,13 @@
 <div class="container">
     <br>
     <div class="header-container">
-        <h1>Leaderboard for: {{id}}</h1>
+        <h1>Leaderboard for: {{selected}}</h1>
     </div>
-
+    <select #selection [(ngModel)]="selected" <!--(change)="search(selection.value)" -->>
+            <option *ngFor="let option of options" [value]="option">
+                {{ option }}
+            </option>
+        </select>
     <div class="inner-container">
         <table id="myTable" class="table table-striped mb-0">
             <thead>
@@ -14,8 +18,8 @@
                     <th scope="col">Time Taken</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr *ngFor = "let board of lboard, let i = index">
+            <tbody *ngFor = "let board of lboard, let i = index">
+                <tr *ngIf = "board.cat.category === selected">
                     <td> {{i + 1}} </td>
                     <td>{{board.username}}</td>
                     <td>{{board.quizScore}}</td>
