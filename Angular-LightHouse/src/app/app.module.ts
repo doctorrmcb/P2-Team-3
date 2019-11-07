@@ -25,6 +25,7 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { CategoryComponent } from './category/category.component';
 import { TakeQuizComponent } from './take-quiz/take-quiz.component';
 import { DeleteQuestionComponent } from './delete-question/delete-question.component';
+import { ManageQuestionComponent } from './manage-question/manage-question.component';
 
 @NgModule({	
   declarations: [	
@@ -44,8 +45,13 @@ import { DeleteQuestionComponent } from './delete-question/delete-question.compo
     LeaderboardComponent, 
     CategoryComponent,
     TakeQuizComponent,
+<<<<<<< Updated upstream
     QuizManagementComponent,	
     DeleteQuestionComponent	
+=======
+    DeleteQuestionComponent,
+    ManageQuestionComponent	
+>>>>>>> Stashed changes
   ],	
   imports: [	
     routing,	
