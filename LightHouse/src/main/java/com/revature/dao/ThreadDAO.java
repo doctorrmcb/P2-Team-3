@@ -3,6 +3,7 @@ package com.revature.dao;
 import java.util.List;
 
 import com.revature.pojo.ForumThread;
+import com.revature.pojo.User;
 
 /**
  * This is the interface for the ThreadDAOImpl Class
@@ -37,6 +38,14 @@ public interface ThreadDAO {
 	 */
 	
 	public List<ForumThread> getAllThreads();
+	
+	/**
+	 * Retrieves all threads a user has created
+	 * 
+	 * @param user
+	 * @return list of threads
+	 */
+	public List<ForumThread> getThreadsByUser(User user);
 	
 	/**
 	 * Retrieves all threads based on subforum

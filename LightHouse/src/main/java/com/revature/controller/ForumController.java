@@ -75,8 +75,8 @@ public class ForumController {
 		
 		ControllerResponse cr = new ControllerResponse();
 		String response = "";
-		
-		if (threadService.getThreadByTitle(thread.getTitle()) == null) {
+		info("Creating thread with title: " + thread.getTitle());
+		if (threadService.getThreadByTitle(thread.getTitle()) != null) {
 			response = "A thread with this title already exists";
 			cr.setResponse(response);
 			return cr;
