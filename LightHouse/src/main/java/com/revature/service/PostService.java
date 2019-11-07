@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.revature.pojo.ForumThread;
 import com.revature.pojo.Post;
+import com.revature.pojo.User;
 
 /**
  * Interface for the PostService object
@@ -30,11 +31,21 @@ public interface PostService {
 	public List<Post> getAllPosts();
 	
 	/**
+	 * Gets all posts belonging to a user
+	 * 
+	 * @param user who wrote the posts
+	 * @return list of posts
+	 */
+	public List<Post> getPostsByUser(User user);
+	
+	/**
 	 * Gets all posts belonging to a thread
 	 * 
 	 * @param thread
 	 * @return list of posts
 	 */
+	
+	
 	public List<Post> getPostsByThread(ForumThread thread);
 
 	
