@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import com.revature.dao.PostDAO;
 import com.revature.pojo.ForumThread;
 import com.revature.pojo.Post;
+import com.revature.pojo.User;
 
 /**
  * The implementation of Post Service
@@ -45,6 +46,16 @@ public class PostServiceImpl implements PostService{
 	 */
 	public List<Post> getAllPosts(){
 		return postDAO.getAllPosts();
+	}
+	
+	/**
+	 * Gets all posts belonging to a user
+	 * 
+	 * @param user who wrote the posts
+	 * @return list of posts
+	 */
+	public List<Post> getPostsByUser(User user){
+		return postDAO.getPostsByUser(user);
 	}
 	
 	/**

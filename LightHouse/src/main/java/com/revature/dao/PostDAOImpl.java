@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 
 import com.revature.pojo.ForumThread;
 import com.revature.pojo.Post;
+import com.revature.pojo.User;
 import com.revature.util.SessionFactoryUtil;
 
 import static com.revature.util.LoggerUtil.*;
@@ -51,6 +52,30 @@ public class PostDAOImpl implements PostDAO {
 		return post;
 	}
 	
+	/**
+	 * Gets all posts belonging to a user
+	 * 
+	 * @param user who wrote the posts
+	 * @return list of posts
+	 */
+	public List<Post> getPostsByUser(User user){
+		
+		Session sess = sf.openSession();
+		Transaction tx = sess.beginTransaction();
+		Criteria crit = sess.createCriteria(Post.class).add(Restrictions.eq("userID", user));
+		List<Post> postList = crit.list();
+		tx.commit();
+		sess.clear();
+		return postList;
+		
+	}
+	
+	/**
+	 * Gets all posts belonging to a thread
+	 * 
+	 * @param the thread
+	 * @return list of posts
+	 */
 	@Override
 	public List<Post> getPostsByThread(ForumThread thread){
 		Session sess = sf.openSession();

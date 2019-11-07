@@ -21,14 +21,10 @@ export class SubForumComponent implements OnInit {
   username: string;
   display = 'none';
   options = ['Java', 'SQL', 'HTML', 'CSS', 'JavaScript'];
-  
 
   constructor(private route: ActivatedRoute,
     private router: Router,
     private http: HttpClient
-
-
-
   ) { }
 
   ngOnInit() {
@@ -41,9 +37,10 @@ export class SubForumComponent implements OnInit {
         //<a href="{{tr[i]."></a> 
       } */
       this.threads = tr;
-      console.log(tr);
-      console.log(this.threads);
+      //console.log(tr);
+      //console.log(this.threads);
     });
+
   }
 
   createNewThread() {
