@@ -11,7 +11,11 @@ import { PostComponent } from './post/post.component';
 import { SubForumComponent } from './sub-forum/sub-forum.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { TakeQuizComponent } from './take-quiz/take-quiz.component';
+<<<<<<< HEAD
 import { DeleteQuestionComponent } from './delete-question/delete-question.component';
+=======
+import { ResourcesPageComponent } from './resources-page/resources-page.component';
+>>>>>>> d00c89d3a4000bfde3f41d77c14ce812fd929143
 
 const appRoutes: Routes = [
   {path: '', component: LoginComponent},
@@ -24,7 +28,11 @@ const appRoutes: Routes = [
   {path: 'sub-forum/:id/:title', component: ThreadComponent},
   {path: 'leaderboard', component: LeaderboardComponent},
   {path: 'take-quiz', component: TakeQuizComponent},
+<<<<<<< HEAD
   {path: 'delete-question', component: DeleteQuestionComponent}
+=======
+  {path: 'resources', component: ResourcesPageComponent}
+>>>>>>> d00c89d3a4000bfde3f41d77c14ce812fd929143
 ]
 
 
