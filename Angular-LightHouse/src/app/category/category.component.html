@@ -2,7 +2,7 @@
     <p>
         <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
             [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-            Create A New Category
+            CREATE A NEW CATEGORY
         </button>
     </p>
     <div id="collapseExample" [ngbCollapse]="!isCollapsed">
@@ -13,7 +13,7 @@
                 Category Name: <input type="text" name="catName" [(ngModel)]="name" placeholder="Place input here...">
                 <br>
                 <br>
-                <button name="createCat" id="createCat" type="button" class="btn" (click)="onCreateCat()">Create
+                <button name="createCat" id="createCat" type="button" class="btn" (click)="onCreateCat()">CREATE
                 </button>
 
             </div>

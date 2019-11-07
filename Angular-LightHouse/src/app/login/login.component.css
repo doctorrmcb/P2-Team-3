@@ -78,3 +78,11 @@ body {
     min-width: 50vh;
     background-color: rgba(255, 255, 255, .6);
 }
+
+#register {
+    margin-left: 5%;
+}
+
+#login {
+    margin-left: -2.5%;
+}
