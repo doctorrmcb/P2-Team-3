@@ -9,15 +9,13 @@
     <p></p>
     <p></p>
     <nav class="navbar navbar-light bg-light justify-content-between">
-        <a class="navbar-brand">Take a Look on the Categories of Quizzes Available!</a>
+        <a class="navbar-brand">Take a Look of the Categories of Quizzes Available!</a>
 
         <div>
             <div>Select Category</div>
             <select #selection [(ngModel)]="selected" (change)="search(selection.value)">
-                <option *ngFor="let option of options" 
-                        [value]="option"> 
-                  {{ option }}
-                </option>
+                <option *ngFor="let category of categories" 
+                        value="{{category.category}}">{{category.category}}</option>
            </select>
 
         </div>
