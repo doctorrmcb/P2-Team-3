@@ -21,13 +21,50 @@
     <br>
     <br>
 
-    <!--Accordion wrapper-->
-    <mdb-accordion [multiple]="false" aria-multiselectable="true">
-        <mdb-accordion-item [collapsed]="true" *ngFor="let item of itemsList">
-            <mdb-accordion-item-head> {{ item.title }} </mdb-accordion-item-head>
-            <mdb-accordion-item-body> {{ item.description }} </mdb-accordion-item-body>
-        </mdb-accordion-item>
-    </mdb-accordion>
-    <!--/.Accordion wrapper-->
+    <div class="accordion" id="accordionExample">
+        <div class="card-header" id="headingOne">
+            <p>
+                <button type="button" class="btn btn-primary btn-lg btn-block" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample1">
+             Update Question
+            </button>
+            </p>
+            <div id="collapseExample1" [ngbCollapse]="isCollapsed">
+                <div class="card">
+                    <div class="card-body">
+                        You can collapse this card by clicking Toggle
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-header" id="headingTwo">
+            <p>
+                <button type="button" class="btn btn-primary btn-lg btn-block" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample2">
+             Update Correct Answer
+            </button>
+            </p>
+            <div id="collapseExample2" [ngbCollapse]="isCollapsed">
+                <div class="card">
+                    <div class="card-body">
+                        You can collapse this card by clicking Toggle
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button type="button" class="btn btn-primary btn-lg btn-block" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample3">
+             Update Explanation
+            </button>
+        </p>
+        <div id="collapseExample3" [ngbCollapse]="isCollapsed">
+            <div class="card">
+                <div class="card-body">
+                    You can collapse this card by clicking Toggle
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </div>
