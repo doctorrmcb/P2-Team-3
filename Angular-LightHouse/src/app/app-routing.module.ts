@@ -32,7 +32,8 @@ const appRoutes: Routes = [
   {path: 'quiz', component: TakeQuizComponent},
   {path: 'resources', component: ResourcesPageComponent},
   {path: 'delete-question', component: DeleteQuestionComponent},
-  {path: 'create-question', component: CreateQuestionComponent}
+  {path: 'create-question', component: CreateQuestionComponent},
+  {path: 'manage-question', component: ManageQuestionComponent}
 ]
 
 
