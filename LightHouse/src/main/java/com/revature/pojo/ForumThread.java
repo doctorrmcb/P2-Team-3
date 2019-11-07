@@ -36,7 +36,7 @@ public class ForumThread {
 	
 	@Id
 	@SequenceGenerator(name = "THREADID_SEQ", sequenceName = "thread_id_seq")
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "THREADID_SEQ")
+	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "THREADID_SEQ")
 	@Column(name = "THREAD_ID")
 	private int threadID;
 	

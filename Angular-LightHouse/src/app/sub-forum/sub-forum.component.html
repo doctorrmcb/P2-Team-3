@@ -1,12 +1,36 @@
 <div class="container">
     <br>
-    <h1>{{ id }}</h1>
+    <div class="header-container">
+        <h1>{{ id }}</h1>
+    </div>
+
     <div class="inner-container">
-        <span id="label">Threads</span>
+        <header>
+            <div id="label">Title</div>
+            <div id="date">Latest Post</div>
+        </header>
+        <br>
         <dl class="Threads">
             <dt *ngFor="let thread of threads">
                 <div class="anchor-container">
                     <a [routerLink]="['../', id, thread.title]">{{ thread.title }}</a>
+                    <div *ngIf="thread.lastPost[4].toString().length < 2" style="display:none">
+                        {{thread.lastPost[4] = '0' + thread.lastPost[4]}}</div>
+                    <div *ngIf="thread.lastPost[3] > 12" style="display:none">
+                        {{thread.lastPost[3] = thread.lastPost[3] - 12}}
+                        {{thread.lastPost[5] = "PM"}}
+                    </div>
+                    <div *ngIf="thread.lastPost[3] === 12" style="display:none">
+                        {{thread.lastPost[5] = "PM"}}
+                    </div>
+                    <div *ngIf="thread.lastPost[3] < 12" style="display:none">
+                        {{thread.lastPost[5] = "AM"}}
+                    </div>
+
+                    <div id="latest-post">
+                        Latest post: {{thread.lastPost[1]}}/{{thread.lastPost[2]}}/{{thread.lastPost[0]}}
+                        {{thread.lastPost[3]}}:{{thread.lastPost[4]}} {{thread.lastPost[5]}}
+                    </div>
                 </div>
             </dt>
         </dl>
