@@ -30,7 +30,7 @@ export class ViewQuestionComponent implements OnInit {
   }
 
   getCategories(){
-    let url = 'http://localhost:8080/LightHouse/view-question/';
+    let url = 'http://localhost:8080/LightHouse/take-quiz/';
     let result = this.http.get<Category[]>(url, {}).subscribe(cr =>{
       this.categories = cr;
     });
