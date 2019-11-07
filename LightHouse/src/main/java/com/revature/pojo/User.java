@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope(value = "session")
 @Entity
-@Table(name = "lighthouse.users")
+@Table(name = "users")
 public class User {
 
 	@Id
