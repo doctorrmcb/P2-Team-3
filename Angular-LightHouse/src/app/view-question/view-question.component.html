@@ -1,1 +1,58 @@
-<p>view-question works!</p>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-lg" [routerLink]="['../take-quiz']">Take Quiz</button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-lg" [routerLink]="['../manage-question']">Manage Question</button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-lg" [routerLink]="['../leaderboard']">View Leaderboard</button>
+            </div>
+        </div>
+
+    </ol>
+</nav>
+<div class="paddingClass">
+
+
+    <br>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">Take a Look of the Categories of Questions Available!</a>
+
+        <div>
+            <div>Select Category</div>
+            <select #selection [(ngModel)]="selected" (change)="search(selection.value)">
+                <option *ngFor="let category of categories" value="{{category.category}}">{{category.category}}</option>
+            </select>
+        </div>
+    </nav>
+    <br>
+
+    <div class="header-container">
+        <h1>List of questions for: {{category.category}}</h1>
+    </div>
+
+    <div class="inner-container">
+        <table id="myTable" class="table table-striped mb-0">
+            <thead>
+                <tr>
+                    <th scope="col">Question</th>
+                    <th scope="col">Correct Answer</th>
+                    <th scope="col">Explanation</th>
+                    <th scope="col">Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{question.question}} </td>
+                    <td>{{correctAnswer.question}}</td>
+                    <td>{{explanation.question}}</td>
+                    <td>{{rating.question}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
