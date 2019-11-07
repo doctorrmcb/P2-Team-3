@@ -52,15 +52,30 @@ export class ThreadComponent implements OnInit {
     for (let post of posts){
       let orderBy = "";
       orderBy += post.postDate[0];
-      orderBy += post.postDate[1];
-      orderBy += post.postDate[2];
-      orderBy += post.postTime[0];
+      if (post.postDate[1].toString().length < 2){
+        orderBy += '0' + post.postDate[1];
+      } else{
+        orderBy += post.postDate[1];
+      }
+      if (post.postDate[2].toString().length < 2){
+        orderBy += '0' + post.postDate[2];
+      } else{
+        orderBy += post.postDate[2];
+      }
+
+      if (post.postTime[0].toString().length < 2){
+        orderBy += '0' + post.postTime[0];
+      } else{
+        orderBy += post.postTime[0];
+      }
+      
       if (post.postTime[1].toString().length < 2){
         orderBy += '0' + post.postTime[1];
       } else{
         orderBy += post.postTime[1];
       }
       post.orderBy = Number(orderBy);
+      console.log(post.orderBy);
     }
     return posts;
   }

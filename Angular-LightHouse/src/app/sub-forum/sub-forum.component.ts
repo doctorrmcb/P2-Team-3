@@ -47,14 +47,31 @@ export class SubForumComponent implements OnInit {
     for (let thread of threads){
       let orderBy = "";
       orderBy += thread.lastPost[0];
-      orderBy += thread.lastPost[1];
-      orderBy += thread.lastPost[2];
-      orderBy += thread.lastPost[3];
+
+      if (thread.lastPost[1].toString().length < 2){
+        orderBy += '0' + thread.lastPost[1];
+      } else{
+        orderBy += thread.lastPost[1];
+      }
+
+      if (thread.lastPost[2].toString().length < 2){
+        orderBy += '0' + thread.lastPost[2];
+      } else{
+        orderBy += thread.lastPost[2];
+      }
+
+      if (thread.lastPost[3].toString().length < 2){
+        orderBy += '0' + thread.lastPost[3];
+      } else{
+        orderBy += thread.lastPost[3];
+      }
+      
       if (thread.lastPost[4].toString().length < 2){
         orderBy += '0' + thread.lastPost[4];
       } else{
         orderBy += thread.lastPost[4];
       }
+      
       thread.orderBy = Number(orderBy);
     }
     return threads;
