@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -45,8 +46,8 @@ public class QuizController {
 
 	}
 
-	@GetMapping("/quiz")
-	public List<Question> takeQuiz(@RequestBody String catName, HttpSession sess) {
+	@GetMapping("/quiz/{catName}")
+	public List<Question> takeQuiz(@PathVariable String catName, HttpSession sess) {
 
 		List<Question> qList = new ArrayList<Question>();
 		List<Question> newQList = new ArrayList<Question>();
