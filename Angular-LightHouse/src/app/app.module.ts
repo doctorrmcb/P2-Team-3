@@ -27,6 +27,7 @@ import { TakeQuizComponent } from './take-quiz/take-quiz.component';
 import { DeleteQuestionComponent } from './delete-question/delete-question.component';
 import { ManageQuestionComponent } from './manage-question/manage-question.component';
 import { CreateQuestionComponent } from './create-question/create-question.component';
+import { UpdateQuestionComponent } from './update-question/update-question.component';
 
 @NgModule({	
   declarations: [	
@@ -49,7 +50,8 @@ import { CreateQuestionComponent } from './create-question/create-question.compo
     QuizManagementComponent,	
     DeleteQuestionComponent,
     ManageQuestionComponent,
-    CreateQuestionComponent	
+    CreateQuestionComponent,
+    UpdateQuestionComponent	
   ],	
   imports: [	
     routing,	
