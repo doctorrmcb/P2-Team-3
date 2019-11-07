@@ -23,6 +23,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { CategoryComponent } from './category/category.component';
 import { TakeQuizComponent } from './take-quiz/take-quiz.component';
+import { DeleteQuestionComponent } from './delete-question/delete-question.component';
 
 @NgModule({	
   declarations: [	
@@ -41,7 +42,8 @@ import { TakeQuizComponent } from './take-quiz/take-quiz.component';
     QuizComponent,	
     LeaderboardComponent, 
     CategoryComponent,
-    TakeQuizComponent	
+    TakeQuizComponent,
+    DeleteQuestionComponent	
   ],	
   imports: [	
     routing,	
