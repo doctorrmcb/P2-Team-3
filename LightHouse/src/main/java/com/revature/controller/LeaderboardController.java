@@ -16,7 +16,7 @@ import com.revature.service.LeaderboardServiceImpl;
  *
  */
 @RestController
-@CrossOrigin(origins =  "*")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true" /*"*"*/)
 public class LeaderboardController {
 	
 	private LeaderboardServiceImpl lboardService;
