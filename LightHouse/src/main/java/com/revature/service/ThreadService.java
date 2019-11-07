@@ -3,6 +3,7 @@ package com.revature.service;
 import java.util.List;
 
 import com.revature.pojo.ForumThread;
+import com.revature.pojo.User;
 
 /**
  * Interface for the ThreadService object
@@ -35,6 +36,16 @@ public interface ThreadService {
 	 * @return List of all threads
 	 */
 	public List<ForumThread> getAllThreads();
+	
+
+	/**
+	 * Retrieves all threads a user has created
+	 * 
+	 * @param user
+	 * @return list of threads
+	 */
+	public List<ForumThread> getThreadsByUser(User user);
+	
 	
 	/**
 	 * Retrieves all threads based on subforum

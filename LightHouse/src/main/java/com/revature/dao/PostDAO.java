@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.revature.pojo.ForumThread;
 import com.revature.pojo.Post;
+import com.revature.pojo.User;
 
 /**
  * This is the interface for PostDAOImpl
@@ -26,10 +27,18 @@ public interface PostDAO {
 	/**
 	 * Gets all posts belonging to a thread
 	 * 
-	 * @param title of thread
+	 * @param the thread
 	 * @return list of posts
 	 */
 	public List<Post> getPostsByThread(ForumThread thread);
+	
+	/**
+	 * Gets all posts belonging to a user
+	 * 
+	 * @param user who wrote the posts
+	 * @return list of posts
+	 */
+	public List<Post> getPostsByUser(User user);
 	
 	
 	/**
