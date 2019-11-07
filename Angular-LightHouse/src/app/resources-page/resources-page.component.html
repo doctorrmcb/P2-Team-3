@@ -29,11 +29,11 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let resource of resources">
+  <tr *ngFor="let fResource of filteredResources">
     <td>
-      {{ resource.name }}
+      {{ fRresource.name }}
     </td>
-    <td><a href=resource.link>{{ resource.link}} </a></td>
+    <td><a href=resource.link>{{ fResource.link}} </a></td>
     <td></td>
     <td> <span style="font-size:150%;color:yellow;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td>
   </tr>
