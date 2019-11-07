@@ -1,5 +1,9 @@
 package com.revature.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,27 +17,50 @@ import com.revature.pojo.ControllerResponse;
 import com.revature.pojo.Question;
 import com.revature.service.CategoryServiceImpl;
 import com.revature.service.QuestionServiceImpl;
+import static com.revature.util.LoggerUtil.*;
 
 @RestController
 @CrossOrigin("*")
 public class QuizController {
-	
+
 	private QuestionServiceImpl qService;
-	
+
 	private CategoryServiceImpl catService;
-	
+
 	@Autowired
 	public void setQuestionServiceImpl(QuestionServiceImpl qService) {
 		this.qService = qService;
 	}
-	
+
 	@Autowired
 	public void setCategoryServiceImpl(CategoryServiceImpl catService) {
 		this.catService = catService;
 	}
+
+	public static int generateRandomIntIntRange(int min, int max) {
+
+		Random r = new Random();
+
+		return r.nextInt((max - min) + 1) + min;
+
+	}
+
 	@GetMapping("/quiz")
-	public ControllerResponse takeQuiz(@RequestBody Category cat, Question q, HttpSession sess) {
-	
-	return cr;
+	public List<Question> takeQuiz(@RequestBody String catName, HttpSession sess) {
+
+		List<Question> qList = new ArrayList<Question>();
+		List<Question> newQList = new ArrayList<Question>();
+		int rando;
+		qList = qService.getAllQuestionsbyCategory(catName);
+		if (qList == null) {
+			error("The list is empty!");
+		} else {
+
+			for (int count = 0; count < 10; count++) {
+				rando = generateRandomIntIntRange(0, (qList.size() - 1));
+				newQList.add(qList.get(rando));
+			}
+		}
+		return newQList;
 	}
 }

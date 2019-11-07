@@ -33,18 +33,18 @@ body {
     box-shadow: none;
 }
 
-#quiz{
-    float:left;
-    width: 30%;
+/* #quiz{
+    
+    
 }
 #resources{
-    float:left;
-    width: 30%;
+    
+    
 }
 #forum{
-    float:left;
-    width: 30%;
-}
+    
+    
+} */
 
 .title {
     text-align: center;
@@ -62,7 +62,7 @@ body {
     font-family: 'Futura-PT';
     font-size: 15px;
     font-weight: 700;
-    width: 80%;
+    width: 100%;
     position: relative; 
     
 }
@@ -74,9 +74,9 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 60%;
     height: 80%;
-    
+    margin-top: 2%;
 }
 
 .form {
@@ -87,4 +87,8 @@ body {
     padding-right: 5vh;
     min-width: 50vh;
     background-color: rgba(255, 255, 255, .6);
+}
+
+h2 {
+    margin-top: 7%;
 }

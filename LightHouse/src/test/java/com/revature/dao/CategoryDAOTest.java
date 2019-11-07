@@ -62,7 +62,7 @@ public class CategoryDAOTest {
 	@Test
 	public void testPassCreateCategory() {
 		info("testPassCreateCategory running...");
-		assertTrue(category.createCategory("MySQL AOP Basics"));
+		assertTrue(category.createCategory("Java"));
 	}
 
 	/**

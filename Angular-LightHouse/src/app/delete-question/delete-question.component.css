@@ -1,11 +1,13 @@
-.my-custom-scrollbar {
-    position: relative;
-    height: 200px;
-    overflow: auto;
+.btn-primary {
+    background-color: #F26925;
+    border-color: #F26925;
+    color: #FFFFFF;
 }
 
-.table-wrapper-scroll-y {
-    display: block;
+.btn-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .breadcrumb {
@@ -13,8 +15,13 @@
     justify-content: center;
 }
 
-.paddingClass {
-    padding: 20px;
+.mytable {
+    position: absolute;
+    height: 200px;
+    width: 50%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .paddingClass {

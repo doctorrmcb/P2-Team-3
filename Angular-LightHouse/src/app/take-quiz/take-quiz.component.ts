@@ -3,7 +3,7 @@ import {Injectable} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Category } from '../types/Category';
-
+import { ControllerResponse } from '../types/ControllerResponse';
 @Component({
   selector: 'app-take-quiz',
   templateUrl: './take-quiz.component.html',
@@ -13,9 +13,9 @@ import { Category } from '../types/Category';
 @Injectable()
 export class TakeQuizComponent implements OnInit {
 
-  options =['Java8', 'Html', 'CSS', 'PostgreSQL', 'JavaScript']
+  //options =['Java8', 'Html', 'CSS', 'PostgreSQL', 'JavaScript']
   selected: string;
-  category: Category[];
+  categories: Category[];
   
   constructor(
     private route: ActivatedRoute,
@@ -23,12 +23,16 @@ export class TakeQuizComponent implements OnInit {
     private http: HttpClient) { }
 
     ngOnInit() {
+      this.getCategories();
+    }
+
+    getCategories(){
       let url = 'http://localhost:8080/LightHouse/take-quiz/';
-      let result = this.http.get<Category[]>(url, {}).subscribe(tr => {
-        this.category = tr;
-        console.log(tr);
-        console.log(this.category);
+      let result = this.http.get<Category[]>(url, {}).subscribe(cr =>{
+        this.categories = cr;
       });
     }
+
+
   
 }

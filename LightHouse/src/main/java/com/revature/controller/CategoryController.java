@@ -21,6 +21,7 @@ import com.revature.service.CategoryServiceImpl;
 import static com.revature.util.LoggerUtil.*;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 @RestController
 @CrossOrigin(origins = "*")
@@ -59,11 +60,10 @@ public class CategoryController {
 	 * @return
 	 */
 	@GetMapping("/take-quiz")
-	public ResponseEntity<List<Category>>  getAllCategory(){
-		info("Reached read all the categories method...");
-		List<Category> catList = catService.getAllCategory(); 
-		info("category list: " + catList);
-		return new ResponseEntity<List<Category>>(catList, HttpStatus.OK);
+	public List<Category> getCategories(){
+		List<Category> catList = new ArrayList<Category>();
+		catList = catService.getAllCategory();
+		return catList;
 	}
 	
 
