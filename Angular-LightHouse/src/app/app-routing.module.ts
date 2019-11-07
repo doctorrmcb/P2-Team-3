@@ -9,6 +9,7 @@ import { GeneralForumInnerComponent } from './general-forum-inner/general-forum-
 import { ThreadComponent } from './thread/thread.component';
 import { PostComponent } from './post/post.component';
 import { SubForumComponent } from './sub-forum/sub-forum.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 const appRoutes: Routes = [
   {path: '', component: LoginComponent},
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
   {path: 'general-forum-inner', component: GeneralForumInnerComponent},
   {path: 'post', component: PostComponent},
   {path: 'sub-forum/:id', component: SubForumComponent},
-  {path: 'sub-forum/:id/:title', component: ThreadComponent}
+  {path: 'sub-forum/:id/:title', component: ThreadComponent},
+  {path: 'leaderboard', component: LeaderboardComponent}
 ]
 
 
