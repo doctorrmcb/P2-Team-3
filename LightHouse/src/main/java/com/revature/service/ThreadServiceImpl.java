@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 
 import com.revature.dao.ThreadDAO;
 import com.revature.pojo.ForumThread;
+import com.revature.pojo.User;
 
 /**
  * Implementation of ThreadService
@@ -42,6 +43,12 @@ public class ThreadServiceImpl implements ThreadService {
 		return threadDAO.getThread(threadID);
 	}
 	
+	/**
+	 * Retrieves a thread from the database based on title
+	 * 
+	 * @param title of the thread
+	 * @return Thread
+	 */
 	public ForumThread getThreadByTitle(String title) {
 		return threadDAO.getThreadByTitle(title);
 	}
@@ -53,6 +60,16 @@ public class ThreadServiceImpl implements ThreadService {
 	 */
 	public List<ForumThread> getAllThreads(){
 		return threadDAO.getAllThreads();
+	}
+	
+	/**
+	 * Retrieves all threads a user has created
+	 * 
+	 * @param user
+	 * @return list of threads
+	 */
+	public List<ForumThread> getThreadsByUser(User user){
+		return threadDAO.getThreadsByUser(user);
 	}
 	
 	/**

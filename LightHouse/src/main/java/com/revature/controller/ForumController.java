@@ -75,7 +75,12 @@ public class ForumController {
 		
 		ControllerResponse cr = new ControllerResponse();
 		String response = "";
-		
+		info("Creating thread with title: " + thread.getTitle());
+		if (threadService.getThreadByTitle(thread.getTitle()) != null) {
+			response = "A thread with this title already exists";
+			cr.setResponse(response);
+			return cr;
+		}
 		User user = (User) sess.getAttribute("user");
 		info("Inside session of forum " + sess.getAttribute("user"));
 		LocalDate postDate = LocalDate.now();

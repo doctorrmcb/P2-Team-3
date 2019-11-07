@@ -54,6 +54,25 @@ public class ThreadDAOImpl implements ThreadDAO {
 	}
 	
 	/**
+	 * Retrieves all threads a user has created
+	 * 
+	 * @param user
+	 * @return list of threads
+	 */
+	@Override
+	public List<ForumThread> getThreadsByUser(User user){
+		info("Getting thread by user: " + user.getUsername());
+		Session sess = sf.openSession();
+		Transaction tx = sess.beginTransaction();
+		Criteria crit = sess.createCriteria(ForumThread.class).add(Restrictions.eq("userID", user));
+		List<ForumThread> threadList = crit.list();
+		tx.commit();
+		sess.close();
+		
+		return threadList;
+	}
+	
+	/**
 	 * Retrieves a thread from the database based on title
 	 * @param title
 	 * @return Thread
@@ -64,6 +83,7 @@ public class ThreadDAOImpl implements ThreadDAO {
 		Transaction tx = sess.beginTransaction();
 		Criteria crit = sess.createCriteria(ForumThread.class).add(Restrictions.eq("title", title));
 		ForumThread thread = (ForumThread) crit.uniqueResult();
+		
 		if (thread != null) {
 			info("Got thread with title:" + thread.getTitle());
 		}

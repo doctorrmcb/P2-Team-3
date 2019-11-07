@@ -1,3 +1,26 @@
+h1{
+    color: #F26925;
+    margin-left: 5%;
+}
+
+.inner-container {
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    border-color: #474C55;
+
+}
+
+.container{
+    border-color: #474C55;
+}
+
+header{
+    height: 36px;
+    background-color:#F26925;
+    border-radius: 10px;
+}
+
 .btn {
     min-width: 30%;
     background-color: #F26925;
@@ -23,25 +46,52 @@
 dl {
     border-style: solid;
     border-radius: 8px;
+    border-color: #474C55;
 }
 
 .anchor-container {
+
+    padding-bottom:3%;
     border-bottom: solid;
-    margin: 1%;
-    border-color: #474C55;
+    margin: 4%;
+    border-color: #474C55;    
+    
+}
+
+
+
+#label {
+    font-family: 'Futura-PT';
+    font-size: 24px;
+    width: 72%;
+    float: left;
+    padding-left:3%;
+    font-weight: 700;
+
+}
+
+#date {
+    font-family: 'Futura-PT';
+    font-size: 24px;
+    padding-left:3%;
+    font-weight: 700;
 }
 
 a {
     color: #F26925;
-    font-size: 16pt;
+    font-size: 20pt;
+    width: 75%;
+    float:left;
+    
 }
 
-#label {
-    font-family: 'Futura-PT';
-    font-size: 15px;
-}
-
-.inner-container {
+#latest-post{
+    
+    position: relative;
+    right: 1%;
     margin-left: 5%;
-    margin-right: 5%;
+    font-family: 'Futura-PT';
+    padding-left: 5px;
+    font-size: 9pt;
+    
 }
