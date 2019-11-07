@@ -1,1 +1,27 @@
-<p>leaderboard works!</p>
+<div class="container">
+    <br>
+    <div class="header-container">
+        <h1>Leaderboard for: {{id}}</h1>
+    </div>
+
+    <div class="inner-container">
+        <table id="myTable" class="table table-striped mb-0">
+            <thead>
+                <tr>
+                    <th scope="col">Place</th>
+                    <th scope="col">User</th>
+                    <th scope="col">Score</th>
+                    <th scope="col">Time Taken</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let board of lboard, let i = index">
+                    <td> {{i + 1}} </td>
+                    <td>{{board.username}}</td>
+                    <td>{{board.quizScore}}</td>
+                    <td>{{board.timeTaken}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
