@@ -35,7 +35,7 @@ import com.revature.service.S3FileServiceImpl;
  */
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 public class S3FileController {
 	
 	private S3FileServiceImpl s3FileServiceImpl;
