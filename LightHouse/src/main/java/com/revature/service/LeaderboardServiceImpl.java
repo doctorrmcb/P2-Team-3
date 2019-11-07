@@ -28,10 +28,6 @@ public class LeaderboardServiceImpl implements LeaderboardService {
 			leadDAO.createLeaderboard(lead);
 			return true;
 		}
-<<<<<<< Updated upstream
-=======
-		
->>>>>>> Stashed changes
 	}
 
 	@Override
