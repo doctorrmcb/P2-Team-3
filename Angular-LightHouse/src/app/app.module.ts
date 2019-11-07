@@ -20,6 +20,7 @@ import { SubForumComponent } from './sub-forum/sub-forum.component';
 import { HttpRequestInterceptor } from './types/HttpRequestInterceptor';
 import { ResourcesPageComponent } from './resources-page/resources-page.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { QuizComponent } from './quiz/quiz.component';
     PostComponent,
     SubForumComponent,
     ResourcesPageComponent,
-    QuizComponent
+    QuizComponent,
+    LeaderboardComponent
   ],
   imports: [
     routing,
