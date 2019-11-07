@@ -13,12 +13,8 @@ import { TakeQuizComponent } from './take-quiz/take-quiz.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { DeleteQuestionComponent } from './delete-question/delete-question.component';
 import { ResourcesPageComponent } from './resources-page/resources-page.component';
-<<<<<<< Updated upstream
 import { QuizManagementComponent } from './quiz-management/quiz-management.component';
-
-=======
 import { ManageQuestionComponent } from './manage-question/manage-question.component';
->>>>>>> Stashed changes
 
 const appRoutes: Routes = [
   {path: '', component: LoginComponent},
@@ -34,7 +30,8 @@ const appRoutes: Routes = [
   {path: 'leaderboard', component: LeaderboardComponent},
   {path: 'take-quiz', component: TakeQuizComponent},
   {path: 'resources-page', component: ResourcesPageComponent},
-  {path: 'delete-question', component: DeleteQuestionComponent}
+  {path: 'delete-question', component: DeleteQuestionComponent},
+  {path: 'manage-question', component: ManageQuestionComponent},
 ]
 
 

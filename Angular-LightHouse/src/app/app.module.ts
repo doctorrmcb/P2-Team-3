@@ -45,13 +45,9 @@ import { ManageQuestionComponent } from './manage-question/manage-question.compo
     LeaderboardComponent, 
     CategoryComponent,
     TakeQuizComponent,
-<<<<<<< Updated upstream
     QuizManagementComponent,	
-    DeleteQuestionComponent	
-=======
     DeleteQuestionComponent,
     ManageQuestionComponent	
->>>>>>> Stashed changes
   ],	
   imports: [	
     routing,	

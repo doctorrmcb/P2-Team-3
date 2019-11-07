@@ -8,6 +8,11 @@
     display: block;
 }
 
+.breadcrumb {
+    align-items: center;
+    justify-content: center;
+}
+
 .paddingClass {
     padding: 20px;
 }
