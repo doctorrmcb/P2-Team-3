@@ -13,4 +13,5 @@ export class Post{
     postDate: number[];
     postTime: number[];
 
+    orderBy: number;
 }

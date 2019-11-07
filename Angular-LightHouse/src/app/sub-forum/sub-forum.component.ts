@@ -36,11 +36,28 @@ export class SubForumComponent implements OnInit {
       /* for (let i = 0; i < tr.length; i++) {
         //<a href="{{tr[i]."></a> 
       } */
-      this.threads = tr;
-      //console.log(tr);
-      //console.log(this.threads);
+      this.threads = this.formatDate(tr);
+      this.threads.sort((a, b) => (a.orderBy > b.orderBy) ? 1: -1);
+      //this.threads = this.formatDate(this.threads);
     });
 
+  }
+
+  formatDate(threads: Thread[]): Thread[]{
+    for (let thread of threads){
+      let orderBy = "";
+      orderBy += thread.lastPost[0];
+      orderBy += thread.lastPost[1];
+      orderBy += thread.lastPost[2];
+      orderBy += thread.lastPost[3];
+      if (thread.lastPost[4].toString().length < 2){
+        orderBy += '0' + thread.lastPost[4];
+      } else{
+        orderBy += thread.lastPost[4];
+      }
+      thread.orderBy = Number(orderBy);
+    }
+    return threads;
   }
 
   createNewThread() {

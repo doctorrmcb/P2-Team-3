@@ -32,12 +32,28 @@ export class ThreadComponent implements OnInit {
   getPosts() {
     let url = 'http://localhost:8080/LightHouse/post/' + this.title;
     let result = this.http.get<Post[]>(url, {}).subscribe(cr => {
-      this.posts = cr;
+      this.posts = this.formatDate(cr);
+      this.posts.sort((a, b) => (a.orderBy<b.orderBy)?1:-1);
         //alert("Authentication failed.");
       
     });
   }
-
+  formatDate(posts: Post[]): Post[]{
+    for (let post of posts){
+      let orderBy = "";
+      orderBy += post.postDate[0];
+      orderBy += post.postDate[1];
+      orderBy += post.postDate[2];
+      orderBy += post.postTime[0];
+      if (post.postTime[1].toString().length < 2){
+        orderBy += '0' + post.postTime[1];
+      } else{
+        orderBy += post.postTime[1];
+      }
+      post.orderBy = Number(orderBy);
+    }
+    return posts;
+  }
   createNewPost() {
     this.display = 'block';
   }

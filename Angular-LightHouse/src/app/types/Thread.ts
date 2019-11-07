@@ -16,4 +16,6 @@ export class Thread {
     postDate: number[];
     postTime: number[];
     lastPost: number[];
+
+    orderBy: number;
 }
