@@ -125,11 +125,13 @@ public class ForumController {
 		info("Inside session of post " + sess.getAttribute("user"));
 		LocalDate postDate = LocalDate.now();
 		LocalTime postTime = LocalTime.now();
-		//LocalDateTime lastPost = LocalDateTime.of(postDate, postTime);
+		LocalDateTime lastPost = LocalDateTime.of(postDate, postTime);
 		post.setPostID(-1);
 		ForumThread thread = threadService.getThreadByTitle(title);
+		thread.setLastPost(lastPost);
+		threadService.updateThread(thread);
 		info(thread.toString());
-		post.setThreadID(threadService.getThreadByTitle(title));
+		post.setThreadID(thread);
 		post.setPosted_by(user);
 		post.setPostDate(postDate);
 		post.setPostTime(postTime);
