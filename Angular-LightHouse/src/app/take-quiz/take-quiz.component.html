@@ -1,0 +1,61 @@
+<div class="paddingClass">
+
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">Take a Look on the Categories of Quizzes Available!</a>
+
+        <div>
+            <div>Select Category</div>
+            <select #selection [(ngModel)]="selected" (change)="search(selection.value)">
+                <option *ngFor="let option of options" 
+                        [value]="option"> 
+                  {{ option }}
+                </option>
+           </select>
+
+        </div>
+
+    </nav>
+
+    <p></p>
+
+    <div class="card-body">
+        <div> Instructions for {{ selected }} Quizz </div>
+        <div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+            <table class="table table-bordered table-striped mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col">When taking the quiz you will be able to see how much time you have remaining</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">When you have completed the quiz click finish button to record your answers</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">You will receive marks on completion of the quiz</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">You can rate this quizz after completion</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">The answer to each question will be available to view after completion</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">After Completion you can context via a review form an answer or explanation to any question</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Do not forget to check on the leaderboard your evolution in {{ selected }} category </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p></p>
+        <p></p>
+        <button type="button" class="btn btn-primary btn-lg">Start Quizz</button>
+        <button type="button" class="btn btn-secondary btn-lg">Main Menu</button>
+    </div>
+
+
+
+</div>
