@@ -1,9 +1,13 @@
 <div class="outer-container">
     <br>
-    <p id="title">{{ title }}</p>
+    <div class="thread-container">
+        <h1 id="title">{{ title }}</h1>
+        <h2 id="subheader">Discussion in {{ id }} forum</h2>
+    </div>
     <div id="inner">
-        <p id="subheader">Discussion in {{ id }} forum</p>
         <dl class="Posts">
+            <br>
+            <p id="contents"> {{contents}} </p>
             <br>
             <dt *ngFor="let post of posts">
                 <div class="post-container">

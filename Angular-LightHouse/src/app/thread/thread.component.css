@@ -3,6 +3,14 @@ dl {
     border-radius: 8px;
 }
 
+#contents{
+    margin-left: 10%;
+    font-family: 'Futura-PT';
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+
 .outer-container {
     margin-left: 5%;
     margin-right: 5%;
