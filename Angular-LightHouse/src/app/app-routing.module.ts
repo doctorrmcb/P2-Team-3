@@ -9,8 +9,10 @@ import { GeneralForumInnerComponent } from './general-forum-inner/general-forum-
 import { ThreadComponent } from './thread/thread.component';
 import { PostComponent } from './post/post.component';
 import { SubForumComponent } from './sub-forum/sub-forum.component';
-import { QuizManagementComponent } from './quiz-management/quiz-management.component';
+import { TakeQuizComponent } from './take-quiz/take-quiz.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { ResourcesPageComponent } from './resources-page/resources-page.component';
+import { QuizManagementComponent } from './quiz-management/quiz-management.component';
 
 
 const appRoutes: Routes = [
@@ -23,7 +25,10 @@ const appRoutes: Routes = [
   {path: 'sub-forum/:id/:title', component: ThreadComponent},
   {path: 'quiz-management', component: QuizManagementComponent},
   {path: 'sub-forum/:id', component: SubForumComponent},
-  {path: 'resources-page', component: ResourcesPageComponent}
+  {path: 'sub-forum/:id/:title', component: ThreadComponent},
+  {path: 'leaderboard', component: LeaderboardComponent},
+  {path: 'take-quiz', component: TakeQuizComponent},
+  {path: 'resources', component: ResourcesPageComponent}
 ]
 
 

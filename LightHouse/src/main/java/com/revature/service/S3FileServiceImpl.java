@@ -3,6 +3,7 @@ package com.revature.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.amazonaws.services.s3.model.S3Object;
 import com.revature.dao.S3FileDAO;
@@ -14,6 +15,7 @@ import com.revature.pojo.S3File;
  * 
  * @author ErikHaklar
  */
+@Component
 public class S3FileServiceImpl implements S3FileService {
 
 	private static S3FileDAO s3FileDAO;

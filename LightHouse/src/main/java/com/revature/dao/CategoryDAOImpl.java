@@ -25,8 +25,8 @@ import java.util.List;
 @Component
 public class CategoryDAOImpl implements CategoryDAO {
 
-	SessionFactory sf = SessionFactoryUtil.getSessionFactory();
-
+	private static SessionFactory sf;
+	@Autowired
 	public void setSessionFactory(SessionFactory sf) {
 		this.sf = sf;
 	}

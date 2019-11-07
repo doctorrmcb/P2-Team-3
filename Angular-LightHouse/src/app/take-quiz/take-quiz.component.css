@@ -1,0 +1,19 @@
+.my-custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+.paddingClass {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #F26925;
+    border-color: #F26925;
+    color: #FFFFFF;
+}

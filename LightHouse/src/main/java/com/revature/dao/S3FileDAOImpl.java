@@ -1,4 +1,4 @@
-package com.revature.s3;
+package com.revature.dao;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.SdkClientException;
@@ -32,7 +32,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class FileManagementS3 implements S3FileDAO{
+import org.springframework.stereotype.Component;
+
+@Component
+public class S3FileDAOImpl implements S3FileDAO{
 	
 	private String bucketName = "lighthouse18882819";
 	
