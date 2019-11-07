@@ -42,7 +42,8 @@ import { TakeQuizComponent } from './take-quiz/take-quiz.component';
     QuizComponent,	
     LeaderboardComponent, 
     CategoryComponent,
-    TakeQuizComponent	
+    TakeQuizComponent,
+    QuizManagementComponent	
   ],	
   imports: [	
     routing,	
@@ -60,5 +61,5 @@ import { TakeQuizComponent } from './take-quiz/take-quiz.component';
   ],*/],	
   bootstrap: [AppComponent]	
 })	
-    QuizManagementComponent
+    
 export class AppModule { }
