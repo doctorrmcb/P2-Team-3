@@ -38,7 +38,7 @@ public class S3FileController {
 	private S3FileServiceImpl s3FileServiceImpl;
 
 	@Autowired
-	public void setS3FileService(S3FileServiceImpl s3FileServiceImpl) {
+	public void setS3FileServiceImpl(S3FileServiceImpl s3FileServiceImpl) {
 		this.s3FileServiceImpl = s3FileServiceImpl;
 	}
 	
