@@ -19,7 +19,7 @@ import com.revature.service.UserServiceImpl;
  *
  */
 @RestController
-@CrossOrigin(origins = /*"localhost:4200"*/"*")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 public class RegistrationController {
 	
 	/**

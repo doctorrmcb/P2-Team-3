@@ -66,9 +66,9 @@ import { ViewQuestionComponent } from './view-question/view-question.component';
   ],	
   exports: [	
   ],	
-  providers: [/*[	
+  providers: [[	
     { provide: HTTP_INTERCEPTORS, useClass: HttpRequestInterceptor, multi: true }	
-  ],*/],	
+  ],],	
   bootstrap: [AppComponent]	
 })	
     

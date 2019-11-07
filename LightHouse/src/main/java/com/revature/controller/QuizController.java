@@ -20,7 +20,7 @@ import com.revature.service.QuestionServiceImpl;
 import static com.revature.util.LoggerUtil.*;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 public class QuizController {
 
 	private QuestionServiceImpl qService;
