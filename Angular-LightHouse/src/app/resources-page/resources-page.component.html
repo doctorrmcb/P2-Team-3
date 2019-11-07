@@ -7,10 +7,9 @@
 
 <div>
   <h6> Sort by category: </h6>
-  <select #selection [(ngModel)]="selected" (change)="search(selection.value)">
-    
+  <select #selection [(ngModel)]="selected" (change)="onGetS3FilesByCat(selection.value)">
       <option *ngFor="let option of options" 
-              [value]="option"> 
+              value="{{option}}"> 
         {{ option }}
       </option>
  </select>
@@ -23,17 +22,19 @@
   <thead>
   <tr>
     <th scope="col">Resource / Documentation</th>
-    <th scope="col">Link</th>
+    <th scope="col">Download</th>
     <th scope="col"></th>
     <th scope="col">Rating</th>
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let fResource of filteredResources">
+  <tr *ngFor="let resource of resources">
     <td>
-      {{ fResource.name }}
+      {{ resource.keyName }}
     </td>
-    <td><a href=resource.link>{{ fResource.link}} </a></td>
+    <td><button
+      (click)="downloadFile(resource)"
+       class="btn btn-primary btn-sm">Download</button></td>
     <td></td>
     <td> <span style="font-size:150%;color:yellow;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td>
   </tr>
@@ -43,16 +44,23 @@
 
 <br>
 <br>
-<h2>Upload and download your own resources!</h2>
+<h2>Upload your own resources!</h2>
 
-
+<label class="label" id="label-path" for="path">Path:</label>
+<br>
+<input type="text" id="path" [(ngModel)]="path" placeholder="Path">
+<br>
+<br>
 <input type="file"
        id="avatar" name="avatar"
-       accept="image/png, image/jpeg">
+       (change)="uploadFile($event.target.files[0])">
+       <!-- <button
+       (click)="uploadFile(avatar.value)"
+        class="btn btn-primary btn-sm">Upload</button> -->
 <br>
 <br>
 
-<div class="table-wrapper-scroll-y my-custom-scrollbar">
+<!-- <div class="table-wrapper-scroll-y my-custom-scrollbar">
   <table id="myTable" class="table table-striped mb-0">
     <thead>
     <tr>
@@ -63,7 +71,7 @@
     <tbody>
     <tr *ngFor="let resource of resources">
       <td>
-        {{ resource.name }}
+        {{ resource.keyName }}
       </td>
       <td><button
         (click)="deletePost(post)"
@@ -75,4 +83,4 @@
   </table>
   </div>
 
-</div>
+</div> -->

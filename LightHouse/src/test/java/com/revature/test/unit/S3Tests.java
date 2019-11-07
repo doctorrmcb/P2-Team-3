@@ -15,12 +15,13 @@ import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.S3Object;
+import com.revature.dao.S3FileDAOImpl;
 import com.revature.pojo.S3File;
-import com.revature.s3.FileManagementS3;
+//import com.revature.s3.FileManagementS3;
 
 public class S3Tests {
 
-private static FileManagementS3 fileMan = new FileManagementS3();
+private static S3FileDAOImpl fileMan = new S3FileDAOImpl();
 
 
 	
@@ -42,12 +43,12 @@ private static FileManagementS3 fileMan = new FileManagementS3();
 	@Test
 	public void uploadFile()
 	{
-		fileMan = new FileManagementS3();
+		fileMan = new S3FileDAOImpl();
 		
 		S3File testFile = new S3File();
-		testFile.setKeyName("UploadMe.txt");
-		testFile.setFilePath("C:\\Users\\Erik\\Desktop\\S3Tests\\UploadMe.txt");
-		testFile.setCategory("classNotes");
+		testFile.setKeyName("JavaLesson.docx");
+		testFile.setFilePath("C:\\Users\\Erik\\Desktop\\S3Tests\\JavaLesson.docx");
+		testFile.setCategory("Java");
 		
 		assertEquals(true, fileMan.uploadFile(testFile));
 	}
