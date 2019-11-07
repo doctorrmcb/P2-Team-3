@@ -21,11 +21,18 @@ public interface LeaderboardDAO {
 	public boolean createLeaderboard(Leaderboard lead);
 	
 	/**
+	 * Reads all leaderboards from the database
+	 * @return a list of all leaderboards
+	 */
+	public List<Leaderboard> getAllLead();
+	
+	/**
 	 * Read a leaderboard from the database using the category name
 	 * @param catName
 	 * @return a list of leaderboard if the category 
 	 * exists into the database and null otherwise
 	 **/
+	
 	public List<Leaderboard> getLeadByCat(String catName);
 	
 	/**

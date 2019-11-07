@@ -84,6 +84,20 @@ public class LeaderboardDAOImpl implements LeaderboardDAO {
 	}
 
 	/**
+	 * Reads all leaderboards from the database
+	 * @return a list of all leaderboards
+	 */
+	public List<Leaderboard> getAllLead(){
+		Session sess = sf.openSession();
+		Transaction tx = sess.beginTransaction();
+		Criteria crit = sess.createCriteria(Leaderboard.class);
+		List<Leaderboard> result = crit.list();
+		tx.commit();
+		sess.close();
+		return result;
+	}
+	
+	/**
 	 * Read a leaderboard from the database using the category name
 	 * 
 	 * @param catName

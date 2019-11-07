@@ -33,7 +33,7 @@ export class ThreadComponent implements OnInit {
     let url = 'http://localhost:8080/LightHouse/post/' + this.title;
     let result = this.http.get<Post[]>(url, {}).subscribe(cr => {
       this.posts = this.formatDate(cr);
-      this.posts.sort((a, b) => (a.orderBy<b.orderBy)?1:-1);
+      this.posts.sort((a, b) => (a.orderBy > b.orderBy)?1:-1);
         //alert("Authentication failed.");
       
     });
