@@ -8,7 +8,7 @@ import { Options } from 'selenium-webdriver/chrome';
 })
 export class ResourcesPageComponent {
 
-  options =['Java', 'Html', 'CSS', 'PostgreSQL', 'JavaScript'];
+  options =['Java', 'HTML', 'CSS', 'PostgreSQL', 'JavaScript'];
   selected = this.options[0];
   
   
@@ -27,12 +27,14 @@ export class ResourcesPageComponent {
  
   ];
 
-  filteredResources;
+  filteredResources: any[] = [];
 
   constructor() { }
 
   search(selected){
     console.log('selected value:', selected);
+
+    this.filteredResources = [];
 
     for (let i = 0; i < this.resources.length; i++)
     {
