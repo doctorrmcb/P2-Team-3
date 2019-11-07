@@ -29,8 +29,8 @@ const appRoutes: Routes = [
   {path: 'sub-forum/:id', component: SubForumComponent},
   {path: 'sub-forum/:id/:title', component: ThreadComponent},
   {path: 'leaderboard', component: LeaderboardComponent},
-  {path: 'take-quiz', component: TakeQuizComponent},
-  {path: 'resources-page', component: ResourcesPageComponent},
+  {path: 'quiz', component: TakeQuizComponent},
+  {path: 'resources', component: ResourcesPageComponent},
   {path: 'delete-question', component: DeleteQuestionComponent},
   {path: 'create-question', component: CreateQuestionComponent}
 ]

@@ -25,6 +25,24 @@
     box-shadow: none;
 }
 
+.form-control {
+    max-width: 100%;
+    margin: auto;
+    border-color: #F26925;
+    border: 3px, solid, #F26925!important;
+    border-width: 3px;
+    border-radius: 12px;
+    padding-left: 18px; 
+    padding-top: 8px;
+    padding-right: 18px;
+    padding-bottom: 8px;
+    height: 50px;    
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
 #title {
     font-family: 'Futura-PT';
     font-size: 36pt;
