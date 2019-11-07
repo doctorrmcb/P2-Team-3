@@ -1,6 +1,7 @@
 package com.revature.controller;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.revature.pojo.Category;
 import com.revature.pojo.ControllerResponse;
 import com.revature.pojo.Question;
+import com.revature.pojo.QuestionDTO;
 import com.revature.service.CategoryServiceImpl;
 import com.revature.service.QuestionServiceImpl;
 import static com.revature.util.LoggerUtil.*;
@@ -47,21 +49,19 @@ public class QuizController {
 	}
 
 	@GetMapping("/quiz/{catName}")
-	public List<Question> takeQuiz(@PathVariable String catName, HttpSession sess) {
+	public List<QuestionDTO> takeQuiz(@PathVariable String catName, HttpSession sess) {
 
 		List<Question> qList = new ArrayList<Question>();
-		List<Question> newQList = new ArrayList<Question>();
-		int rando;
+		List<QuestionDTO> DTOList = new ArrayList<QuestionDTO>();
 		qList = qService.getAllQuestionsbyCategory(catName);
 		if (qList == null) {
 			error("The list is empty!");
 		} else {
-
+			Collections.shuffle(qList);
 			for (int count = 0; count < 10; count++) {
-				rando = generateRandomIntIntRange(0, (qList.size() - 1));
-				newQList.add(qList.get(rando));
+				DTOList.add(new QuestionDTO(qList.get(count)));
 			}
 		}
-		return newQList;
+		return DTOList;
 	}
 }
