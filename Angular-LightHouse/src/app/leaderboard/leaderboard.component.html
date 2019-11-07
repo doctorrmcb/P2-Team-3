@@ -3,7 +3,7 @@
     <div class="header-container">
         <h1>Leaderboard for: {{selected}}</h1>
     </div>
-    <select #selection [(ngModel)]="selected" <!--(change)="search(selection.value)" -->>
+    <select #selection [(ngModel)]="selected">
             <option *ngFor="let option of options" [value]="option">
                 {{ option }}
             </option>
