@@ -53,7 +53,7 @@ import { ViewQuestionComponent } from './view-question/view-question.component';
     ManageQuestionComponent,
     CreateQuestionComponent,
     UpdateQuestionComponent,
-    ViewQuestionComponent	
+    ViewQuestionComponent,
   ],	
   imports: [	
     routing,	
@@ -66,9 +66,9 @@ import { ViewQuestionComponent } from './view-question/view-question.component';
   ],	
   exports: [	
   ],	
-  providers: [/*[	
+  providers: [[	
     { provide: HTTP_INTERCEPTORS, useClass: HttpRequestInterceptor, multi: true }	
-  ],*/],	
+  ],],	
   bootstrap: [AppComponent]	
 })	
     

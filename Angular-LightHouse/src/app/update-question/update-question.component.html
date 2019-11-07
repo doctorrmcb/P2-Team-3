@@ -16,22 +16,34 @@
 
         </ol>
     </nav>
-
     <br>
-    <br>
-    <br>
-
-    <div class="accordion" id="accordionExample">
+    <div class="accordion" id="collapseOne">
         <div class="card-header" id="headingOne">
             <p>
-                <button type="button" class="btn btn-primary btn-lg btn-block" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample1">
+                <button type="button" class="btn btn-primary btn-lg btn-block" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseOne">
              Update Question
             </button>
             </p>
-            <div id="collapseExample1" [ngbCollapse]="isCollapsed">
+            <div id="collapseOne" [ngbCollapse]="!isCollapsed">
                 <div class="card">
                     <div class="card-body">
-                        You can collapse this card by clicking Toggle
+                        <label class="label" id="label-oldcontent" for="oldcontent">Content of the targeted question:</label>
+                        <input name="oldcontent" id="oldcontent" type="text" class="form-control" [(ngModel)]="oldcontent" placeholder="targeted question" />
+                        <br>
+                        <label class="label" id="label-newcontent" for="newcontent">Content of the updated question:</label>
+                        <input name="newcontent" id="newcontent" type="text" class="form-control" [(ngModel)]="newcontent" placeholder="updated question" />
+                        <br>
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="label" id="label-questionid" for="questionid">Question ID:</label>
+                                    <input name="questionid" id="questionid" type="number" class="form-control" [(ngModel)]="questionid" placeholder="question id" />
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary btn-lg" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseOne">Update Question</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -39,28 +51,62 @@
 
         <div class="card-header" id="headingTwo">
             <p>
-                <button type="button" class="btn btn-primary btn-lg btn-block" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample2">
+                <button type="button" class="btn btn-primary btn-lg btn-block" (click)="isCollapsed2 = !isCollapsed2" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample2">
              Update Correct Answer
             </button>
             </p>
-            <div id="collapseExample2" [ngbCollapse]="isCollapsed">
+            <div id="collapseExample2" [ngbCollapse]="!isCollapsed2">
                 <div class="card">
                     <div class="card-body">
-                        You can collapse this card by clicking Toggle
+                        <label class="label" id="label-oldanswer" for="oldanswer">Content of the targeted correct answer:</label>
+                        <input name="oldanswer" id="oldanswer" type="text" class="form-control" [(ngModel)]="oldanswer" placeholder="targeted correct answer" />
+                        <br>
+                        <label class="label" id="label-newanswer" for="newanswer">Content of the updated correct answer:</label>
+                        <input name="newanswer" id="newanswer" type="text" class="form-control" [(ngModel)]="newanswer" placeholder="updated correct answer" />
+                        <br>
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="label" id="label-questionid1" for="questionid1">Question ID:</label>
+                                    <input name="questionid1" id="questionid1" type="number" class="form-control" [(ngModel)]="questionid1" placeholder="question id" />
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary btn-lg" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseOne">Update Question</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
 
-        <p>
-            <button type="button" class="btn btn-primary btn-lg btn-block" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample3">
+        <div class="card-header" id="headingThree">
+            <p>
+                <button type="button" class="btn btn-primary btn-lg btn-block" (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample3">
              Update Explanation
             </button>
-        </p>
-        <div id="collapseExample3" [ngbCollapse]="isCollapsed">
-            <div class="card">
-                <div class="card-body">
-                    You can collapse this card by clicking Toggle
+            </p>
+            <div id="collapseExample3" [ngbCollapse]="!isCollapsed3">
+                <div class="card">
+                    <div class="card-body">
+                        <label class="label" id="label-oldexplanation" for="oldexplanation">Content of the targeted explanation:</label>
+                        <input name="oldexplanation" id="oldexplanation" type="text" class="form-control" [(ngModel)]="oldexplanation" placeholder="targeted explanation" />
+                        <br>
+                        <label class="label" id="label-newexplanation" for="newexplanation">Content of the updated explanation:</label>
+                        <input name="newexplanation" id="newexplanation" type="text" class="form-control" [(ngModel)]="newexplanation" placeholder="updated explanation" />
+                        <br>
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="label" id="label-questionid2" for="questionid2">Question ID:</label>
+                                    <input name="questionid2" id="questionid2" type="number" class="form-control" [(ngModel)]="questionid2" placeholder="question id" />
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary btn-lg" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseOne">Update Question</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

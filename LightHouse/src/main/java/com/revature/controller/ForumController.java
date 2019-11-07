@@ -32,7 +32,7 @@ import static com.revature.util.LoggerUtil.*;
  */
 
 @RestController
-@CrossOrigin(origins = /*"localhost:4200"*/ "*")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true" /*"*"*/)
 public class ForumController {
 	
 	private ThreadServiceImpl threadService;
