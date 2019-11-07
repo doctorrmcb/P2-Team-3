@@ -1,4 +1,4 @@
-package com.revature.s3;
+package com.revature.dao;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.SdkClientException;
@@ -32,7 +32,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class FileManagementS3 implements S3FileDAO{
+import org.springframework.stereotype.Component;
+
+@Component
+public class S3FileDAOImpl implements S3FileDAO{
 	
 	private String bucketName = "lighthouse18882819";
 	
@@ -67,13 +70,13 @@ public class FileManagementS3 implements S3FileDAO{
 	 * @since 2019-10-30
 	 */
 	@Override
-	public boolean uploadFile(S3File file, String category) {
+	public boolean uploadFile(S3File file) {
 		
 		try {
 			PutObjectRequest request = new PutObjectRequest(file.getBucketName(), file.getKeyName(), new File(file.getFilePath()));
             ObjectMetadata metadata = new ObjectMetadata();
             metadata.setContentType("plain/text");
-            metadata.addUserMetadata("x-amz-meta-" + category, category);
+            metadata.addUserMetadata("x-amz-meta-" + file.getCategory(), file.getCategory());
             request.setMetadata(metadata);
 			s3client.putObject(request);
 		} catch (AmazonServiceException e) {
@@ -167,7 +170,7 @@ public class FileManagementS3 implements S3FileDAO{
             
             if (userMetadataMap.toString().contentEquals("{x-amz-meta-" + category.toLowerCase() + "=" + category + "}"))
             {
-            	files.add(new S3File(bucketName, objectSummary.getKey(), ""));
+            	files.add(new S3File(bucketName, objectSummary.getKey(), "", category));
             }
         }
         
