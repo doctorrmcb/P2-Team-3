@@ -16,11 +16,11 @@ export class HomeComponent implements OnInit {
   }
 
   toQuiz(): void{
-
+    this.router.navigate(['take-quiz']);
   }
 
   toResources(): void{
-
+    this.router.navigate(['resources']);
   }
 
   toForums(): void{

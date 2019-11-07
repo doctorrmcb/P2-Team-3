@@ -1,0 +1,82 @@
+<div class="paddingClass">
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-lg" [routerLink]="['../take-quiz']">Take Quiz</button>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-lg" [routerLink]="['../manage-question']">Manage Question</button>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-lg" [routerLink]="['../leaderboard']">View Leaderboard</button>
+                </div>
+            </div>
+
+        </ol>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="mytable">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Question ID</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let field of fieldArray; let i = index">
+                    <td>
+                        <input [(ngModel)]="field.id" class="form-control" type="text" name="{{field.id}}" />
+                    </td>
+                    <td>
+                        <button class="button" type="button" (click)="deleteFieldValue(i)">Cancel Action</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-control" type="text" id="newAttributeid" [(ngModel)]="newAttribute.id" name="newAttributeid" />
+                    </td>
+                    <td>
+                        <button class="button" type="button" (click)="addFieldValue()">Add Question ID</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-primary btn-lg">Confirm Deletion</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>

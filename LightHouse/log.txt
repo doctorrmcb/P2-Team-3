@@ -1,9 +1,0 @@
-2019-11-05 19:12:09 INFO  root:25 - Getting all Users
-2019-11-05 19:14:06 INFO  root:25 - Getting all Users
-2019-11-05 19:15:59 INFO  root:25 - Getting all Users
-2019-11-05 19:15:59 INFO  root:25 - Retrieved 0users
-2019-11-05 19:22:26 INFO  root:25 - Getting all Users
-2019-11-05 19:22:26 INFO  root:25 - Retrieved 0users
-2019-11-05 19:23:50 INFO  root:25 - Getting user with username: testUsername
-2019-11-05 19:24:39 INFO  root:25 - Getting user with username: testUsername
-2019-11-05 19:26:44 INFO  root:25 - Getting user with username: testUsername
