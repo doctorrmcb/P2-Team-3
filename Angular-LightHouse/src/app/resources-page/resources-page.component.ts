@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Options } from 'selenium-webdriver/chrome';
+import { HttpClient, HttpResponse } from '@angular/common/http';
+import { S3Category } from '../types/S3Category';
+import { S3Files } from '../types/S3Files';
+import { S3FilesReturned } from '../types/S3FilesReturned';
 
 @Component({
   selector: 'app-resources-page',
@@ -10,24 +14,31 @@ export class ResourcesPageComponent {
 
   options =['Java', 'HTML', 'CSS', 'PostgreSQL', 'JavaScript'];
   selected = this.options[0];
+
+  private http: HttpClient;
   
   
-  resources= [
-    {name: "Java Tutorial", link:"https://docs.oracle.com/javase/tutorial/index.html", rating: 5, category: "Java"},
-    {name: "Html Tutorial", link:"https://www.w3schools.com/html/", rating: 5, category: "HTML"},
-    {name: "CSS Tutorial", link:"https://www.w3schools.com/css/default.asp", rating: 5, category: "CSS"},
-    {name: "JavaScript Tutorial", link:"https://www.w3schools.com/js/", rating: 5, category: "JavaScript"},
-    {name: "PostgreSQL Tutorial", link:"http://www.postgresqltutorial.com/", rating: 5, category: "PostgreSQL"},
+  // resources= [
+  //   {name: "Java Tutorial", link:"https://docs.oracle.com/javase/tutorial/index.html", rating: 5, category: "Java"},
+  //   {name: "Html Tutorial", link:"https://www.w3schools.com/html/", rating: 5, category: "HTML"},
+  //   {name: "CSS Tutorial", link:"https://www.w3schools.com/css/default.asp", rating: 5, category: "CSS"},
+  //   {name: "JavaScript Tutorial", link:"https://www.w3schools.com/js/", rating: 5, category: "JavaScript"},
+  //   {name: "PostgreSQL Tutorial", link:"http://www.postgresqltutorial.com/", rating: 5, category: "PostgreSQL"},
     
-    {name: "Java Documentation", link:"https://docs.oracle.com/javase/8/docs/", rating: 5, category: "Java"},
-    {name: "Javascript Documentation", link:"https://docs.oracle.com/javase/tutorial/index.html", rating: 5, category: "JavaScript"},
-    {name: "Html Documentation", link:"https://devdocs.io/html/", rating: 5, category: "HTML"},
-    {name: "CSS Documentation", link:"https://devdocs.io/css/", rating: 5, category: "CSS"},
-    {name: "PostgreSQL Documentation", link:"https://www.postgresql.org/docs/", rating: 5, category: "PostgreSQL"}
+  //   {name: "Java Documentation", link:"https://docs.oracle.com/javase/8/docs/", rating: 5, category: "Java"},
+  //   {name: "Javascript Documentation", link:"https://docs.oracle.com/javase/tutorial/index.html", rating: 5, category: "JavaScript"},
+  //   {name: "Html Documentation", link:"https://devdocs.io/html/", rating: 5, category: "HTML"},
+  //   {name: "CSS Documentation", link:"https://devdocs.io/css/", rating: 5, category: "CSS"},
+  //   {name: "PostgreSQL Documentation", link:"https://www.postgresql.org/docs/", rating: 5, category: "PostgreSQL"}
  
-  ];
+  // ];
 
   filteredResources: any[] = [];
+
+
+  resources: S3Files[] = [];
+  filesReturned: S3FilesReturned;
+  //resources: any[] = [];
 
   constructor() { }
 
@@ -71,6 +82,23 @@ export class ResourcesPageComponent {
 
   ngOnInit() {
     this.search(this.selected);
+  }
+
+
+  onGetS3FilesByCat(): void {
+    let url = 'http://localhost:8080/LightHouse/get-files';
+    let result = this.http.post<S3FilesReturned>(url, {
+      selected: this.selected,
+    }).subscribe(cr => {
+      this.filesReturned = cr;
+      this.resources = [];
+
+      for (let i = 0; i < this.filesReturned.files.length; i++)
+      {
+        this.resources.push(this.filesReturned.files[i]);
+      }
+
+    });
   }
 
 }
