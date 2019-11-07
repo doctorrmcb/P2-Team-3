@@ -28,6 +28,7 @@ import { DeleteQuestionComponent } from './delete-question/delete-question.compo
 import { ManageQuestionComponent } from './manage-question/manage-question.component';
 import { CreateQuestionComponent } from './create-question/create-question.component';
 import { UpdateQuestionComponent } from './update-question/update-question.component';
+import { ViewQuestionComponent } from './view-question/view-question.component';
 
 @NgModule({	
   declarations: [	
@@ -51,7 +52,8 @@ import { UpdateQuestionComponent } from './update-question/update-question.compo
     DeleteQuestionComponent,
     ManageQuestionComponent,
     CreateQuestionComponent,
-    UpdateQuestionComponent	
+    UpdateQuestionComponent,
+    ViewQuestionComponent	
   ],	
   imports: [	
     routing,	

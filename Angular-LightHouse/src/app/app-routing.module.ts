@@ -17,6 +17,7 @@ import { QuizManagementComponent } from './quiz-management/quiz-management.compo
 import { ManageQuestionComponent } from './manage-question/manage-question.component';
 import { CreateQuestionComponent } from './create-question/create-question.component';
 import { UpdateQuestionComponent } from './update-question/update-question.component';
+import { ViewQuestionComponent } from './view-question/view-question.component';
 
 const appRoutes: Routes = [
   {path: '', component: LoginComponent},
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
   {path: 'delete-question', component: DeleteQuestionComponent},
   {path: 'create-question', component: CreateQuestionComponent},
   {path: 'manage-question', component: ManageQuestionComponent},
-  {path: 'update-question', component: UpdateQuestionComponent}
+  {path: 'update-question', component: UpdateQuestionComponent},
+  {path: 'view-question', component: ViewQuestionComponent}
 ]
 
 
