@@ -7,6 +7,7 @@ import { RouterModule, Routes, Router } from '@angular/router';
 import { AppComponent } from './app.component';	
 import { RegistrationComponent } from './registration/registration.component';	
 
+import { QuizManagementComponent } from './quiz-management/quiz-management.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';	
 import { NavbarOuterComponent } from './navbar-outer/navbar-outer.component';	
 import { LoginComponent } from './login/login.component';	
@@ -41,7 +42,8 @@ import { TakeQuizComponent } from './take-quiz/take-quiz.component';
     QuizComponent,	
     LeaderboardComponent, 
     CategoryComponent,
-    TakeQuizComponent	
+    TakeQuizComponent,
+    QuizManagementComponent	
   ],	
   imports: [	
     routing,	
@@ -59,4 +61,5 @@ import { TakeQuizComponent } from './take-quiz/take-quiz.component';
   ],*/],	
   bootstrap: [AppComponent]	
 })	
+    
 export class AppModule { }
