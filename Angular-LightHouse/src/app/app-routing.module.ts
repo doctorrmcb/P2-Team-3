@@ -17,10 +17,10 @@ const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'general-forum', component: GeneralForumComponent},
   {path: 'general-forum-inner', component: GeneralForumInnerComponent},
-  {path: 'thread', component: ThreadComponent},
   {path: 'post', component: PostComponent},
-  {path: 'sub-forum/:id', component: SubForumComponent},
+  {path: 'sub-forum/:id/:title', component: ThreadComponent}
   {path: 'quiz-management', component: QuizManagementComponent}
+  {path: 'sub-forum/:id', component: SubForumComponent},
 ]
 
 

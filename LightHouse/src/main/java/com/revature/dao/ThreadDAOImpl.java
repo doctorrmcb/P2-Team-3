@@ -1,5 +1,7 @@
 package com.revature.dao;
 
+import static com.revature.util.LoggerUtil.info;
+
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -12,6 +14,7 @@ import org.springframework.stereotype.Component;
 
 import com.revature.util.SessionFactoryUtil;
 import com.revature.pojo.ForumThread;
+import com.revature.pojo.User;
 import com.revature.util.LoggerUtil.*;
 
 /**
@@ -49,7 +52,26 @@ public class ThreadDAOImpl implements ThreadDAO {
 		sess.close();
 		return thread;
 	}
-
+	
+	/**
+	 * Retrieves a thread from the database based on title
+	 * @param title
+	 * @return Thread
+	 */
+	public ForumThread getThreadByTitle(String title) {
+		info("Getting thread with title: " + title);
+		Session sess = sf.openSession();
+		Transaction tx = sess.beginTransaction();
+		Criteria crit = sess.createCriteria(ForumThread.class).add(Restrictions.eq("title", title));
+		ForumThread thread = (ForumThread) crit.uniqueResult();
+		if (thread != null) {
+			info("Got thread with title:" + thread.getTitle());
+		}
+		tx.commit();
+		sess.close();
+		
+		return thread;
+	}
 	
 	/**
 	 *Retrieves all threads from the database
@@ -58,7 +80,6 @@ public class ThreadDAOImpl implements ThreadDAO {
 	 */
 	@Override
 	public List<ForumThread> getAllThreads() {
-		
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
 		Criteria crit = sess.createCriteria(ForumThread.class);

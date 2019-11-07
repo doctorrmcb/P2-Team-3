@@ -48,7 +48,7 @@ public class Post {
 	 */
 	@ManyToOne
 	@JoinColumn(name = "user_id")
-	private User posted_by;
+	private User postedBy;
 	
 	/**
 	 * Contents of the post
@@ -91,11 +91,11 @@ public class Post {
 	}
 
 	public User getPosted_by() {
-		return posted_by;
+		return postedBy;
 	}
 
 	public void setPosted_by(User posted_by) {
-		this.posted_by = posted_by;
+		this.postedBy = posted_by;
 	}
 
 	public String getContents() {
@@ -139,7 +139,7 @@ public class Post {
 		result = prime * result + ((postDate == null) ? 0 : postDate.hashCode());
 		result = prime * result + postID;
 		result = prime * result + ((postTime == null) ? 0 : postTime.hashCode());
-		result = prime * result + ((posted_by == null) ? 0 : posted_by.hashCode());
+		result = prime * result + ((postedBy == null) ? 0 : postedBy.hashCode());
 		result = prime * result + ((threadID == null) ? 0 : threadID.hashCode());
 		return result;
 	}
@@ -172,10 +172,10 @@ public class Post {
 				return false;
 		} else if (!postTime.equals(other.postTime))
 			return false;
-		if (posted_by == null) {
-			if (other.posted_by != null)
+		if (postedBy == null) {
+			if (other.postedBy != null)
 				return false;
-		} else if (!posted_by.equals(other.posted_by))
+		} else if (!postedBy.equals(other.postedBy))
 			return false;
 		if (threadID == null) {
 			if (other.threadID != null)
@@ -187,7 +187,7 @@ public class Post {
 
 	@Override
 	public String toString() {
-		return "Post [postID=" + postID + ", threadID=" + threadID + ", posted_by=" + posted_by + ", contents="
+		return "Post [postID=" + postID + ", threadID=" + threadID + ", posted_by=" + postedBy + ", contents="
 				+ contents + ", postDate=" + postDate + ", postTime=" + postTime + ", isReported=" + isReported + "]";
 	}
 
@@ -196,7 +196,7 @@ public class Post {
 		super();
 		this.postID = postID;
 		this.threadID = threadID;
-		this.posted_by = posted_by;
+		this.postedBy = posted_by;
 		this.contents = contents;
 		this.postDate = postDate;
 		this.postTime = postTime;

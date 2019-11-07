@@ -5,18 +5,23 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.pojo.ControllerResponse;
 import com.revature.pojo.ForumThread;
+import com.revature.pojo.Post;
 import com.revature.pojo.User;
+import com.revature.service.PostServiceImpl;
 import com.revature.service.ThreadServiceImpl;
 import static com.revature.util.LoggerUtil.*;
 
@@ -27,17 +32,24 @@ import static com.revature.util.LoggerUtil.*;
  */
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = /*"localhost:4200"*/ "*")
 public class ForumController {
 	
 	private ThreadServiceImpl threadService;
+	private PostServiceImpl postService;
 
 	@Autowired
 	public void setThreadService(ThreadServiceImpl threadService) {
 		this.threadService = threadService;
 	}
 	
-	
+	@Autowired
+	public void setPostService(PostServiceImpl postService) {
+		this.postService = postService;
+	}
+
+
+
 	/**
 	 * Retrieves all threads in a subforum
 	 * @param subforum
@@ -59,12 +71,13 @@ public class ForumController {
 	 * @return response  Response used to dictate logic flow in angular
 	 */
 	@PostMapping("/forum/{subforum}")
-	public ControllerResponse createThread(@PathVariable String subforum, ForumThread thread, HttpSession sess) {
+	public ControllerResponse createThread(@PathVariable String subforum, @RequestBody ForumThread thread, HttpSession sess) {
 		
 		ControllerResponse cr = new ControllerResponse();
 		String response = "";
 		
 		User user = (User) sess.getAttribute("user");
+		info("Inside session of forum " + sess.getAttribute("user"));
 		LocalDate postDate = LocalDate.now();
 		LocalTime postTime = LocalTime.now();
 		LocalDateTime lastPost = LocalDateTime.of(postDate, postTime);
@@ -73,6 +86,8 @@ public class ForumController {
 		thread.setPostDate(postDate);
 		thread.setPostTime(postTime);
 		thread.setLastPost(lastPost);
+		thread.setTopic(subforum);
+		thread.setSubforum(subforum);
 		threadService.createThread(thread);
 		
 		response = "success";
@@ -80,4 +95,44 @@ public class ForumController {
 		return cr;
 	}
 
+	/**
+	 * Retrieves all posts in a thread based on thread title
+	 * @param title
+	 * @return list of posts
+	 */
+	@GetMapping("/post/{title}")
+	public List<Post> getPostsByTitle(@PathVariable String title){
+		info("Reached getPostsByTitle of forum controller");
+		ForumThread thread = threadService.getThreadByTitle(title);
+		List<Post> postList = postService.getPostsByThread(thread);
+		info("PostList: " + postList);
+		return postList;
+	}
+	
+	
+	@PostMapping("/{title}/post")
+	public ControllerResponse createPost(@PathVariable String title, @RequestBody Post post, HttpSession sess) {
+		
+		ControllerResponse cr = new ControllerResponse();
+		String response = "";
+		
+		User user = (User) sess.getAttribute("user");
+		info("Inside session of post " + sess.getAttribute("user"));
+		LocalDate postDate = LocalDate.now();
+		LocalTime postTime = LocalTime.now();
+		//LocalDateTime lastPost = LocalDateTime.of(postDate, postTime);
+		post.setPostID(-1);
+		ForumThread thread = threadService.getThreadByTitle(title);
+		info(thread.toString());
+		post.setThreadID(threadService.getThreadByTitle(title));
+		post.setPosted_by(user);
+		post.setPostDate(postDate);
+		post.setPostTime(postTime);
+		post.setContents(post.getContents());
+		postService.createPost(post);
+		
+		response = "success";
+		cr.setResponse(response);
+		return cr;
+	}
 }

@@ -270,7 +270,7 @@ public class ForumThread {
 
 	@Override
 	public String toString() {
-		return "ForumThread [threadID=" + threadID + ", posted_by=" + postedBy + ", title=" + title + ", contents="
+		return "ForumThread [threadID=" + threadID + ", postedBy=" + postedBy + ", title=" + title + ", contents="
 				+ contents + ", postDate=" + postDate + ", postTime=" + postTime + ", topic=" + topic + ", subforum="
 				+ subforum + ", lastPost=" + lastPost + ", isReported=" + isReported + ", isSticky=" + isSticky + "]";
 	}
