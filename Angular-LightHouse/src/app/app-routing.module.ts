@@ -15,6 +15,7 @@ import { DeleteQuestionComponent } from './delete-question/delete-question.compo
 import { ResourcesPageComponent } from './resources-page/resources-page.component';
 import { QuizManagementComponent } from './quiz-management/quiz-management.component';
 import { ManageQuestionComponent } from './manage-question/manage-question.component';
+import { CreateQuestionComponent } from './create-question/create-question.component';
 
 const appRoutes: Routes = [
   {path: '', component: LoginComponent},
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
   {path: 'leaderboard', component: LeaderboardComponent},
   {path: 'take-quiz', component: TakeQuizComponent},
   {path: 'resources-page', component: ResourcesPageComponent},
-  {path: 'delete-question', component: DeleteQuestionComponent}
+  {path: 'delete-question', component: DeleteQuestionComponent},
+  {path: 'create-question', component: CreateQuestionComponent}
 ]
 
 
