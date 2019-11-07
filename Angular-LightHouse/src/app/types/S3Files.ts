@@ -3,4 +3,10 @@ export class S3Files {
     keyName = "";
     filePath = "";
     category = "";
+
+    constructor(keyName: string, filePath: string, category: string) {
+        this.keyName = keyName;
+        this.filePath = filePath;
+        this.category = category;
+    }
 }
