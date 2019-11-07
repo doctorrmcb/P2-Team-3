@@ -11,7 +11,7 @@ public interface LeaderboardService {
 	 * @return true if the leaderboard have been created and false otherwise
 	 **/
 	public boolean createLeaderboard(Leaderboard lead);
-	
+
 	/**
 	 * Read a leaderboard from the database using the category name
 	 * @param catName
@@ -19,7 +19,7 @@ public interface LeaderboardService {
 	 * exists into the database and null otherwise
 	 **/
 	public List<Leaderboard> getLeadByCat(String catName);
-	
+
 	/**
 	 * Read a leaderboard from the database using the User name
 	 * @param username
@@ -27,7 +27,7 @@ public interface LeaderboardService {
 	 * exists into the database and null otherwise
 	 **/
 	public List<Leaderboard> getLeadByUser(String username);
-	
+
 	/**
 	 * Read a leaderboard from the database using the leadID
 	 * @param leadID
@@ -35,7 +35,7 @@ public interface LeaderboardService {
 	 * exists into the database and null otherwise
 	 **/
 	public Leaderboard getLeaderboard(int leadID);
-	
+
 	/**
 	 * Delete a leaderboard from the database using the LeadID
 	 * @param LeadID
