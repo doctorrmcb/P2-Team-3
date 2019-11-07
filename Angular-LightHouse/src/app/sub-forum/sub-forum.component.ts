@@ -37,7 +37,7 @@ export class SubForumComponent implements OnInit {
         //<a href="{{tr[i]."></a> 
       } */
       this.threads = this.formatDate(tr);
-      this.threads.sort((a, b) => (a.orderBy > b.orderBy) ? 1: -1);
+      this.threads.sort((a, b) => (a.orderBy < b.orderBy) ? 1: -1);
       //this.threads = this.formatDate(this.threads);
     });
 

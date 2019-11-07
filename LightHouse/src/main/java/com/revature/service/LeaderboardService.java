@@ -11,6 +11,12 @@ public interface LeaderboardService {
 	 * @return true if the leaderboard have been created and false otherwise
 	 **/
 	public boolean createLeaderboard(Leaderboard lead);
+	
+	/**
+	 * Reads all leaderboards from the database
+	 * @return a list of all leaderboards
+	 */
+	public List<Leaderboard> getAllLead();
 
 	/**
 	 * Read a leaderboard from the database using the category name
