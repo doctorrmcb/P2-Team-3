@@ -1,5 +1,7 @@
-<p>create-question works!</p>
-
+<div class="outer-container">
+<br>
+<h1 id="title">Create a Question</h1>
+<br>
 <label class="label" id="label-question" for="question">Question:</label>
 <input name="question" id="question" type="text" class="form-control" [(ngModel)]="question" placeholder="question" />
 <br>
@@ -18,7 +20,6 @@
 <label class="label" id="label-wa3" for="wa3">Wrong Answer 3:</label>
 <input name="wa3" id="wa3" type="text" class="form-control" [(ngModel)]="wa3" placeholder="Wrong Answer 3" />
 <br>
-<br>
 <label class="label" id="label-dropdown" for="dropdown">Topic:</label>
 <br>
 <select #selection [(ngModel)]="selected" (change)="search(selection.value)">
@@ -27,8 +28,12 @@
     </option>
 </select>
 
+
+</div>
+<br>
 <button name="createNewQuestion" id="createNewQuestion" class="btn" (click)="createNewQuestion()">CREATE A NEW
-    Question</button>
+        QUESTION</button>
+    
 <div class="backdrop" [ngStyle]="{'display':createDisplay}"></div>
 <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':createDisplay}">
     <div class="modal-dialog" role="document">
