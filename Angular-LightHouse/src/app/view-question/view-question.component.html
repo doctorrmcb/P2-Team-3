@@ -23,7 +23,7 @@
 
         <div>
             <div>Select Category</div>
-            <select #selection [(ngModel)]="selected" (change)="search(selection.value)">
+            <select #selection [(ngModel)]="selected" (change)="getQuestions(selection.value)">
                 <option *ngFor="let category of categories" value="{{category.category}}">{{category.category}}</option>
             </select>
         </div>
@@ -31,26 +31,30 @@
     <br>
 
     <div class="header-container">
-        <h1>List of questions for: {{category.category}}</h1>
+        <h1>List of questions for: {{selected}}</h1>
     </div>
 
     <div class="inner-container">
         <table id="myTable" class="table table-striped mb-0">
             <thead>
                 <tr>
-                    <th scope="col">Question</th>
+                    <th scope="col">QuestionID</th>
+                    <th scope="col">Question Name</th>
                     <th scope="col">Correct Answer</th>
                     <th scope="col">Explanation</th>
                     <th scope="col">Rating</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>{{question.question}} </td>
-                    <td>{{correctAnswer.question}}</td>
-                    <td>{{explanation.question}}</td>
-                    <td>{{rating.question}}</td>
-                </tr>
+                <div *ngFor="let question of questions">
+                    <tr>
+                        <td>{{question.questionID}} </td>
+                        <td>{{question.questionName}}</td>
+                        <td>{{question.correctAnswer}}</td>
+                        <td>{{question.explanation}}</td>
+                        <td>{{question.questionRating}}</td>
+                    </tr>
+                </div>
             </tbody>
         </table>
     </div>

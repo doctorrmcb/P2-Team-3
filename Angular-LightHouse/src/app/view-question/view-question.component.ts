@@ -3,7 +3,7 @@ import {Injectable} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Category } from '../types/Category';
-import { Question } from '../types/Question';
+import { QList } from '../types/QList';
 
 @Component({
   selector: 'app-view-question',
@@ -16,7 +16,7 @@ export class ViewQuestionComponent implements OnInit {
 
   selected: string;
   categories: Category[];
-  questions: Question[];
+  questions: QList[];
   
   constructor(
     private route: ActivatedRoute,
@@ -25,6 +25,7 @@ export class ViewQuestionComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.selected = "Java";
     this.getCategories();
     this.getQuestions();
   }
@@ -37,8 +38,8 @@ export class ViewQuestionComponent implements OnInit {
   }
 
   getQuestions(){
-    let url = 'http://localhost:8080/LightHouse/view-question/';
-    let result = this.http.get<Question[]>(url, {}).subscribe(cr =>{
+    let url = 'http://localhost:8080/LightHouse/viewQuestions/' + this.selected;
+    let result = this.http.get<QList[]>(url, {}).subscribe(cr =>{
       this.questions = cr;
     });
   }
