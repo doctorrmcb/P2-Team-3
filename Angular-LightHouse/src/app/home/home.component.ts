@@ -20,7 +20,6 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-<<<<<<< HEAD
 
     this.elemResources.style.visibility = "visible";
     this.elemForum.style.visibility = "visible";
@@ -29,9 +28,6 @@ export class HomeComponent implements OnInit {
     this.elemSearch.style.visibility = "visible";
     this.elemLogout.style.visibility = "visible";
 
-=======
-    console.log(sessionStorage.getItem('user'));
->>>>>>> forum
   }
 
   toQuiz(): void{

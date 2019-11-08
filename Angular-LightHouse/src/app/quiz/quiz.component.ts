@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Question } from '../types/Question';
+import { element } from 'protractor';
 
 @Component({
   selector: 'app-quiz',
@@ -29,8 +30,10 @@ export class QuizComponent implements OnInit {
 
   submitQuiz(selected) {
     for (let i = 0; i < 10; i++) {
+      let elemForm = document.getElementById("#formGroup[" + i + "]");
       
     }
+    
   }
 
 }
