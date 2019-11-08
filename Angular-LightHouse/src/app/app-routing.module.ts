@@ -11,9 +11,14 @@ import { PostComponent } from './post/post.component';
 import { SubForumComponent } from './sub-forum/sub-forum.component';
 import { TakeQuizComponent } from './take-quiz/take-quiz.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { DeleteQuestionComponent } from './delete-question/delete-question.component';
 import { ResourcesPageComponent } from './resources-page/resources-page.component';
 import { QuizManagementComponent } from './quiz-management/quiz-management.component';
-
+import { ManageQuestionComponent } from './manage-question/manage-question.component';
+import { CreateQuestionComponent } from './create-question/create-question.component';
+import { UpdateQuestionComponent } from './update-question/update-question.component';
+import { ViewQuestionComponent } from './view-question/view-question.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 const appRoutes: Routes = [
   {path: '', component: LoginComponent},
@@ -28,7 +33,13 @@ const appRoutes: Routes = [
   {path: 'sub-forum/:id/:title', component: ThreadComponent},
   {path: 'leaderboard', component: LeaderboardComponent},
   {path: 'take-quiz', component: TakeQuizComponent},
-  {path: 'resources', component: ResourcesPageComponent}
+  {path: 'resources', component: ResourcesPageComponent},
+  {path: 'delete-question', component: DeleteQuestionComponent},
+  {path: 'create-question', component: CreateQuestionComponent},
+  {path: 'manage-question', component: ManageQuestionComponent},
+  {path: 'update-question', component: UpdateQuestionComponent},
+  {path: 'view-question', component: ViewQuestionComponent},
+  {path: 'quiz', component: QuizComponent}
 ]
 
 

@@ -1,1 +1,48 @@
-<p>leaderboard works!</p>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-lg" [routerLink]="['../take-quiz']">TAKE QUIZ</button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-lg" [routerLink]="['../manage-question']">MANAGE QUESTION</button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-lg" [routerLink]="['../leaderboard']">VIEW LEADERBOARD</button>
+            </div>
+        </div>
+
+    </ol>
+</nav>
+<div class="container">
+    <br>
+    <div class="header-container">
+        <h1>Leaderboard for: {{selected}}</h1>
+    </div>
+    <select #selection [(ngModel)]="selected">
+            <option *ngFor="let option of options" [value]="option">
+                {{ option }}
+            </option>
+        </select>
+    <div class="inner-container">
+        <br>
+        <table id="myTable" class="table table-striped mb-0">
+            <thead>
+                <tr>
+                    <th scope="col">Place</th>
+                    <th scope="col">User</th>
+                    <th scope="col">Score</th>
+                    <th scope="col">Time Taken</th>
+                </tr>
+            </thead>
+            <tbody *ngFor = "let board of lboard, let i = index">
+                <tr *ngIf = "board.cat.category === selected">
+                    <td> {{i + 1}} </td>
+                    <td>{{board.username}}</td>
+                    <td>{{board.quizScore}}</td>
+                    <td>{{board.timeTaken}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

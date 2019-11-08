@@ -1,3 +1,4 @@
+
 package com.revature.controller;
 
 import javax.servlet.http.HttpSession;
@@ -15,7 +16,7 @@ import com.revature.service.CategoryServiceImpl;
 import com.revature.service.QuestionServiceImpl;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 public class QuestionController {
 	
 	private QuestionServiceImpl qService;

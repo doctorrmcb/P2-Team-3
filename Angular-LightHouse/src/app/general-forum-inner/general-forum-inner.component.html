@@ -2,7 +2,7 @@
     <p>
         <button type="button" class="btn" (click)="isCollapsed = !isCollapsed"
             [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-            {{ inputForum.title }}
+            {{ inputForum.title | uppercase }}
         </button>
     </p>
     <div id="collapseExample" [ngbCollapse]="!isCollapsed">

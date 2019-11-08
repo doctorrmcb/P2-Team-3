@@ -32,7 +32,7 @@ import static com.revature.util.LoggerUtil.*;
  */
 
 @RestController
-@CrossOrigin(origins = /*"localhost:4200"*/ "*")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true" /*"*"*/)
 public class ForumController {
 	
 	private ThreadServiceImpl threadService;
@@ -102,7 +102,7 @@ public class ForumController {
 
 	/**
 	 * Retrieves all posts in a thread based on thread title
-	 * @param title
+	 * @param title of the thread
 	 * @return list of posts
 	 */
 	@GetMapping("/post/{title}")
@@ -114,7 +114,26 @@ public class ForumController {
 		return postList;
 	}
 	
+	/**
+	 * Retrieves a thread based on thread title
+	 * @param title of the thread
+	 * @return thread
+	 */
+	@GetMapping("/thread/{title}")
+	public ForumThread getThreadByTitle(@PathVariable String title) {
+		info("Reached getTHreadByTitle of forum controller");
+		ForumThread thread = threadService.getThreadByTitle(title);
+		info("Thread: " + thread);
+		return thread;
+	}
 	
+	/**
+	 * Creates a post based on the thread
+	 * @param title of the thread
+	 * @param post object
+	 * @param sess http session
+	 * @return Response to dictate logic flow
+	 */
 	@PostMapping("/{title}/post")
 	public ControllerResponse createPost(@PathVariable String title, @RequestBody Post post, HttpSession sess) {
 		
@@ -125,11 +144,13 @@ public class ForumController {
 		info("Inside session of post " + sess.getAttribute("user"));
 		LocalDate postDate = LocalDate.now();
 		LocalTime postTime = LocalTime.now();
-		//LocalDateTime lastPost = LocalDateTime.of(postDate, postTime);
+		LocalDateTime lastPost = LocalDateTime.of(postDate, postTime);
 		post.setPostID(-1);
 		ForumThread thread = threadService.getThreadByTitle(title);
+		thread.setLastPost(lastPost);
+		threadService.updateThread(thread);
 		info(thread.toString());
-		post.setThreadID(threadService.getThreadByTitle(title));
+		post.setThreadID(thread);
 		post.setPosted_by(user);
 		post.setPostDate(postDate);
 		post.setPostTime(postTime);

@@ -29,6 +29,11 @@ public class LeaderboardServiceImpl implements LeaderboardService {
 			return true;
 		}
 	}
+	
+	@Override
+	public List<Leaderboard> getAllLead(){
+		return leadDAO.getAllLead();
+	}
 
 	@Override
 	public List<Leaderboard> getLeadByCat(String catName) {

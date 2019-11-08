@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Post } from '../types/Post';
 import { ControllerResponse } from '../types/ControllerResponse';
+import { Thread } from '../types/Thread';
+
 
 @Component({
   selector: 'app-thread',
@@ -11,10 +13,11 @@ import { ControllerResponse } from '../types/ControllerResponse';
 })
 export class ThreadComponent implements OnInit {
 
+  //@Input() inputThread: Thread;
   id: string;
   response: string;
   title = "";
-  contents: "";
+  contents: string;
   posts: Post[];
   display = 'none';
   //thread: Thread;
@@ -25,19 +28,42 @@ export class ThreadComponent implements OnInit {
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id');
     this.title = this.route.snapshot.paramMap.get('title');
+    this.getThread();
+    //this.contents = this.inputThread.contents;
     //this.thread = this.route.snapshot.paramMap.get('thread');
     this.getPosts();
   }
-
+  getThread() {
+    let url = 'http://localhost:8080/LightHouse/thread/' + this.title;
+    let result = this.http.get<Thread>(url, {}).subscribe(cr => {
+      this.contents = cr.contents;
+    })
+  }
   getPosts() {
     let url = 'http://localhost:8080/LightHouse/post/' + this.title;
     let result = this.http.get<Post[]>(url, {}).subscribe(cr => {
-      this.posts = cr;
+      this.posts = this.formatDate(cr);
+      this.posts.sort((a, b) => (a.orderBy > b.orderBy)?1:-1);
         //alert("Authentication failed.");
       
     });
   }
-
+  formatDate(posts: Post[]): Post[]{
+    for (let post of posts){
+      let orderBy = "";
+      orderBy += post.postDate[0];
+      orderBy += post.postDate[1];
+      orderBy += post.postDate[2];
+      orderBy += post.postTime[0];
+      if (post.postTime[1].toString().length < 2){
+        orderBy += '0' + post.postTime[1];
+      } else{
+        orderBy += post.postTime[1];
+      }
+      post.orderBy = Number(orderBy);
+    }
+    return posts;
+  }
   createNewPost() {
     this.display = 'block';
   }

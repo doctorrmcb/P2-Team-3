@@ -1,0 +1,61 @@
+<div class="outer-container">
+    <br>
+    <h1 id="title">Create a Question</h1>
+    <br>
+    <label class="label" id="label-question" for="question">Question:</label>
+    <input name="question" id="question" type="text" class="form-control" [(ngModel)]="question"
+        placeholder="question" />
+    <br>
+    <label class="label" id="label-ca" for="ca">Correct Answer:</label>
+    <input name="ca" id="ca" type="text" class="form-control" [(ngModel)]="ca" placeholder="Correct Answer" />
+    <br>
+    <label class="label" id="label-exp" for="exp">Explanation:</label>
+    <input name="exp" id="exp" type="text" class="form-control" [(ngModel)]="exp" placeholder="Explanation" />
+    <br>
+    <label class="label" id="label-wa1" for="wa1">Wrong Answer 1:</label>
+    <input name="wa1" id="wa1" type="text" class="form-control" [(ngModel)]="wa1" placeholder="Wrong Answer 1" />
+    <br>
+    <label class="label" id="label-wa2" for="wa2">Wrong Answer 2:</label>
+    <input name="wa2" id="wa2" type="text" class="form-control" [(ngModel)]="wa2" placeholder="Wrong Answer 2" />
+    <br>
+    <label class="label" id="label-wa3" for="wa3">Wrong Answer 3:</label>
+    <input name="wa3" id="wa3" type="text" class="form-control" [(ngModel)]="wa3" placeholder="Wrong Answer 3" />
+    <br>
+    <label class="label" id="label-dropdown" for="dropdown">Topic:</label>
+    <br>
+    <select #selection [(ngModel)]="selected" (change)="search(selection.value)">
+        <option *ngFor="let option of options" [value]="option">
+            {{ option }}
+        </option>
+    </select>
+
+
+</div>
+<br>
+<button name="createNewQuestion" id="createNewQuestion" class="btn" (click)="createNewQuestion()">CREATE A NEW
+    QUESTION</button>
+
+
+<div class="backdrop" [ngStyle]="{'display':createDisplay}"></div>
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':createDisplay}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()"><span aria-hidden="true">&times;</span></button>
+  -->
+                <h4 class="modal-title">Create a New Question</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <!-- <p>Model body text</p> -->
+
+                </form>
+                <h2 style="color:red; font-size: 16px;">{{response}}</h2>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" (click)="onCloseHandled()">CLOSE</button>
+                <button type="button" class="btn btn-default" (click)="onSubmit()">SUBMIT</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal !-->

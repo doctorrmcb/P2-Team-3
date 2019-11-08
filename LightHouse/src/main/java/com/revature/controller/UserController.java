@@ -16,7 +16,7 @@ import com.revature.service.ThreadServiceImpl;
 import com.revature.service.UserServiceImpl;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 public class UserController {
 	
 	private UserServiceImpl userService;

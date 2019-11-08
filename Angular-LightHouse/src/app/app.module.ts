@@ -24,6 +24,11 @@ import { QuizComponent } from './quiz/quiz.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { CategoryComponent } from './category/category.component';
 import { TakeQuizComponent } from './take-quiz/take-quiz.component';
+import { DeleteQuestionComponent } from './delete-question/delete-question.component';
+import { ManageQuestionComponent } from './manage-question/manage-question.component';
+import { CreateQuestionComponent } from './create-question/create-question.component';
+import { UpdateQuestionComponent } from './update-question/update-question.component';
+import { ViewQuestionComponent } from './view-question/view-question.component';
 
 @NgModule({	
   declarations: [	
@@ -43,7 +48,12 @@ import { TakeQuizComponent } from './take-quiz/take-quiz.component';
     LeaderboardComponent, 
     CategoryComponent,
     TakeQuizComponent,
-    QuizManagementComponent	
+    QuizManagementComponent,	
+    DeleteQuestionComponent,
+    ManageQuestionComponent,
+    CreateQuestionComponent,
+    UpdateQuestionComponent,
+    ViewQuestionComponent,
   ],	
   imports: [	
     routing,	
@@ -56,9 +66,9 @@ import { TakeQuizComponent } from './take-quiz/take-quiz.component';
   ],	
   exports: [	
   ],	
-  providers: [/*[	
+  providers: [[	
     { provide: HTTP_INTERCEPTORS, useClass: HttpRequestInterceptor, multi: true }	
-  ],*/],	
+  ],],	
   bootstrap: [AppComponent]	
 })	
     
