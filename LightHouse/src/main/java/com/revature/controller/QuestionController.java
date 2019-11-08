@@ -55,7 +55,8 @@ public class QuestionController {
 		//sess.getAttribute("user");
 		q.setUser(user);
 		qService.createQuestion(q);
-		return q;
+		Question que = qService.getQuestionByName(q.getQuestionName());
+		return que;
 		
 		}
 	

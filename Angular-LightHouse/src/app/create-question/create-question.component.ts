@@ -11,6 +11,7 @@ import { Question } from '../types/Question';
 })
 export class CreateQuestionComponent implements OnInit {
 
+  qID: number;
   question: "";
   ca: "";
   exp: "";
@@ -40,12 +41,17 @@ export class CreateQuestionComponent implements OnInit {
         
       }/*, { headers: headers }*/).subscribe(cr => {
         if (cr != null) {
-          console.log("Response" + cr.questionName);
+          console.log("Response " + cr.questionName);
           this.onCloseHandled();
+          this.qID = cr.qID;
+          console.log("Response Question ID = " + cr.qID)
+          console.log(this.qID);
           this.ngOnInit();
+          
+          this.createNewQuestion();
         } else {
-          console.log("Response" + cr.response);
-          this.response = cr.response;
+          //console.log("Response" + cr.response);
+          this.response = "Question Already Exists";
           //alert("Authentication failed.");
         }
       });
