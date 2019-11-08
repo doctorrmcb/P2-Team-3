@@ -18,6 +18,7 @@ export class ResourcesPageComponent {
   options = ['Java', 'HTML', 'CSS', 'PostgreSQL', 'JavaScript'];
   selected = this.options[0];
   path: "";
+  //path0: "";
 
   //private http: HttpClient;
   
@@ -109,12 +110,13 @@ export class ResourcesPageComponent {
     });
   }
 
-  downloadFile(file): void {
-    let url = 'http://localhost:8080/LightHouse/download-files';
+  downloadFile(fileName): void {
+    let url = 'http://localhost:8080/LightHouse/download-file/';
 
-    let keyName = file.name;
-    let filePath = this.path + file.name;
+    let keyName = fileName;
+    let filePath = this.path + fileName;
     let return0 = "!"+keyName+"!" + filePath+"!";
+    console.log("Attempting to download file with keyName: " +keyName+ " filePath: " + filePath)
 
     let result = this.http.post<ControllerResponse>(url, {
       return0 
