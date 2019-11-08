@@ -1,0 +1,46 @@
+<div class="paddingClass">
+    <br>
+    <div class="table-wrapper-scroll-y my-custom-scrollbar">
+        <dt *ngFor="let question of questions, let i = index">
+            <br>
+            <table class="table table-bordered table-striped mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col"> Question {{i+1}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <br>
+                    <label id="questionName">{{question.questionName}}?</label>
+                    <div class="form-group" id="formGroup{{i}}">
+
+                        <input type="radio" id="answer1" name="question{{i}}" class="radio" value="question1answer1"
+                            ng-model="formData.question1"><label class="radiolabel">{{question.answers[0]}}</label>
+                        <br>
+
+                        <input type="radio" id="answer2" name="question{{i}}" class="radio" value="question1answer2"
+                            ng-model="formData.question1"><label class="radiolabel">{{question.answers[1]}}</label>
+                            <br>
+
+                        <input type="radio" id="answer3" name="question{{i}}" class="radio" value="question1answer3"
+                            ng-model="formData.question1"><label class="radiolabel">{{question.answers[2]}}</label>
+                            <br>
+
+                        <input type="radio" id="answer4" name="question{{i}}" class="radio" value="question1answer3"
+                            ng-model="formData.question1"> <label class="radiolabel">
+                            {{question.answers[3]}}</label>
+
+                    </div>
+                </tbody>
+
+            </table>
+        </dt>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <button type="button" class="btn btn-lg" (click)="submitQuiz()">SUBMIT</button>
+                <!-- <button type="button" class="btn btn-lg" (click)="saveQuiz(selected)">SAVE</button> -->
+            </ol>
+        </nav>
+    </div>
+</div>

@@ -6,39 +6,110 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import com.revature.pojo.ForumThread;
 import com.revature.pojo.Post;
+import com.revature.pojo.User;
 import com.revature.util.SessionFactoryUtil;
 
+import static com.revature.util.LoggerUtil.*;
 
-/*
- * Author - Robert Li
+/**
+ * This class implements CRUD methods for Post objects
+ * 
+ * @author Robert Li
  */
+@Component
 public class PostDAOImpl implements PostDAO {
 
-private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
-	
+	/**
+	 * This is the SessionFactory that will create sessions
+	 */
+	private static SessionFactory sf;
+
+	@Autowired
+	public void setSessionFactory(SessionFactory sf) {
+		this.sf = sf;
+	}
+	/**
+	 * This method gets a post from the database
+	 * 
+	 * @param postID is the ID of the post to retrieve
+	 * @return Post returns the post
+	 */
 	@Override
 	public Post getPost(int postID) {
+		info("Getting post with ID: " + postID);
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
-		Post Post = (Post) sess.get(Post.class, postID);
+		Post post = (Post) sess.get(Post.class, postID);
+		info("Got post with ID:" + post.getPostID());
 		tx.commit();
 		sess.close();
-		return Post;
+		return post;
 	}
+	
+	/**
+	 * Gets all posts belonging to a user
+	 * 
+	 * @param user who wrote the posts
+	 * @return list of posts
+	 */
+	public List<Post> getPostsByUser(User user){
+		
+		Session sess = sf.openSession();
+		Transaction tx = sess.beginTransaction();
+		Criteria crit = sess.createCriteria(Post.class).add(Restrictions.eq("postedBy", user));
+		List<Post> postList = crit.list();
+		tx.commit();
+		sess.clear();
+		return postList;
+		
+	}
+	
+	/**
+	 * Gets all posts belonging to a thread
+	 * 
+	 * @param the thread
+	 * @return list of posts
+	 */
+	@Override
+	public List<Post> getPostsByThread(ForumThread thread){
+		Session sess = sf.openSession();
+		Transaction tx = sess.beginTransaction();
+		Criteria crit = sess.createCriteria(Post.class).add(Restrictions.eq("threadID", thread));
+		List<Post> postList = crit.list();
+		tx.commit();
+		sess.clear();
+		return postList;
+	}
+	/**
+	 * This method gets all posts from the database
+	 * 
+	 * @return postList This is the list of all posts
+	 */
 
 	@Override
 	public List<Post> getAllPosts() {
-		
+		info("Getting all posts");
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
 		Criteria crit = sess.createCriteria(Post.class);
 		List<Post> postList = crit.list();
+		info("Retrieved " + postList.size() + "posts");
 		tx.commit();
 		sess.close();
 		return postList;
 	}
+
+	/**
+	 * This method inserts a post into the database
+	 * 
+	 * @param post This post is the post to be inserted
+	 */
 
 	@Override
 	public void createPost(Post post) {
@@ -49,6 +120,12 @@ private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 		sess.close();
 	}
 
+	/**
+	 * This method updates a post in the database
+	 * 
+	 * @param post is the post to be updated
+	 */
+
 	@Override
 	public void updatePost(Post post) {
 		Session sess = sf.openSession();
@@ -57,6 +134,12 @@ private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 		tx.commit();
 		sess.close();
 	}
+
+	/**
+	 * This method deletes a post from the database
+	 * 
+	 * @param post is the post to be deleted
+	 */
 
 	@Override
 	public void deletePost(Post post) {

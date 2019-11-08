@@ -1,0 +1,23 @@
+<div>
+    <p>
+        <button type="button" class="btn" (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+            {{ inputForum.title | uppercase }}
+        </button>
+    </p>
+    <div id="collapseExample" [ngbCollapse]="!isCollapsed">
+        <div class="card">
+            <div class="card-body">
+                <dl class="Threads">
+                    <dt *ngFor="let String of inputForum.subforum; let i = index">
+                        <div class="anchor-container">
+                            <a [routerLink]="['../sub-forum', String]">{{ String }}</a>
+                            <p>{{ inputForum.descriptions[i] }}</p>
+                        </div>
+                    </dt>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
