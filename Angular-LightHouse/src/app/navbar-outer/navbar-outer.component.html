@@ -1,29 +1,38 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-  <a href="/"><img class="navbar-brand" id="revature-image" src="assets/Revature-Logo.png" alt="HomePage"></a>
+  <!-- <div id="link-container"> -->
+    
 
 
     <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" id="home-link" [routerLink]="['./home']">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="quiz-link" [routerLink]="['./take-quiz']">Quiz</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="forum-link" [routerLink]="['./general-forum']">Forum</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="resources-link" [routerLink]="['./resources']">Resources</a>
-          </li>
-        </ul>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+          <a href="/"><img class="navbar-brand" id="revature-image" src="assets/Revature-Logo.png" alt="HomePage"></a>
+      </li>
+      <li class="nav-item active words" id="home-li">
+        <a class="nav-link" id="home-link" [routerLink]="['./home']">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item words">
+        <a class="nav-link" id="quiz-link" [routerLink]="['./take-quiz']">Quiz</a>
+      </li>
+      <li class="nav-item words">
+        <a class="nav-link" id="forum-link" [routerLink]="['./general-forum']">Forum</a>
+      </li>
+      <li class="nav-item words">
+        <a class="nav-link" id="resources-link" [routerLink]="['./resources']">Resources</a>
+      </li>
+      <li class="buttons" id="profile-li">
+          <button class="btn" id="profile" type="submit" [routerLink]="['./user/', username]">Profile</button>
+      </li>
+      <li class="buttons">
+          <button class="btn" id="logout" type="submit" [routerLink]="['']">Logout</button>
+      </li>
+    </ul>
 
-        <!-- <form class="form-inline my-2 my-lg-0"> -->
-            <!-- <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search"> -->
-            <button class="btn  " id="profile" type="submit" [routerLink]="['./user/', username]">Profile</button>
-            <button class="btn  " id="logout" type="submit" [routerLink]="['']">Logout</button>
-          <!-- </form> -->
+    <!-- <form class="form-inline my-2 my-lg-0"> -->
+    <!-- <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search"> -->
+    
+    
+    <!-- </form> -->
     <!-- </div> -->
-
+  <!-- </div> -->
 </nav>
-

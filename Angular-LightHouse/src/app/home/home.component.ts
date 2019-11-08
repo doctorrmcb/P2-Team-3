@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   elemForum = document.getElementById('forum-link');
   elemQuiz = document.getElementById('quiz-link');
   elemHome = document.getElementById('home-link');
-  elemSearch = document.getElementById('search');
+  /* elemSearch = document.getElementById('search'); */
   elemProfile = document.getElementById('profile');
   elemLogout = document.getElementById('logout');
 
