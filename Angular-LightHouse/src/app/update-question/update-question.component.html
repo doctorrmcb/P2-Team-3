@@ -29,11 +29,11 @@
             <div id="collapseOne" [ngbCollapse]="!isCollapsed">
                 <div class="card">
                     <div class="card-body">
-                        <label class="label" id="label-oldcontent" for="oldcontent">Content of the targeted
+                        <!-- <label class="label" id="label-oldcontent" for="oldcontent">Content of the targeted
                             question:</label>
                         <input name="oldcontent" id="oldcontent" type="text" class="form-control"
                             [(ngModel)]="oldcontent" placeholder="targeted question" />
-                        <br>
+                        <br> -->
                         <label class="label" id="label-newcontent" for="newcontent">Content of the updated
                             question:</label>
                         <input name="newcontent" id="newcontent" type="text" class="form-control"
@@ -47,8 +47,8 @@
                                         [(ngModel)]="questionid" placeholder="question id" />
                                 </div>
                                 <div class="col">
-                                    <button type="button" class="btn btn-lg" (click)="isCollapsed = !isCollapsed"
-                                        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseOne">UPDATE QUESTION</button>
+                                    <button type="button" class="btn btn-lg submit" (click)="updateQuestionName()"
+                                        [attr.aria-expanded]="!isCollapsed" aria-controls="collapse">UPDATE QUESTION</button>
                                 </div>
                             </div>
                         </form>
@@ -67,11 +67,11 @@
             <div id="collapseExample2" [ngbCollapse]="!isCollapsed2">
                 <div class="card">
                     <div class="card-body">
-                        <label class="label" id="label-oldanswer" for="oldanswer">Content of the targeted correct
+                        <!-- <label class="label" id="label-oldanswer" for="oldanswer">Content of the targeted correct
                             answer:</label>
                         <input name="oldanswer" id="oldanswer" type="text" class="form-control" [(ngModel)]="oldanswer"
                             placeholder="targeted correct answer" />
-                        <br>
+                        <br> -->
                         <label class="label" id="label-newanswer" for="newanswer">Content of the updated correct
                             answer:</label>
                         <input name="newanswer" id="newanswer" type="text" class="form-control" [(ngModel)]="newanswer"
@@ -85,8 +85,8 @@
                                         [(ngModel)]="questionid1" placeholder="question id" />
                                 </div>
                                 <div class="col">
-                                    <button type="button" class="btn btn-lg" (click)="isCollapsed = !isCollapsed"
-                                        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseOne">UPDATE QUESTION</button>
+                                    <button type="button" class="btn btn-lg submit" (click)="updateQuestionCorrect()"
+                                        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseTwo">UPDATE QUESTION</button>
                                 </div>
                             </div>
                         </form>
@@ -105,11 +105,11 @@
             <div id="collapseExample3" [ngbCollapse]="!isCollapsed3">
                 <div class="card">
                     <div class="card-body">
-                        <label class="label" id="label-oldexplanation" for="oldexplanation">Content of the targeted
+                        <!-- <label class="label" id="label-oldexplanation" for="oldexplanation">Content of the targeted
                             explanation:</label>
                         <input name="oldexplanation" id="oldexplanation" type="text" class="form-control"
                             [(ngModel)]="oldexplanation" placeholder="targeted explanation" />
-                        <br>
+                        <br> -->
                         <label class="label" id="label-newexplanation" for="newexplanation">Content of the updated
                             explanation:</label>
                         <input name="newexplanation" id="newexplanation" type="text" class="form-control"
@@ -123,8 +123,8 @@
                                         [(ngModel)]="questionid2" placeholder="question id" />
                                 </div>
                                 <div class="col">
-                                    <button type="button" class="btn btn-lg" (click)="isCollapsed = !isCollapsed"
-                                        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseOne">UPDATE QUESTION</button>
+                                    <button type="button" class="btn btn-lg submit" (click)="updateQuestionExplain()"
+                                        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseThree">UPDATE QUESTION</button>
                                 </div>
                             </div>
                         </form>
