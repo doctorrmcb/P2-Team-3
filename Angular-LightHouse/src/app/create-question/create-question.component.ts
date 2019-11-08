@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { ControllerResponse } from '../types/ControllerResponse';
+import { Question } from '../types/Question';
 
 @Component({
   selector: 'app-create-question',
@@ -29,7 +30,7 @@ export class CreateQuestionComponent implements OnInit {
   onSubmit() {
       let url = 'http://localhost:8080/LightHouse/createQuestion/' + this.selected;
       console.log(url);
-      let result = this.http.post<ControllerResponse>(url, {
+      let result = this.http.post<Question>(url, {
         questionName: this.question,
         correctAnswer: this.ca,
         wrongAnswer1: this.wa1,
@@ -38,8 +39,8 @@ export class CreateQuestionComponent implements OnInit {
         explanation: this.exp
         
       }/*, { headers: headers }*/).subscribe(cr => {
-        if (cr.response === "success") {
-          console.log("Response" + cr.response);
+        if (cr != null) {
+          console.log("Response" + cr.questionName);
           this.onCloseHandled();
           this.ngOnInit();
         } else {

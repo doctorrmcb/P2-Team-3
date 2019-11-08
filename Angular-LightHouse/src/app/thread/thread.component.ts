@@ -94,7 +94,7 @@ export class ThreadComponent implements OnInit {
     //let headers = new HttpHeaders();
     //headers.append("allow-control-allow-credentials", "true");
     let result = this.http.post<ControllerResponse>(url, {
-      contents: this.contents
+      contents: this.postContents
     }/*, { headers: headers }*/).subscribe(cr => {
       if (cr.response === "success") {
         console.log("Response" + cr.response);

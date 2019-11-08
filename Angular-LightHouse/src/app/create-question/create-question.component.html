@@ -22,7 +22,8 @@
     <br>
     <label class="label" id="label-dropdown" for="dropdown">Topic:</label>
     <br>
-    <select #selection [(ngModel)]="selected" (change)="search(selection.value)">
+    <h2 style = "color:red; font-size: 16px;">{{response}}</h2>
+    <select #selection [(ngModel)]="selected">
         <option *ngFor="let option of options" [value]="option">
             {{ option }}
         </option>
@@ -31,7 +32,7 @@
 
 </div>
 <br>
-<button name="createNewQuestion" id="createNewQuestion" class="btn" (click)="createNewQuestion()">CREATE A NEW
+<button name="createNewQuestion" id="createNewQuestion" class="btn" (click)="onSubmit()">CREATE A NEW
     QUESTION</button>
 
 
@@ -52,7 +53,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-lg" (click)="onCloseHandled()">CLOSE</button>
-                <button type="button" class="btn btn-lg" (click)="onSubmit()">SUBMIT</button>
+                <!-- <button type="button" class="btn btn-lg" (click)="onSubmit()">SUBMIT</button> -->
             </div>
         </div>
         <!-- /.modal-content -->
