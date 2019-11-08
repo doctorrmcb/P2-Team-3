@@ -13,7 +13,7 @@
 
 #path0 {
     vertical-align: middle;
-    margin-top: 7.5%;
+    margin-top: 2.5%;
 }
 
 .btn {
@@ -30,7 +30,7 @@
     font-weight: 700;
     width: 80%;
     position: relative; 
-    left: 10%;
+    /* left: 10%; */
 }
 
 .btn:hover, .btn:active, .btn:focus {

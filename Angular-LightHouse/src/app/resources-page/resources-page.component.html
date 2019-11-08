@@ -1,67 +1,61 @@
-
 <div class="paddingClass">
 
   <h1>Resources and Documentation</h1>
 
-<p>Take a look at our reccommended resources for studying!</p>
+  <p>Take a look at our reccommended resources for studying!</p>
 
-<div>
-  <h6> Sort by category: </h6>
-  <select #selection [(ngModel)]="selected" (change)="onGetS3FilesByCat(selection.value)">
-      <option *ngFor="let option of options" 
-              value="{{option}}"> 
+  <div>
+    <h6> Sort by category: </h6>
+    <select #selection [(ngModel)]="selected" (change)="onGetS3FilesByCat(selection.value)">
+      <option *ngFor="let option of options" value="{{option}}">
         {{ option }}
       </option>
- </select>
-</div>
-<p></p>
-<div>Selected Option: {{ selected }}</div>
+    </select>
+  </div>
+  <p></p>
+  <div>Selected Option: {{ selected }}</div>
 
-<div class="table-wrapper-scroll-y my-custom-scrollbar">
-<table id="myTable" class="table table-striped mb-0">
-  <thead>
-  <tr>
-    <th scope="col">Resource / Documentation</th>
-    <th scope="col">Download</th>
-    <th scope="col"></th>
-    <th scope="col">Rating</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let resource of resources">
-    <td>
-      {{ resource.keyName }}
-    </td>
-    <td><button
-      (click)="downloadFile(resource.keyName)"
-       class="btn btn-sm">DOWNLOAD</button></td>
-       <input type="text" id="path0" [(ngModel)]="path" placeholder="Path to download to">
-    <td></td>
-    <td> <span style="font-size:150%;color:yellow;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td>
-  </tr>
-  </tbody>
-</table>
-</div>
+  <div class="table-wrapper-scroll-y my-custom-scrollbar">
+    <table id="myTable" class="table table-striped mb-0">
+      <thead>
+        <tr>
+          <th scope="col">Resource / Documentation</th>
+          <th scope="col">Download</th>
+          <th scope="col"></th>
+          <th scope="col">Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let resource of resources">
+          <td>
+            {{ resource.keyName }}
+          </td>
+          <td><span><button (click)="downloadFile(resource.keyName)" class="btn btn-sm">DOWNLOAD</button></span></td>
+          <td><input type="text" id="path0" [(ngModel)]="path" placeholder="Path to download to"></td>
+          <!-- <td></td> -->
+          <td> <span style="font-size:150%;color:yellow;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<br>
-<br>
-<h2>Upload your own resources!</h2>
+  <br>
+  <br>
+  <h2>Upload your own resources!</h2>
 
-<label class="label" id="label-path" for="path">Path:</label>
-<br>
-<input type="text" id="path" [(ngModel)]="path" placeholder="Path">
-<br>
-<br>
-<input type="file"
-       id="avatar" name="avatar"
-       (change)="uploadFile($event.target.files[0])">
-       <!-- <button
+  <label class="label" id="label-path" for="path">Path:</label>
+  <br>
+  <input type="text" id="path" [(ngModel)]="path" placeholder="Path">
+  <br>
+  <br>
+  <input type="file" id="avatar" name="avatar" (change)="uploadFile($event.target.files[0])">
+  <!-- <button
        (click)="uploadFile(avatar.value)"
         class="btn btn-primary btn-sm">Upload</button> -->
-<br>
-<br>
+  <br>
+  <br>
 
-<!-- <div class="table-wrapper-scroll-y my-custom-scrollbar">
+  <!-- <div class="table-wrapper-scroll-y my-custom-scrollbar">
   <table id="myTable" class="table table-striped mb-0">
     <thead>
     <tr>
