@@ -25,6 +25,7 @@ export class TakeQuizComponent implements OnInit {
     private http: HttpClient) { }
 
     ngOnInit() {
+      this.selected = "Java";
       this.getCategories();
     }
 
