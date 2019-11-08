@@ -27,4 +27,10 @@ export class QuizComponent implements OnInit {
 
   }
 
+  submitQuiz(selected) {
+    for (let i = 0; i < 10; i++) {
+      
+    }
+  }
+
 }

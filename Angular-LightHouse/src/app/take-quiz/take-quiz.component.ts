@@ -44,8 +44,6 @@ export class TakeQuizComponent implements OnInit {
        // console.log('take-quiz: ' + this.questions);
         this.router.navigate(['quiz'], {state: [this.questions]})
       });
-
-      ;
     }
   
 }

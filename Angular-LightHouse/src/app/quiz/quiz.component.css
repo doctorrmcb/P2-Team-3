@@ -70,6 +70,15 @@ dl {
     margin-left: 5%;
     margin-right: 5%;
 }
+
 .radiolabel {
-    margin-left: 5%;
+    margin-left: 1%;
+}
+
+.radio {
+    margin-left: 1%;
+}
+
+#questionName {
+    margin-left: 2%;
 }
