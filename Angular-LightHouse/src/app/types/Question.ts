@@ -5,10 +5,7 @@ export class Question {
     user: User;
     category: Category;
     questionName: string;
-    correctAnswer: string;
-    wrongAnswer1: string;
-    wrongAnswer2: string;
-    wrongAnswer3: string;
+    answers:String[];
     explanation: string;
     questionRating: number;
     status: string;
