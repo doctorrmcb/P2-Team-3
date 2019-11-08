@@ -49,7 +49,7 @@ export class CreateQuestionComponent implements OnInit {
           this.ngOnInit();
           
           this.createNewQuestion();
-          this.router.navigate(['view-question']);
+          
         } else {
           //console.log("Response" + cr.response);
           this.response = "Question Already Exists";
@@ -58,6 +58,10 @@ export class CreateQuestionComponent implements OnInit {
       });
     }
 
+
+  onContinue() {
+    this.router.navigate(['view-question']);
+  }
   constructor(private route: ActivatedRoute,
     private router: Router,
     private http: HttpClient) { }
