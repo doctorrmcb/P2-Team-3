@@ -44,7 +44,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input class="form-control" type="text" id="newAttributeid" [(ngModel)]="newAttribute.id"
+                        <input class="form-control" type="text" id="newAttributeid" [(ngModel)]="newAttribute[i]"
                             name="newAttributeid" />
                     </td>
                     <td>
@@ -69,7 +69,7 @@
         <p></p>
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group mr-2" role="group" aria-label="First group">
-                <button type="button" class="btn btn-lg">CONFIRM DELETION</button>
+                <button type="button" class="btn btn-lg" (click) = "onDelete()">CONFIRM DELETION</button>
             </div>
         </div>
     </div>

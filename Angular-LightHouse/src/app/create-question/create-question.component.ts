@@ -41,11 +41,11 @@ export class CreateQuestionComponent implements OnInit {
         
       }/*, { headers: headers }*/).subscribe(cr => {
         if (cr != null) {
-          console.log("Response " + cr.questionName);
+          //console.log("Response " + cr.questionName);
           this.onCloseHandled();
-          this.qID = cr.qID;
-          console.log("Response Question ID = " + cr.qID)
-          console.log(this.qID);
+          this.qID = cr.questionID;
+          //console.log("Response Question ID = " + cr.questionID)
+          //console.log(this.qID);
           this.ngOnInit();
           
           this.createNewQuestion();
