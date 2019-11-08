@@ -125,11 +125,12 @@ public class S3FileDAOImpl implements S3FileDAO{
 			while((line = reader.readLine()) != null)
 			{
 				bufferWriter.write(line);
-				gotFile = true;
 			}
 			
 			objectDataInput.close();
 			bufferWriter.close();
+			
+			gotFile = true;
 			
 		} catch (IOException e) {
 			e.printStackTrace();

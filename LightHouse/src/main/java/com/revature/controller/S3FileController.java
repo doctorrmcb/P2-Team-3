@@ -90,7 +90,7 @@ public class S3FileController {
 	 * 
 	 * @author ErikHaklar
 	 */
-	@GetMapping("/download-file/{}")
+	@PostMapping("/download-file")
 	public ControllerResponse downloadFile(@RequestBody String return0){
 		
 		String[] infoString = return0.split("[!]");
@@ -99,16 +99,27 @@ public class S3FileController {
 		String filePath0 = infoString[2];
 		
 		info("Reached downloadFile in S3FileController");
+		info("keyName0: "+ keyName0 +" - filePath0: "+ filePath0);
 		S3File file = new S3File();
 		file.setKeyName(keyName0);
 		file.setFilePath(filePath0);
 		
-		S3Object fileObject;
-		fileObject = s3FileServiceImpl.sendFile(file);
+		boolean status;
+		status = s3FileServiceImpl.downloadFile(file);
+		String response = "";
 		
 		ControllerResponse cr = new ControllerResponse();
 		
-		cr.setResponse(fileObject.toString());
+		if (status == true)
+		{
+			response = "success";
+		}
+		else
+		{
+			response = "failure";
+		}
+		
+		cr.setResponse(response);
 		return cr;
 	}
 	
