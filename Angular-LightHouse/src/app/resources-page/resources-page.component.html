@@ -33,8 +33,9 @@
       {{ resource.keyName }}
     </td>
     <td><button
-      (click)="downloadFile(resource)"
+      (click)="downloadFile(resource.keyName)"
        class="btn btn-sm">DOWNLOAD</button></td>
+       <input type="text" id="path0" [(ngModel)]="path" placeholder="Path to download to">
     <td></td>
     <td> <span style="font-size:150%;color:yellow;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td>
   </tr>

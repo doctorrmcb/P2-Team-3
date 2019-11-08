@@ -10,7 +10,6 @@ import org.junit.runners.Suite.SuiteClasses;
 
 //import com.revature.dao.S3FileDAO;
 import com.revature.pojo.S3File;
-import com.revature.s3.FileManagementS3;
 
 @RunWith(Suite.class)
 @SuiteClasses({})
