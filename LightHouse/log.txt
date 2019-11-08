@@ -90,3 +90,7 @@
 2019-11-07 20:26:30 INFO  root:25 - Closing the session
 2019-11-07 20:28:37 INFO  root:25 - ListReadCategory running...
 2019-11-07 20:28:58 INFO  root:25 - Opening session..
+2019-11-07 18:56:46 INFO  root:25 - Getting user with ID: 1
+2019-11-07 18:56:46 INFO  root:25 - Got user with ID:1
+2019-11-07 18:58:01 INFO  root:25 - Getting user with ID: 1
+2019-11-07 18:58:02 INFO  root:25 - Got user with ID:1

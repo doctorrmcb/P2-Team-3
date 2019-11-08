@@ -22,7 +22,7 @@ export class LeaderboardComponent implements OnInit {
     let url = 'http://localhost:8080/LightHouse/leaderboard';
     let result = this.http.get<Leaderboard[]>(url, {}).subscribe(tr => {
       this.lboard = tr;
-      this.lboard.sort((a, b) => (a.quizScore < b.quizScore)? 1: (a.quizScore === b.quizScore) ? ((a.timeTaken < b.timeTaken)?1:-1): -1);
+      this.lboard.sort((a, b) => (a.quizScore < b.quizScore)? 1: (a.quizScore === b.quizScore) ? ((a.timeTaken > b.timeTaken)?1:-1): -1);
     })
   }
 

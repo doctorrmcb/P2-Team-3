@@ -40,6 +40,7 @@ export class LoginComponent implements OnInit {
         sessionStorage.setItem(
           'user', this.username
         ); 
+        console.log("User: " + sessionStorage.getItem('user'));
         this.router.navigate(['home']);
       } else {
         console.log("Response" + cr.response);

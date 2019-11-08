@@ -1,6 +1,6 @@
 import { User } from './User';
 
-export class Thread {
+export class ForumThread {
     threadID: number;
     postedBy: User;
     title: string;

@@ -24,6 +24,7 @@ export class GeneralForumComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
