@@ -47,6 +47,8 @@ ul {
 
 li {
     max-height: 100%;
+    font-family: 'Futura-PT';
+    font-size: 15px;
 }
 
 .words {
@@ -55,7 +57,7 @@ li {
 
 .buttons {
     margin-top: 1%;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 #home-li {
