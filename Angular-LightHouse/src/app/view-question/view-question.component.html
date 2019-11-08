@@ -19,7 +19,7 @@
 
     <br>
     <nav class="navbar navbar-light bg-light justify-content-between">
-        <a class="navbar-brand">Take a Look of the Categories of Questions Available!</a>
+        <a class="navbar-brand">Take a Look at the Categories of Questions Available!</a>
 
         <div>
             <div>Select Category</div>
@@ -45,8 +45,7 @@
                     <th scope="col">Rating</th>
                 </tr>
             </thead>
-            <tbody>
-                <div *ngFor="let question of questions">
+                <tbody *ngFor="let question of questions">
                     <tr>
                         <td>{{question.questionID}} </td>
                         <td>{{question.questionName}}</td>
@@ -54,7 +53,6 @@
                         <td>{{question.explanation}}</td>
                         <td>{{question.questionRating}}</td>
                     </tr>
-                </div>
             </tbody>
         </table>
     </div>
