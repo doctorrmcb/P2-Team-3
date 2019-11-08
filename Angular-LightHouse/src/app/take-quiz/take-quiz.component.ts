@@ -42,9 +42,10 @@ export class TakeQuizComponent implements OnInit {
         console.log("cr: " + cr);
         console.log("cr[0].questionName: " + cr[0].questionName);
         console.log('take-quiz: ' + this.questions);
+        this.router.navigate(['quiz'], {state: this.questions})
       });
 
-      this.router.navigate(['quiz'], {state: {data: this.questions}});
+      ;
     }
   
 }

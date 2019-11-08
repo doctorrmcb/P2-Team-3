@@ -20,6 +20,8 @@ export class QuizComponent implements OnInit {
 
   ngOnInit() {
 
+    console.log(history.state[0]);
+    console.log(history.state[1]);
     this.questions = history.state;
     console.log("quiz: " + this.questions);
 
