@@ -32,8 +32,8 @@ export class DeleteQuestionComponent implements OnInit {
   }
 
   onDelete() {
-    for (let i of this.newAttribute ){
-      this.deleteQuestion(i);
+    for (let i of this.fieldArray ){
+      this.deleteQuestion(i.id);
     }
   }
 
