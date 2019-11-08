@@ -8,10 +8,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class NavbarOuterComponent implements OnInit {
 
+  username: String;
+
   constructor(private route: ActivatedRoute,
     private router: Router) { }
 
   ngOnInit() {
+    this.username = sessionStorage.getItem('user');
   }
 
 }

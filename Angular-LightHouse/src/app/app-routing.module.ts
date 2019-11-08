@@ -19,6 +19,8 @@ import { CreateQuestionComponent } from './create-question/create-question.compo
 import { UpdateQuestionComponent } from './update-question/update-question.component';
 import { ViewQuestionComponent } from './view-question/view-question.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const appRoutes: Routes = [
   {path: '', component: LoginComponent},
@@ -39,7 +41,9 @@ const appRoutes: Routes = [
   {path: 'manage-question', component: ManageQuestionComponent},
   {path: 'update-question', component: UpdateQuestionComponent},
   {path: 'view-question', component: ViewQuestionComponent},
-  {path: 'quiz', component: QuizComponent}
+  {path: 'quiz', component: QuizComponent},
+  {path: 'user/:username', component:ProfileComponent},
+  {path: 'logout', component:LogoutComponent}
 ]
 
 

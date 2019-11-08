@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Post } from '../types/Post';
 import { ControllerResponse } from '../types/ControllerResponse';
-import { Thread } from '../types/Thread';
+import { ForumThread } from '../types/Thread';
 
 
 @Component({
@@ -35,7 +35,8 @@ export class ThreadComponent implements OnInit {
   }
   getThread() {
     let url = 'http://localhost:8080/LightHouse/thread/' + this.title;
-    let result = this.http.get<Thread>(url, {}).subscribe(cr => {
+    let result = this.http.get<ForumThread>(url, {}).subscribe(cr => {
+      console.log(cr);
       this.contents = cr.contents;
     })
   }
@@ -44,23 +45,36 @@ export class ThreadComponent implements OnInit {
     let result = this.http.get<Post[]>(url, {}).subscribe(cr => {
       this.posts = this.formatDate(cr);
       this.posts.sort((a, b) => (a.orderBy > b.orderBy)?1:-1);
-        //alert("Authentication failed.");
-      
     });
   }
   formatDate(posts: Post[]): Post[]{
     for (let post of posts){
       let orderBy = "";
       orderBy += post.postDate[0];
-      orderBy += post.postDate[1];
-      orderBy += post.postDate[2];
-      orderBy += post.postTime[0];
+      if (post.postDate[1].toString().length < 2){
+        orderBy += '0' + post.postDate[1];
+      } else{
+        orderBy += post.postDate[1];
+      }
+      if (post.postDate[2].toString().length < 2){
+        orderBy += '0' + post.postDate[2];
+      } else{
+        orderBy += post.postDate[2];
+      }
+
+      if (post.postTime[0].toString().length < 2){
+        orderBy += '0' + post.postTime[0];
+      } else{
+        orderBy += post.postTime[0];
+      }
+      
       if (post.postTime[1].toString().length < 2){
         orderBy += '0' + post.postTime[1];
       } else{
         orderBy += post.postTime[1];
       }
       post.orderBy = Number(orderBy);
+      console.log(post.orderBy);
     }
     return posts;
   }

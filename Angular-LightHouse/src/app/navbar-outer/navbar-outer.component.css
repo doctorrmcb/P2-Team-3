@@ -6,6 +6,12 @@
     margin-bottom: 0.5%;
 }
 
+button {
+    border-color: #F26925;
+    color: #F26925;
+    
+}
+
 #navbar {
     height: 80px;
 }

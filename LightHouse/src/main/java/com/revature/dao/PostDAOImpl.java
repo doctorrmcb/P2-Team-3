@@ -62,7 +62,7 @@ public class PostDAOImpl implements PostDAO {
 		
 		Session sess = sf.openSession();
 		Transaction tx = sess.beginTransaction();
-		Criteria crit = sess.createCriteria(Post.class).add(Restrictions.eq("userID", user));
+		Criteria crit = sess.createCriteria(Post.class).add(Restrictions.eq("postedBy", user));
 		List<Post> postList = crit.list();
 		tx.commit();
 		sess.clear();

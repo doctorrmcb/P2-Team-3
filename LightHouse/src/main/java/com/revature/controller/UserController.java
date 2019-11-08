@@ -70,7 +70,7 @@ public class UserController {
 	 * @param username of the user
 	 * @return user
 	 */
-	@GetMapping("/{username}")
+	@GetMapping("/user/{username}")
 	public User getUser(@PathVariable String username) {
 		User user = userService.getUserByUsername(username);
 		return user;

@@ -1,9 +1,9 @@
-import { Thread } from './Thread';
+import { ForumThread } from './Thread';
 import { User } from './User';
 
 export class Post{
     postID: number;
-    threadID: Thread;
+    threadID: ForumThread;
     posted_by: User;
     contents: string;
     //postDate: Date;
