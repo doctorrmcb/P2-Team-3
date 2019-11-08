@@ -60,7 +60,7 @@ public class CategoryController {
 	 * @return
 	 */
 	@GetMapping("/category")
-	public List<Category> getCategories(){
+	public List<Category> 	getCategories(){
 		List<Category> catList = new ArrayList<Category>();
 		catList = catService.getAllCategory();
 		return catList;

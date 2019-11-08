@@ -25,15 +25,18 @@ export class DeleteQuestionComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private http: HttpClient
-  ) { }
+    private http: HttpClient,
+  ) { this.addFieldValue() }
 
   ngOnInit() {
   }
 
   onDelete() {
-    for (let i of this.fieldArray ){
-      this.deleteQuestion(i.id);
+    console.log(this.fieldArray);
+    for (let i in this.fieldArray ){
+      console.log(this.fieldArray[i]);
+      console.log(this.fieldArray[i].id);
+      this.deleteQuestion(this.fieldArray[i].id);
     }
   }
 
