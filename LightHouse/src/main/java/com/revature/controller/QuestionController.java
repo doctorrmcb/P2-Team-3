@@ -53,7 +53,7 @@ public class QuestionController {
 		//sess.getAttribute("user");
 		q.setUser(null);
 		qService.createQuestion(q);
-		response = "Question Created";
+		response = "success";
 		cr.setResponse(response);
 		return cr;
 		

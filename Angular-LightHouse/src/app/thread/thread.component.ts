@@ -18,6 +18,7 @@ export class ThreadComponent implements OnInit {
   response: string;
   title = "";
   contents: string;
+  postContents: string;
   posts: Post[];
   display = 'none';
   //thread: Thread;

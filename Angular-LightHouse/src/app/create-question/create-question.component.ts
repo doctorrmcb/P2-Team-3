@@ -28,6 +28,7 @@ export class CreateQuestionComponent implements OnInit {
     }
   onSubmit() {
       let url = 'http://localhost:8080/LightHouse/createQuestion/' + this.selected;
+      console.log(url);
       let result = this.http.post<ControllerResponse>(url, {
         questionName: this.question,
         correctAnswer: this.ca,
