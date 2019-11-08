@@ -18,6 +18,12 @@ export class LoginComponent implements OnInit {
   login = "log In";
   register = "register";
 
+  elemResources = document.getElementById('resources-link');
+  elemForum = document.getElementById('forum-link');
+  elemQuiz = document.getElementById('quiz-link');
+  elemHome = document.getElementById('home-link');
+  elemSearch = document.getElementById('search');
+  elemLogout = document.getElementById('logout');
 
   onRegister(): void{
     this.router.navigate(['registration']);
@@ -53,6 +59,12 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     sessionStorage.setItem('token', '');
+    this.elemResources.style.visibility = "hidden";
+    this.elemForum.style.visibility = "hidden";
+    this.elemQuiz.style.visibility = "hidden";
+    this.elemHome.style.visibility = "hidden";
+    this.elemSearch.style.visibility = "hidden";
+    this.elemLogout.style.visibility = "hidden";
   }
 
 }

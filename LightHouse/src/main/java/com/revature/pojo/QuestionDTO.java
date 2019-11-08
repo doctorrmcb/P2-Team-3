@@ -40,6 +40,7 @@ public class QuestionDTO {
 	public QuestionDTO(Question q) {
 		this.qID = q.getQuestionID();
 		this.cat= q.getCat();
+		this.questionName = q.getQuestionName();
 		this.answers = new ArrayList<String>();
 		this.answers.add(q.getCorrectAnswer());
 		this.answers.add(q.getWrongAnswer1());

@@ -19,7 +19,7 @@ import com.revature.pojo.User;
 import com.revature.service.UserServiceImpl;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true" /*"*"*/)
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 public class LoginController {
 	private UserServiceImpl userService;
 

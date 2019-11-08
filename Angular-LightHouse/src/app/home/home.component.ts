@@ -8,11 +8,26 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  elemResources = document.getElementById('resources-link');
+  elemForum = document.getElementById('forum-link');
+  elemQuiz = document.getElementById('quiz-link');
+  elemHome = document.getElementById('home-link');
+  elemSearch = document.getElementById('search');
+  elemLogout = document.getElementById('logout');
+
   constructor(
     private router: Router
   ) { }
 
   ngOnInit() {
+
+    this.elemResources.style.visibility = "visible";
+    this.elemForum.style.visibility = "visible";
+    this.elemQuiz.style.visibility = "visible";
+    this.elemHome.style.visibility = "visible";
+    this.elemSearch.style.visibility = "visible";
+    this.elemLogout.style.visibility = "visible";
+
   }
 
   toQuiz(): void{
