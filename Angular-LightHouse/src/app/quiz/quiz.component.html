@@ -5,27 +5,27 @@
             <dt *ngFor="let question of questions, let i = index">
                 <thead>
                     <tr>
-                        <th scope="col"> Question {{i}}</th>
+                        <th scope="col"> Question {{i+1}}</th>
                     </tr>
                 </thead>
                 <tbody>
                     <label>{{question.questionName}}</label>
                     <div class="form-group">
                         <div class="radio">
-                            <label><input type="radio" name="question1" value="question1answer1"
-                                    ng-model="formData.question1">question1answer1</label>
+                            <input type="radio" id="answer1" name="question1" value="question1answer1"
+                                    ng-model="formData.question1"><label class="radiolabel">{{question.answers[0]}}</label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" name="question1" value="question1answer2"
-                                    ng-model="formData.question1">question1answer2</label>
+                            <input type="radio" id="answer2" name="question2" value="question1answer2"
+                                    ng-model="formData.question1"><label class="radiolabel">{{question.answers[1]}}</label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" name="question1" value="question1answer3"
-                                    ng-model="formData.question1">question1answer3</label>
+                            <input type="radio" id="answer3" name="question3" value="question1answer3"
+                                    ng-model="formData.question1"><label class="radiolabel">{{question.answers[2]}}</label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" name="question1" value="question1answer3"
-                                    ng-model="formData.question1">question1answer3</label>
+                            <input type="radio" id="answer4" name="question4" value="question1answer3"
+                                    ng-model="formData.question1"> <label class="radiolabel">  {{question.answers[3]}}</label>
                         </div>
                     </div>
                 </tbody>
