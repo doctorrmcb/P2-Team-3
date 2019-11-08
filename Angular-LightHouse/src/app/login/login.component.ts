@@ -68,6 +68,7 @@ export class LoginComponent implements OnInit {
     /* this.elemSearch.style.visibility = "hidden"; */
     this.elemProfile.style.visibility = "hidden";
     this.elemLogout.style.visibility = "hidden";
+    sessionStorage.clear();
   }
 
 }
