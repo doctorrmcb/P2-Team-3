@@ -3,8 +3,7 @@
     <h1 id="title">Create a Question</h1>
     <br>
     <label class="label" id="label-question" for="question">Question:</label>
-    <input name="question" id="question" type="text" class="form-control" [(ngModel)]="question"
-        placeholder="question" />
+    <input name="question" id="question" type="text" class="form-control" [(ngModel)]="question" placeholder="question" />
     <br>
     <label class="label" id="label-ca" for="ca">Correct Answer:</label>
     <input name="ca" id="ca" type="text" class="form-control" [(ngModel)]="ca" placeholder="Correct Answer" />
@@ -47,15 +46,17 @@
             </div>
             <div class="modal-body">
                 <form>
-                    <!-- <p>Model body text</p> -->
-
+                    Question ID : 24
                 </form>
                 <h2 style="color:red; font-size: 16px;">{{response}}</h2>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" (click)="onCloseHandled()">CLOSE</button>
-                <button type="button" class="btn btn-default" (click)="onSubmit()">SUBMIT</button>
+                <button type="button" class="btn btn-lg" (click)="onCloseHandled()">CLOSE</button>
+                <button type="button" class="btn btn-lg" (click)="onSubmit()">SUBMIT</button>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal !-->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal !-->
