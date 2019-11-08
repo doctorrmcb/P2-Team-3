@@ -23,6 +23,7 @@ export class ResourcesPageComponent {
   //private http: HttpClient;
   
   
+  //These wree for hard coded tests
   // resources= [
   //   {name: "Java Tutorial", link:"https://docs.oracle.com/javase/tutorial/index.html", rating: 5, category: "Java"},
   //   {name: "Html Tutorial", link:"https://www.w3schools.com/html/", rating: 5, category: "HTML"},
@@ -94,6 +95,16 @@ export class ResourcesPageComponent {
   }
 
 
+  /**
+   * When the page is first loaded or whenever the dropdown box for selecting a file category is changed,
+   * this function will be called. By default, the Java category is selected and so that will be the category
+   * loaded up on page startup. This function will grab all files from the AWS S3 Bucket through a get request
+   * to Java. It wil then set this.resources to the response recieved where HTML will populate the resoucres
+   * table on page using *ngFor. 
+   * 
+   * @author ErikHaklar
+   * @param selected 
+   */
   onGetS3FilesByCat(selected): void {
     let url = 'http://localhost:8080/LightHouse/get-files/' + selected;
     let result = this.http.get<S3Files[]>(url, {
@@ -110,6 +121,17 @@ export class ResourcesPageComponent {
     });
   }
 
+  /**
+   * Download a file listed on the resources page by clicking the download button next to the one you want to grab.
+   * You must provide a path to download the file to so it knows where to go by writing that information
+   * into the input located next to the download button. the file path must include a \ after the endpoint
+   * like this: C:\Users\Erik\Desktop\S3Tests\DownloadTests\. The name of the file is then inserted at the
+   * endpoint so the final file path will look like this: 
+   * C:\Users\Erik\Desktop\S3Tests\DownloadTests\JavaLesson.txt
+   * 
+   * @author ErikHaklar
+   * @param fileName 
+   */
   downloadFile(fileName): void {
     let url = 'http://localhost:8080/LightHouse/download-file/';
 
@@ -133,6 +155,16 @@ export class ResourcesPageComponent {
     });
   }
 
+  /**
+   * Upload a file to the resources page by entering the path of the file on your computer for the file
+   * you want to upload and selecting the file by clicking on the 'Choose File' button. the file path
+   * provided must include a \ at the endpoint. It should look like C:\Users\Erik\Desktop\S3Tests\.
+   * After the file is chosen this function will automatically add the file name of the file selected
+   * ontp the endpoint. The final file path will look like this: C:\Users\Erik\Desktop\S3Tests\JavaLesson.txt
+   * 
+   * @author ErikHaklar
+   * @param file 
+   */
   uploadFile(file): void {
     let url = 'http://localhost:8080/LightHouse/upload-file/';
     //let S3File = new S3Files(file.name, this.path, this.selected); 
