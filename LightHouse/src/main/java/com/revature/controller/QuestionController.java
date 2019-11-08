@@ -64,11 +64,47 @@ public class QuestionController {
 	
 	}
 	
-	@PutMapping("/updateQuestion/{id}")
-	public ControllerResponse updateQuestion(@PathVariable int id, @RequestBody String name, HttpSession sess) {
-		if (true) {
+	@PutMapping("/updateQuestionName/{id}")
+	public ControllerResponse updateQuestionName(@PathVariable int id, @RequestBody String name, HttpSession sess) {
+		ControllerResponse cr = new ControllerResponse();
+		name = name.replace("{\"newcontent\":\"", "");
+		name = name.replace("\"}", "");
+		boolean check = qService.updateQuestionName(id, name);
+		if (check) {
+			cr.setResponse("success");
 			return cr;
 		} else {
+			cr.setResponse("fail");
+			return cr;
+		}
+	}
+	
+	@PutMapping("/updateQuestionAnswer/{id}")
+	public ControllerResponse updateQuestionAnswer(@PathVariable int id, @RequestBody String name, HttpSession sess) {
+		ControllerResponse cr = new ControllerResponse();
+		name = name.replace("{\"newanswer\":\"", "");
+		name = name.replace("\"}", "");
+		boolean check = qService.updateCorrectAnswer(id, name);
+		if (check) {
+			cr.setResponse("success");
+			return cr;
+		} else {
+			cr.setResponse("fail");
+			return cr;
+		}
+	}
+	
+	@PutMapping("/updateQuestionExplanation/{id}")
+	public ControllerResponse updateQuestionExplanation(@PathVariable int id, @RequestBody String name, HttpSession sess) {
+		ControllerResponse cr = new ControllerResponse();
+		name = name.replace("{\"newexplanation\":\"", "");
+		name = name.replace("\"}", "");
+		boolean check = qService.updateQuestionExplanation(id, name);
+		if (check) {
+			cr.setResponse("success");
+			return cr;
+		} else {
+			cr.setResponse("fail");
 			return cr;
 		}
 	}
