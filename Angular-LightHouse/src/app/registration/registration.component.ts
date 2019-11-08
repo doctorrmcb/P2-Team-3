@@ -65,7 +65,7 @@ export class RegistrationComponent implements OnInit {
       } else {
         console.log("Response: " + cr.response);
         this.response = cr.response;
-        alert("Registration failed.");
+        //alert("Registration failed.");
       }
     });
   }
