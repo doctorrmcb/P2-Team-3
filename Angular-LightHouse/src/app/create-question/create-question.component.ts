@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { ControllerResponse } from '../types/ControllerResponse';
 import { Question } from '../types/Question';
@@ -49,6 +49,7 @@ export class CreateQuestionComponent implements OnInit {
           this.ngOnInit();
           
           this.createNewQuestion();
+          this.router.navigate(['view-question']);
         } else {
           //console.log("Response" + cr.response);
           this.response = "Question Already Exists";
@@ -58,6 +59,7 @@ export class CreateQuestionComponent implements OnInit {
     }
 
   constructor(private route: ActivatedRoute,
+    private router: Router,
     private http: HttpClient) { }
 
   ngOnInit() {
