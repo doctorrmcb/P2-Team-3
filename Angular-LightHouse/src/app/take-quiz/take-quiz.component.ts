@@ -40,6 +40,7 @@ export class TakeQuizComponent implements OnInit {
       let result = this.http.get<Question[]>(url, {}).subscribe(cr =>{
         this.questions = cr;
         console.log("cr: " + cr);
+        console.log("cr[0].questionName: " + cr[0].questionName);
         console.log('take-quiz: ' + this.questions);
       });
 
