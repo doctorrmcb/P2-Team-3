@@ -2,7 +2,7 @@ import { User } from './User';
 import { Category } from './Category';
 
 export class Question {
-    qID: number;
+    questionID: number;
     cat: Category;
     user: User;
     questionName: string;

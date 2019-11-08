@@ -10,6 +10,8 @@
                             <app-post [inputPost]='post'></app-post>
                             <a [routerLink]="['../../sub-forum/', post.threadID.subforum, post.threadID.title]">In thread:
                                 {{post.threadID.title}}</a>
+                            <br>
+                            <br>
                         </div>
                     </dt>
                 </dl>
@@ -27,6 +29,7 @@
                 </dl>
             </ng-template>
         </ngb-tab>
+        <!--
         <ngb-tab title="Quizzes">
             <ng-template ngbTabContent>
                 <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla
@@ -43,5 +46,6 @@
                     feugiat.</p>
             </ng-template>
         </ngb-tab>
+    -->
     </ngb-tabset>
 </div>
