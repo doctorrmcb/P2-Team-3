@@ -39,7 +39,11 @@ export class TakeQuizComponent implements OnInit {
       let url = 'http://localhost:8080/LightHouse/quiz/' + this.selected;
       let result = this.http.get<Question[]>(url, {}).subscribe(cr =>{
         this.questions = cr;
+        console.log("cr: " + cr);
+        console.log('take-quiz: ' + this.questions);
       });
+
+      this.router.navigate(['quiz'], {state: {data: this.questions}});
     }
   
 }
