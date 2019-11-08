@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Post } from '../types/Post';
 import { ControllerResponse } from '../types/ControllerResponse';
-import { Thread } from '../types/Thread';
+import { ForumThread } from '../types/Thread';
 
 
 @Component({
@@ -35,7 +35,8 @@ export class ThreadComponent implements OnInit {
   }
   getThread() {
     let url = 'http://localhost:8080/LightHouse/thread/' + this.title;
-    let result = this.http.get<Thread>(url, {}).subscribe(cr => {
+    let result = this.http.get<ForumThread>(url, {}).subscribe(cr => {
+      console.log(cr);
       this.contents = cr.contents;
     })
   }
@@ -44,8 +45,6 @@ export class ThreadComponent implements OnInit {
     let result = this.http.get<Post[]>(url, {}).subscribe(cr => {
       this.posts = this.formatDate(cr);
       this.posts.sort((a, b) => (a.orderBy > b.orderBy)?1:-1);
-        //alert("Authentication failed.");
-      
     });
   }
   formatDate(posts: Post[]): Post[]{

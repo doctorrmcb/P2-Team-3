@@ -29,6 +29,8 @@ import { ManageQuestionComponent } from './manage-question/manage-question.compo
 import { CreateQuestionComponent } from './create-question/create-question.component';
 import { UpdateQuestionComponent } from './update-question/update-question.component';
 import { ViewQuestionComponent } from './view-question/view-question.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({	
   declarations: [	
@@ -54,6 +56,8 @@ import { ViewQuestionComponent } from './view-question/view-question.component';
     CreateQuestionComponent,
     UpdateQuestionComponent,
     ViewQuestionComponent,
+    ProfileComponent,
+    LogoutComponent,
   ],	
   imports: [	
     routing,	

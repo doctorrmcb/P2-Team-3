@@ -8,6 +8,7 @@ import org.apache.http.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -41,6 +42,10 @@ public class LoginController {
 	}
 	*/
 	
+	@GetMapping("/logout")
+	public void logout(HttpSession sess) {
+		sess.invalidate();
+	}
 	/*
 	 * @RequestMapping(path = "/login", method = RequestMethod.OPTIONS) public void
 	 * loginPreFlight(HttpResponse httpResponse) {

@@ -107,9 +107,13 @@ public class ForumController {
 	 */
 	@GetMapping("/post/{title}")
 	public List<Post> getPostsByTitle(@PathVariable String title){
+		title = title.replace("%20", " ");
+		//title += "?";
 		info("Reached getPostsByTitle of forum controller");
+		info("looking for posts in: " + title);
 		ForumThread thread = threadService.getThreadByTitle(title);
 		List<Post> postList = postService.getPostsByThread(thread);
+		info("Forum Controller Thread: " + thread);
 		info("PostList: " + postList);
 		return postList;
 	}
@@ -121,7 +125,9 @@ public class ForumController {
 	 */
 	@GetMapping("/thread/{title}")
 	public ForumThread getThreadByTitle(@PathVariable String title) {
-		info("Reached getTHreadByTitle of forum controller");
+		info("Reached getThreadByTitle of forum controller");
+		title = title.replace("%20", " ");
+		//title += "?";
 		ForumThread thread = threadService.getThreadByTitle(title);
 		info("Thread: " + thread);
 		return thread;

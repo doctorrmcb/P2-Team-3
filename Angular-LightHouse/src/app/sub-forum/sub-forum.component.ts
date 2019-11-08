@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Thread } from '../types/Thread';
+import { ForumThread } from '../types/Thread';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient, HttpResponse, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -14,7 +14,7 @@ import { ControllerResponse } from '../types/ControllerResponse';
 export class SubForumComponent implements OnInit {
 
   id: string;
-  threads: Thread[];
+  threads: ForumThread[];
   title: "";
   contents: "";
   response: string;
@@ -32,7 +32,7 @@ export class SubForumComponent implements OnInit {
     this.id = this.route.snapshot.paramMap.get('id');
     
     let url = 'http://localhost:8080/LightHouse/forum/' + this.id;
-    let result = this.http.get<Thread[]>(url, {}).subscribe(tr => {
+    let result = this.http.get<ForumThread[]>(url, {}).subscribe(tr => {
       /* for (let i = 0; i < tr.length; i++) {
         //<a href="{{tr[i]."></a> 
       } */
@@ -43,7 +43,7 @@ export class SubForumComponent implements OnInit {
 
   }
 
-  formatDate(threads: Thread[]): Thread[]{
+  formatDate(threads: ForumThread[]): ForumThread[]{
     for (let thread of threads){
       let orderBy = "";
       orderBy += thread.lastPost[0];

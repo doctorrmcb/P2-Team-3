@@ -1,0 +1,47 @@
+<h1>Welcome to your profile, {{username}} </h1>
+<div class="container">
+    <ngb-tabset>
+        <ngb-tab title="Posts">
+            <ng-template ngbTabContent> Posts by {{username}}
+                <br>
+                <dl class="Posts">
+                    <dt *ngFor="let post of posts">
+                        <div class="post-container">
+                            <app-post [inputPost]='post'></app-post>
+                            <a [routerLink]="['../../sub-forum/', post.threadID.subforum, post.threadID.title]">In thread:
+                                {{post.threadID.title}}</a>
+                        </div>
+                    </dt>
+                </dl>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Threads">
+            <br>
+            <ng-template ngbTabContent> Threads by {{username}}
+                <dl class="Threads">
+                    <dt *ngFor="let thread of threads">
+                        <div class="thread-container">
+                            <a [routerLink]="['../../sub-forum/', thread.subforum, thread.title]">{{ thread.title }}</a>
+                        </div>
+                    </dt>
+                </dl>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Quizzes">
+            <ng-template ngbTabContent>
+                <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla
+                    facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget
+                    tincidunt
+                    eu, congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie
+                    lectus
+                    ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor
+                    arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu
+                    tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus.
+                    Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus
+                    pulvinar
+                    feugiat.</p>
+            </ng-template>
+        </ngb-tab>
+    </ngb-tabset>
+</div>

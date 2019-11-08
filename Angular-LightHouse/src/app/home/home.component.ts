@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log(sessionStorage.getItem('user'));
   }
 
   toQuiz(): void{
