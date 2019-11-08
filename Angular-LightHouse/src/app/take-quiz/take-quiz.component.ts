@@ -30,7 +30,7 @@ export class TakeQuizComponent implements OnInit {
     }
 
     getCategories(){
-      let url = 'http://localhost:8080/LightHouse/take-quiz/';
+      let url = 'http://localhost:8080/LightHouse/category/';
       let result = this.http.get<Category[]>(url, {}).subscribe(cr =>{
         this.categories = cr;
       });

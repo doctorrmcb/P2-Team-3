@@ -59,7 +59,7 @@ public class CategoryController {
 	 * @param 
 	 * @return
 	 */
-	@GetMapping("/take-quiz")
+	@GetMapping("/category")
 	public List<Category> getCategories(){
 		List<Category> catList = new ArrayList<Category>();
 		catList = catService.getAllCategory();
