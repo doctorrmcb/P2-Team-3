@@ -77,3 +77,13 @@ dl {
     margin-left: 5%;
     margin-right: 5%;
 }
+
+.button {
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+#cancelQuestion {
+    margin-left: 28%;
+    margin-top: 5%;
+}

@@ -6,6 +6,7 @@
 
 .table-wrapper-scroll-y {
     display: block;
+    height: 100%;
 }
 
 .breadcrumb {

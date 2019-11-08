@@ -42,11 +42,11 @@
                     <td *ngIf="i === (fieldArray.length - 1); then thenButton else elseButton">
                     </td>
                     <ng-template #elseButton>
-                        <button class="button" type="button" (click)="deleteFieldValue(i)">Cancel
+                        <button class="button" type="button"id="cancelQuestion" (click)="deleteFieldValue(i)">Cancel
                             Action</button>
                     </ng-template>
                     <ng-template #thenButton>
-                        <button class="button" type="button" (click)="addFieldValue()">Add
+                        <button class="button" type="button" id="addQuestion" (click)="addFieldValue()">Add
                             Question
                             ID</button>
                     </ng-template>
