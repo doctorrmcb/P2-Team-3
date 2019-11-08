@@ -30,6 +30,7 @@ export class RegistrationComponent implements OnInit {
   elemQuiz = document.getElementById('quiz-link');
   elemHome = document.getElementById('home-link');
   elemSearch = document.getElementById('search');
+  elemProfile = document.getElementById('profile');
   elemLogout = document.getElementById('logout');
 
   ngOnInit() {
@@ -39,6 +40,7 @@ export class RegistrationComponent implements OnInit {
     this.elemQuiz.style.visibility = "hidden";
     this.elemHome.style.visibility = "hidden";
     this.elemSearch.style.visibility = "hidden";
+    this.elemProfile.style.visibility = "hidden";
     this.elemLogout.style.visibility = "hidden";
   }
   onBack(): void {

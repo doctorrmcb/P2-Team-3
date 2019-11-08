@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
   elemForum = document.getElementById('forum-link');
   elemQuiz = document.getElementById('quiz-link');
   elemHome = document.getElementById('home-link');
+  elemProfile = document.getElementById('profile');
   elemSearch = document.getElementById('search');
   elemLogout = document.getElementById('logout');
 
@@ -65,6 +66,7 @@ export class LoginComponent implements OnInit {
     this.elemQuiz.style.visibility = "hidden";
     this.elemHome.style.visibility = "hidden";
     this.elemSearch.style.visibility = "hidden";
+    this.elemProfile.style.visibility = "hidden";
     this.elemLogout.style.visibility = "hidden";
   }
 

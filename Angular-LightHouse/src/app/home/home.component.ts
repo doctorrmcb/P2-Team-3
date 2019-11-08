@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   elemQuiz = document.getElementById('quiz-link');
   elemHome = document.getElementById('home-link');
   elemSearch = document.getElementById('search');
+  elemProfile = document.getElementById('profile');
   elemLogout = document.getElementById('logout');
 
   constructor(
@@ -25,7 +26,8 @@ export class HomeComponent implements OnInit {
     this.elemForum.style.visibility = "visible";
     this.elemQuiz.style.visibility = "visible";
     this.elemHome.style.visibility = "visible";
-    this.elemSearch.style.visibility = "visible";
+    //this.elemSearch.style.visibility = "visible";
+    this.elemProfile.style.visibility = "visible";
     this.elemLogout.style.visibility = "visible";
 
   }
